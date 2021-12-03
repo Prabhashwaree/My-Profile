@@ -3,14 +3,61 @@
     padding: 0;
 }
 .main_page{
-    /*height: 100%;
-    width: 60%;*/
-   /* padding: 10px;
-    margin: auto;*/
+    background-image: url("../images/head  pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 100vh;
+    position: relative;
+}
+
+.menu-bar nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+.naviLink ul{
+    margin-right: 20px;
+    text-align: right;
+}
+.naviLink ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+}
+
+button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-style: none;
+    padding: 20px;
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    border-radius: 13px;
+    width: 15%;
+    height: 2px;
 
 }
-#main_pic img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
+#btn1{
+
 }
+
+#btn2{
+
+}
+
+#btn3{
+
+}
+
+#btn4{
+
+}
+

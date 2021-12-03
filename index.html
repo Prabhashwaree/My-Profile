@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>My Profile</title>
-    <link href="assets/images/tabIcon.png"rel="icon">
-    <meta content="Nethmini Gayathree,Nethmini,Prabhashwari,Software Engineer Nethmini"name="keywords">
-    <meta content="This is My First Personal Website"name="description">
-    <meta content="width=divice-width initial-scale=1"name="viewport">
-    <meta content="dark blue"name="theme-colour">
-    <link href="assets/style/style.css"rel="stylesheet">
+    <link href="assets/images/tabIcon.png" rel="icon">
+    <meta content="Nethmini Gayathree,Nethmini,Prabhashwari,Software Engineer Nethmini" name="keywords">
+    <meta content="This is My First Personal Website" name="description">
+    <meta content="width=divice-width initial-scale=1" name="viewport">
+    <meta content="dark blue" name="theme-colour">
+    <link href="assets/style/style.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <header>
-    <nav>
-        <a><img src="assets/images/home.png" alt="home"></img></a><br>
+    <div class="menu-bar">
+    <nav class="naviLink">
 
-        <br><a href="#Skills"><button>Skills</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#Experience"><button>Experience</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#Project"><button>Project</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#Education"><button>Education</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="homeBtn"><img src="assets/images/home.png" alt="home"></img></a><br>
+        <ul>
+            <li><a href="#Skills">
+                <button id="btn1">Skills</button>
+            </a></li>
+            <li><a href="#Experience">
+                <button id="btn2">Experience</button>
+            </a></li>
+            <li><a href="#Project">
+                <button id="btn3">Project</button>
+            </a></li>
+            <li><a href="#Education">
+                <button id="btn4">Education</button>
+            </a></li>
+        </ul>
     </nav>
+    </div>
 </header>
-
 
 
 <main>
@@ -32,9 +46,9 @@
     <!--Personal Information-->
     <section>
         <div class="main_page">
-            <div id="main_pic">
-            <img src="assets/images/head%20%20pic.jpg "alt="Head Picture"width="100%"height="100%"></div>
-            <audio src="audio/My%20Voice.mpeg"controls muted autoplay></audio>
+            <!-- <div id="main_pic">-->
+            <!--<img src="assets/images/head%20%20pic.jpg "alt="Head Picture"width="100%"height="100%"></div>-->
+            <audio src="audio/My%20Voice.mpeg" controls muted autoplay></audio>
             <h3>Hello...!</h3>
             <h1>I’m <br>NETHMINI GAYATHREE </h1>
 
@@ -44,35 +58,58 @@
             </p>
 
             <nav>
-                <a href="https://stackoverflow.com/users/17466083/prabhashwaree-nethmi-57"target="-blank"home><img src="assets/images/stackoverflow-128.png" alt="Stack Overflow" width="25"hight="25"></a><br>
-                <a href="https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/"target="-blank"home><img src="assets/images/linkedin-3-128.png" alt="Linkedin"width="25"hight="25"></a><br>
-                <a href="https://www.instagram.com/neth841/"target="-blank"home><img src="assets/images/NicePng_ig-png-logo_10110672.png" alt="Instagram" width="25"hight="25"></a><br>
-                <a href="#Contact="target="-blank"home><img src="assets/images/whatsapp New.png" alt="Whatsapp"width="25"hight="25"></a><br>
-                <a href="https://twitter.com/57Nethmi"target="-blank"home><img src="assets/images/twitter-128.png" alt="Twitter" width="25"hight="25"></a><br>
-                <a href="https://github.com/Prabhashwaree"target="-blank"home><img src="assets/images/git.png" alt="Github" width="25"hight="25"></a>
-            </nav><br>
+                <a href="https://stackoverflow.com/users/17466083/prabhashwaree-nethmi-57" target="-blank" home><img
+                        src="assets/images/stackoverflow-128.png" alt="Stack Overflow" width="25" hight="25"></a><br>
+                <a href="https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/" target="-blank" home><img
+                        src="assets/images/linkedin-3-128.png" alt="Linkedin" width="25" hight="25"></a><br>
+                <a href="https://www.instagram.com/neth841/" target="-blank" home><img
+                        src="assets/images/NicePng_ig-png-logo_10110672.png" alt="Instagram" width="25"
+                        hight="25"></a><br>
+                <a href="#Contact=" target="-blank" home><img src="assets/images/whatsapp New.png" alt="Whatsapp"
+                                                              width="25" hight="25"></a><br>
+                <a href="https://twitter.com/57Nethmi" target="-blank" home><img src="assets/images/twitter-128.png"
+                                                                                 alt="Twitter" width="25"
+                                                                                 hight="25"></a><br>
+                <a href="https://github.com/Prabhashwaree" target="-blank" home><img src="assets/images/git.png"
+                                                                                     alt="Github" width="25" hight="25"></a>
+            </nav>
+            <br>
             <section>
                 <nav>
-                    <a href="#About"><button>About</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#Gallery Page"><button>Gallery Page</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#Activities"><button>Activities</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#Comment"><button>Comment</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#Contact"><button>Contact</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#About">
+                        <button>About</button>
+                    </a>
+                    <a href="#Gallery Page">
+                        <button>Gallery Page</button>
+                    </a>
+                    <a href="#Activities">
+                        <button>Activities</button>
+                    </a>
+                    <a href="#Comment">
+                        <button>Comment</button>
+                    </a>
+                    <a href="#Contact">
+                        <button>Contact</button>
+                    </a>
                 </nav>
             </section>
         </div>
-    </section> <br>
+    </section>
+    <br>
 
 
     <!--Motivate word-->
     <section>
         <figure>
             <blockquote cite="https://yourpositiveoasis.com/50-most-inspirational-quotes/">
-                <pre>You’ll never change your life until you change something <br>you do daily. The secret of your success is found in your <br>daily routine. </pre></blockquote><br>
+                <pre>You’ll never change your life until you change something <br>you do daily. The secret of your success is found in your <br>daily routine. </pre>
+            </blockquote>
+            <br>
             <figcaption><b>– John C. Maxwell -</b></figcaption>
         </figure>
-        <img src="assets/images/feather.webp" alt="fether Picture" width="100"hight="300"></a><br>
-    </section><br>
+        <img src="assets/images/feather.webp" alt="fether Picture" width="100" hight="300"></a><br>
+    </section>
+    <br>
 
 
     <!--About-->
@@ -82,13 +119,13 @@
         </section>
         <div>
             <!--<img src="assets/images/background.jpg" alt="Background Picture" width="200"hight="500"></a><br>-->
-            <img src="assets/images/about pic.jpeg" alt="My Picture" width="200"hight="250"></a><br>
+            <img src="assets/images/about pic.jpeg" alt="My Picture" width="200" hight="250"></a><br>
         </div>
         <section>
             <p>
             <h3>I am K.Prabhashwari Nethmini Gayathri Silva.</h3>
 
-            Age  - 22<br>
+            Age - 22<br>
             School - Sri Sumangala Girl’s School<br>
             City - Panadura <br><br>
 
@@ -100,10 +137,14 @@
             </p>
         </section>
         <nav>
-            <img src="assets/images/Phone.png"alt="Tell Phone"width="50"hight="50"><a href="tell:+94774914870"target="-blank"home>+94774914870</a> <br>
-            <img src="assets/images/Gmail (1).png"alt="E-mail"width="50"hight="50"><a href="mailto:prabhashwaree57@gmail.com"target="-blank"home>prabhashwaree57@gmail.com</a>
+            <img src="assets/images/Phone.png" alt="Tell Phone" width="50" hight="50"><a href="tell:+94774914870"
+                                                                                         target="-blank" home>+94774914870</a>
+            <br>
+            <img src="assets/images/Gmail (1).png" alt="E-mail" width="50" hight="50"><a
+                href="mailto:prabhashwaree57@gmail.com" target="-blank" home>prabhashwaree57@gmail.com</a>
         </nav>
-    </section><br><br>
+    </section>
+    <br><br>
 
 
     <!--Gallery Page-->
@@ -112,34 +153,35 @@
 
         <section>
             <div>
-                <img src="assets/images/Galary 1.jpg"alt="First Galary Pictures"width="200"hight="270">
-                <a href="https://www.pinterest.com/pnethmi57/project/"target="-blank"home><p>First Semester</p></a>
+                <img src="assets/images/Galary 1.jpg" alt="First Galary Pictures" width="200" hight="270">
+                <a href="https://www.pinterest.com/pnethmi57/project/" target="-blank" home><p>First Semester</p></a>
             </div>
         </section>
 
 
         <section>
             <div>
-                <img src="assets/images/Galary 2.jpg" alt="Galary Pictures"width="240"hight="400">
-                <img src="assets/images/Think girl.gif" alt="Thinking"width="80"hight="80">
+                <img src="assets/images/Galary 2.jpg" alt="Galary Pictures" width="240" hight="400">
+                <img src="assets/images/Think girl.gif" alt="Thinking" width="80" hight="80">
             </div>
         </section>
 
 
         <section>
             <div>
-                <img src="assets/images/Galary 3.jpg" alt="Galary Pictures"width="240"hight="400">
-                <img src="assets/images/Think girl.gif" alt="Thinking"width="80"hight="80">
+                <img src="assets/images/Galary 3.jpg" alt="Galary Pictures" width="240" hight="400">
+                <img src="assets/images/Think girl.gif" alt="Thinking" width="80" hight="80">
             </div>
         </section>
 
         <section>
             <div>
-                <img src="assets/images/Galary 4.jpg" alt="Galary Pictures"width="200"hight="270">
-                <img src="assets/images/Think girl.gif" alt="Thinking"width="50"hight="50">
+                <img src="assets/images/Galary 4.jpg" alt="Galary Pictures" width="200" hight="270">
+                <img src="assets/images/Think girl.gif" alt="Thinking" width="50" hight="50">
             </div>
         </section>
-    </section><br><br>
+    </section>
+    <br><br>
 
 
     <!--Activities-->
@@ -152,21 +194,35 @@
 
         <nav>
             <div>
-                <img src="assets/images/grafig pic gif.gif"alt="Photo Graphics Picture"width="200"hight="400">
-                <a href="https://www.pinterest.com/pnethmi57/photo-graphics/"target="-blank"home><figure><figcaption>Photo Grapgices</figcaption></figure> </a>
+                <img src="assets/images/grafig pic gif.gif" alt="Photo Graphics Picture" width="200" hight="400">
+                <a href="https://www.pinterest.com/pnethmi57/photo-graphics/" target="-blank" home>
+                    <figure>
+                        <figcaption>Photo Grapgices</figcaption>
+                    </figure>
+                </a>
             </div>
 
             <div>
-                <img src="assets/images/Traval New (1).jpeg"alt="Traveling Place Picture"width="200"hight="350">
-                <a href="https://www.pinterest.com/pnethmi57/traveling-place/"target="-blank"home><figure><figcaption>Traveling Place</figcaption></figure> </a>
+                <img src="assets/images/Traval New (1).jpeg" alt="Traveling Place Picture" width="200" hight="350">
+                <a href="https://www.pinterest.com/pnethmi57/traveling-place/" target="-blank" home>
+                    <figure>
+                        <figcaption>Traveling Place</figcaption>
+                    </figure>
+                </a>
             </div>
 
             <div>
-                <img src="assets/images/certificate gif (1).gif"alt="Sports Certificate Picture"width="200"hight="400">
-                <a href="https://www.pinterest.com/pnethmi57/certificate/"target="-blank"home><figure><figcaption>Sports Certificate</figcaption></figure> </a>
+                <img src="assets/images/certificate gif (1).gif" alt="Sports Certificate Picture" width="200"
+                     hight="400">
+                <a href="https://www.pinterest.com/pnethmi57/certificate/" target="-blank" home>
+                    <figure>
+                        <figcaption>Sports Certificate</figcaption>
+                    </figure>
+                </a>
             </div>
         </nav>
-    </section><br><br>
+    </section>
+    <br><br>
 
 
     <!--Skill-->
@@ -174,14 +230,15 @@
         <dfn id="Skills"><h2>SKILLS</h2></dfn>
 
         <section>
-            <img src="assets/images/ai.png"alt="Ai Picture"width="70"hight="70">
-            <img src="assets/images/ps.png"alt="Ps Picture"width="70"hight="70">
-            <img src="assets/images/mySQL.png"alt="MySQL Picture"width="85"hight="85">
-            <img src="assets/images/node.jpeg"alt="Node Picture"width="70"hight="70">
-            <img src="assets/images/java.png"alt="Java Picture"width="70"hight="70">
-            <img src="assets/images/javaFx.jpg"alt="JavaFx Picture"width="70"hight="70">
+            <img src="assets/images/ai.png" alt="Ai Picture" width="70" hight="70">
+            <img src="assets/images/ps.png" alt="Ps Picture" width="70" hight="70">
+            <img src="assets/images/mySQL.png" alt="MySQL Picture" width="85" hight="85">
+            <img src="assets/images/node.jpeg" alt="Node Picture" width="70" hight="70">
+            <img src="assets/images/java.png" alt="Java Picture" width="70" hight="70">
+            <img src="assets/images/javaFx.jpg" alt="JavaFx Picture" width="70" hight="70">
         </section>
-    </section><br><br>
+    </section>
+    <br><br>
 
 
     <!--Experience-->
@@ -192,15 +249,17 @@
 
         <p>I have no job experience in software engineering field,<br> but I have other job experience.</p>
         <div>
-            <img src="assets/images/build.png"alt=" Building Experience"width="900"height="600">
+            <img src="assets/images/build.png" alt=" Building Experience" width="900" height="600">
             <section>
-                <h5>2019  06 Month</h5>
-                <h5>TRAINING <img src="assets/images/HelthMynistry.png"alt=" Heath Ministry Picture"width="80"hight="80"></h5>
+                <h5>2019 06 Month</h5>
+                <h5>TRAINING <img src="assets/images/HelthMynistry.png" alt=" Heath Ministry Picture" width="80"
+                                  hight="80"></h5>
                 <h5><b>STEP1</b></h5>
                 <p>
                     I worked as an <br>
-                    employee of <a href="http://www.health.gov.lk/moh_final/english/others.php?spid=23"target="-blank"home><b>Health <br>
-                    Ministry  </b></a>(Training <br>
+                    employee of <a href="http://www.health.gov.lk/moh_final/english/others.php?spid=23" target="-blank"
+                                   home><b>Health <br>
+                    Ministry </b></a>(Training <br>
                     Computer Assistant).
                 </p>
             </section>
@@ -208,12 +267,14 @@
 
             <section>
                 <div>
-                    <h5>2020  10 Month</h5>
-                    <h5>TRAINING <img src="assets/images/Panasia Bank Logo.jpg"alt=" Pan Asia Bank Logo"width="80"hight="80"></h5>
+                    <h5>2020 10 Month</h5>
+                    <h5>TRAINING <img src="assets/images/Panasia Bank Logo.jpg" alt=" Pan Asia Bank Logo" width="80"
+                                      hight="80"></h5>
                     <h5><b>STEP2</b></h5>
                     <p>
                         I worked as an employee of<br>
-                        <a href="https://slbusinessdirectory.com/Thread-contact-details-of-pan-asia-bank-kirulapone-branch-in-sri-lanka" target="-blank"home><b>PAN ASIA BANK </b></a>(TBDO). <br>
+                        <a href="https://slbusinessdirectory.com/Thread-contact-details-of-pan-asia-bank-kirulapone-branch-in-sri-lanka"
+                           target="-blank" home><b>PAN ASIA BANK </b></a>(TBDO). <br>
                         General Tel : 011 - 4374152<br>
                         E-mail : mgr.kir@pabcbank.com<br>
                     </p>
@@ -225,7 +286,7 @@
                 <div>
                     <h5>TRAINING </h5>
                     <h5><b>STEP3</b></h5>
-                    <img src="assets/images/Think girl.gif"alt=" Thinking Picture"width="100"height="100">
+                    <img src="assets/images/Think girl.gif" alt=" Thinking Picture" width="100" height="100">
                 </div>
             </section>
 
@@ -234,7 +295,7 @@
                 <div>
                     <h5>PERMANENT </h5>
                     <h5><b>STEP4</b></h5>
-                    <img src="assets/images/Think girl.gif"alt=" Thinking Picture"width="130"height="130">
+                    <img src="assets/images/Think girl.gif" alt=" Thinking Picture" width="130" height="130">
                 </div>
             </section>
 
@@ -243,11 +304,12 @@
                 <div>
                     <h5>OWNER </h5>
                     <h5><b>STEP5</b></h5>
-                    <img src="assets/images/Think girl.gif"alt=" Thinking Picture"width="160"height="160">
+                    <img src="assets/images/Think girl.gif" alt=" Thinking Picture" width="160" height="160">
                 </div>
             </section>
         </div>
-    </section><br><br>
+    </section>
+    <br><br>
 
 
     <!--Project-->
@@ -258,10 +320,10 @@
 
         <section>
             <h4>01 Semester </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Blue OcenNew.png"alt="blue Oration Pictures"width="200"hight="200">
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Blue OcenNew.png" alt="blue Oration Pictures" width="200" hight="200">
             <nav>
-                <a href="https://github.com/Prabhashwaree/Blue-Ocean"target="-blank"home>
+                <a href="https://github.com/Prabhashwaree/Blue-Ocean" target="-blank" home>
                     Hotel Management System<br>
                     Blue Ocean Hotel</a>
             </nav>
@@ -270,10 +332,10 @@
 
         <section>
             <h4>01 Semester </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Samanrice New.png"alt="Saman Rice Pictures"width="200"hight="200">
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Samanrice New.png" alt="Saman Rice Pictures" width="200" hight="200">
             <nav>
-                <a href="https://github.com/Prabhashwaree/Saman-Rice"target="-blank"home>
+                <a href="https://github.com/Prabhashwaree/Saman-Rice" target="-blank" home>
                     Car Parking System<br>
                     Saman Rice</a>
             </nav>
@@ -282,10 +344,10 @@
 
         <section>
             <h4>01 Semester </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/SupermarketMVC New.png"alt="Super Market(MVC) Pictures"width="200"hight="200">
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/SupermarketMVC New.png" alt="Super Market(MVC) Pictures" width="200" hight="200">
             <nav>
-                <a href="https://github.com/Prabhashwaree/Super-Market-MVC-"target="-blank"home>
+                <a href="https://github.com/Prabhashwaree/Super-Market-MVC-" target="-blank" home>
                     POS System<br>
                     (MVC)<br>
                     Super Market</a>
@@ -295,10 +357,10 @@
 
         <section>
             <h4>01 Semester </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Supermarket New lead.png"alt="Super Market(Lead) Pictures"width="200"hight="200">
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Supermarket New lead.png" alt="Super Market(Lead) Pictures" width="200" hight="200">
             <nav>
-                <a href="https://github.com/Prabhashwaree/Super-Market-layered-"target="-blank"home>
+                <a href="https://github.com/Prabhashwaree/Super-Market-layered-" target="-blank" home>
                     POS System<br>
                     (Lead)<br>
                     Super Market</a>
@@ -310,33 +372,36 @@
             <h4>
                 01 Semester <br>
                 Final Project</h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Doctor New.png"alt="Doctor Chanaling Pictures"width="200"hight="200"><br>
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Doctor New.png" alt="Doctor Chanaling Pictures" width="200" hight="200"><br>
 
-            <img src="assets/images/mySQL.png"alt="mySQL Pictures"width="70"hight="70">
-            <img src="assets/images/java.png"alt="java Pictures"width="65"hight="65">
-            <img src="assets/images/javaFx.jpg"alt="javaFx Pictures"width="50"hight="50">
+            <img src="assets/images/mySQL.png" alt="mySQL Pictures" width="70" hight="70">
+            <img src="assets/images/java.png" alt="java Pictures" width="65" hight="65">
+            <img src="assets/images/javaFx.jpg" alt="javaFx Pictures" width="50" hight="50">
             <p>
                 Final Project<br>
                 Doctor Chanaling
             </p>
             <nav>
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6865849868284420096/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6860564505139671040%2C6865849811460009984)"target="-blank"home> <button>View Result</button></a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6865849868284420096/?commentUrn=urn%3Ali%3Acomment%3A(activity%3A6860564505139671040%2C6865849811460009984)"
+                   target="-blank" home>
+                    <button>View Result</button>
+                </a>
             </nav>
         </section>
 
 
         <section>
-            <h4>02 Semester  </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Think girl.gif"alt="Thinking Pictures"width="120"hight="120">
+            <h4>02 Semester </h4>
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Think girl.gif" alt="Thinking Pictures" width="120" hight="120">
         </section>
 
 
         <section>
-            <h4>02 Semester  </h4>
-            <img src="assets/images/projec leaves.png"alt="diseing Pictures"width="40"hight="30">
-            <img src="assets/images/Think girl.gif"alt="Thinking Pictures"width="105"hight="105">
+            <h4>02 Semester </h4>
+            <img src="assets/images/projec leaves.png" alt="diseing Pictures" width="40" hight="30">
+            <img src="assets/images/Think girl.gif" alt="Thinking Pictures" width="105" hight="105">
         </section>
     </section>
 
@@ -348,8 +413,10 @@
         </section>
 
         <div>
-            <img src="assets/images/education%20new.png"alt="Education Pictures"width="800"height="500"><br>
-            <nav><a href="https://www.facebook.com/ssgspanadura/"target="-blank"home><img src="assets/images/Sumangala%20girls%20School%20Logo.jpg"alt="School Pictures"width="80"height="80"></a></nav>
+            <img src="assets/images/education%20new.png" alt="Education Pictures" width="800" height="500"><br>
+            <nav><a href="https://www.facebook.com/ssgspanadura/" target="-blank" home><img
+                    src="assets/images/Sumangala%20girls%20School%20Logo.jpg" alt="School Pictures" width="80"
+                    height="80"></a></nav>
             <pre>
             Sri Sumangala Girl’s
                    School
@@ -357,26 +424,30 @@
                     A/L</pre>
 
 
-            <nav><a href="https://m.facebook.com/profile.php?id=100069051075529&_rdr"target="-blank"home><img src="assets/images/Nysc.png"alt="NYSC Pictures"width="80"height="80"></a></nav>
+            <nav><a href="https://m.facebook.com/profile.php?id=100069051075529&_rdr" target="-blank" home><img
+                    src="assets/images/Nysc.png" alt="NYSC Pictures" width="80" height="80"></a></nav>
             <pre>
             Graphic Design
              NVQ Level 04</pre>
 
 
-
-            <nav><a href="https://www.facebook.com/ESOFTMetroCollegePanadura/"target="-blank"home><img src="assets/images/Esoft.jpg"alt="Esoft Pictures"width="70"height="70"></a></nav>
+            <nav><a href="https://www.facebook.com/ESOFTMetroCollegePanadura/" target="-blank" home><img
+                    src="assets/images/Esoft.jpg" alt="Esoft Pictures" width="70" height="70"></a></nav>
             <pre>
             English Higher
                 Diploma</pre>
 
 
-            <nav><a href="https://www.ijse.lk/"target="-blank"home><img src="assets/images/Ijse.png"alt="IJSE Picture"width="80"height="80"></a></nav>
+            <nav><a href="https://www.ijse.lk/" target="-blank" home><img src="assets/images/Ijse.png"
+                                                                          alt="IJSE Picture" width="80" height="80"></a>
+            </nav>
             <pre>
             Institute of Software
               Engineering (IJSE)</pre>
         </div>
-        <img src="assets/images/Hat.png"alt="Hat logo Pictures">
-    </section><br><br>
+        <img src="assets/images/Hat.png" alt="Hat logo Pictures">
+    </section>
+    <br><br>
 
 
     <!--Info-->
@@ -385,20 +456,21 @@
         <!--Comment-->
         <section>
             <dfn id="Comment"><h2>COMMENT</h2></dfn>
-           <form>
-               <input type="text" placeholder="Full Name"><br><br>
-               <input type="text" placeholder="E-mail"><br><br>
-               <textarea  type="text" placeholder="Write a Message"></textarea><br><br>
-               <input type="date">
-               <select >
-                   <option value="">Custom</option>
-                   <option>Male</option>
-                   <option >Female</option>
-               </select><br><br>
+            <form>
+                <input type="text" placeholder="Full Name"><br><br>
+                <input type="text" placeholder="E-mail"><br><br>
+                <textarea type="text" placeholder="Write a Message"></textarea><br><br>
+                <input type="date">
+                <select>
+                    <option value="">Custom</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
 
-               <button class="save">Save</button>
-           </form>
-        </section><br><br>
+                <button class="save">Save</button>
+            </form>
+        </section>
+        <br><br>
 
         <!--Contact-->
         <section>
@@ -410,49 +482,52 @@
                 <p>North Thalpitiya Road, Madavilgoda,<br>
                     Wadduwa</p>
 
-                <nav><a href="https://www.google.com/maps/place/Nalluruwa,+Panadura/data=!4m2!3m1!1s0x3ae246296119a769:0x2c101925924a7cf2?sa=X&ved=2ahUKEwiaje6vkKr0AhUTyzgGHY7zDyQQ8gF6BAgsEAE"target="-blank"home><img src="assets/images/Location.png" alt="Location"width="30"height="30"></a> </nav>
+                <nav>
+                    <a href="https://www.google.com/maps/place/Nalluruwa,+Panadura/data=!4m2!3m1!1s0x3ae246296119a769:0x2c101925924a7cf2?sa=X&ved=2ahUKEwiaje6vkKr0AhUTyzgGHY7zDyQQ8gF6BAgsEAE"
+                       target="-blank" home><img src="assets/images/Location.png" alt="Location" width="30" height="30"></a>
+                </nav>
             </section>
 
 
             <section>
                 <h5>EMAIL</h5>
-                <a href="mailto:prabhashwaree57@gmail.com"target="-blank"home><img src="assets/images/Gmail%20(1).png"alt="E-mail"width="30"height="30">prabhashwaree57@gmail.com</a>
+                <a href="mailto:prabhashwaree57@gmail.com" target="-blank" home><img src="assets/images/Gmail%20(1).png"
+                                                                                     alt="E-mail" width="30"
+                                                                                     height="30">prabhashwaree57@gmail.com</a>
             </section>
 
 
             <section>
                 <h5>PHONE</h5>
-                <a href="tell:+94774914870"target="-blank"home><img src="assets/images/Phone%20Bubble_30px.png"alt="Tell Phone"width="30"height="30">077-4914870</a> <br>
-            </section><br><br>
+                <a href="tell:+94774914870" target="-blank" home><img src="assets/images/Phone%20Bubble_30px.png"
+                                                                      alt="Tell Phone" width="30" height="30">077-4914870</a>
+                <br>
+            </section>
+            <br><br>
 
 
             <nav>
-                <img src="assets/images/linkedin.png" alt="Linkedin"width="25"hight="25">
-                <a href="https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/"target="-blank"home>https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/</a><br>
+                <img src="assets/images/linkedin.png" alt="Linkedin" width="25" hight="25">
+                <a href="https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/" target="-blank" home>https://www.linkedin.com/in/nethmini-gayathree-silva-aa4288224/</a><br>
 
-                <img src="assets/images/Instagram.png" alt="Instagram"width="25"hight="25">
-                <a href="https://www.instagram.com/neth841/"target="-blank"home>neth841</a><br>
+                <img src="assets/images/Instagram.png" alt="Instagram" width="25" hight="25">
+                <a href="https://www.instagram.com/neth841/" target="-blank" home>neth841</a><br>
 
-                <img src="assets/images/whatsapp.png"alt="Tell Phone"width="25"hight="25">
-                <a href="tell:+94774914870"target="-blank"home>077-4914870</a> <br>
+                <img src="assets/images/whatsapp.png" alt="Tell Phone" width="25" hight="25">
+                <a href="tell:+94774914870" target="-blank" home>077-4914870</a> <br>
 
-                <img src="assets/images/github_48px.png" alt="Github"width="25"hight="25">
-                <a href="https://github.com/Prabhashwaree"target="-blank"home>https://github.com/Prebhashwaree?tab=repositories</a><br><br>
+                <img src="assets/images/github_48px.png" alt="Github" width="25" hight="25">
+                <a href="https://github.com/Prabhashwaree" target="-blank" home>https://github.com/Prebhashwaree?tab=repositories</a><br><br>
             </nav>
         </section>
-        <img src="assets/images/Tank you girl.gif"alt="mySQL Pictures"width="100"hight="100">
+        <img src="assets/images/Tank you girl.gif" alt="mySQL Pictures" width="100" hight="100">
     </section>
 </main>
-
-
-
 
 
 <footer>
     <pre><small>  <b>Copyright © 2021 Nethmini. All rights reserved.<br>Created By : Prabhashwaree Nethmini Gayathree Silva.</b></small> </pre>
 </footer>
-
-
 
 
 </body>
