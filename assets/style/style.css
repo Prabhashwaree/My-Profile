@@ -3,48 +3,86 @@
     padding: 0;
 }
 .main_page{
-    background-image: url("../images/head  pic.jpg");
+    background-image: url("../images/head  pic.jpg") ;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    min-height: 100vh;
-    position: relative;
+    /* background-repeat: no-repeat;
+     vertical-align: middle;
+     min-height: 100vh;*/
+    width: 100%;
+    height: 100vh;
+    /* position: relative;*/
 }
 
 .menu-bar nav{
-    background: transparent;
-    height: 80px;
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    height: 100px;
     width: 100%;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    position: fixed;
+/*/border-bottom: 1px solid #fff;/*/
 }
 
-.naviLink ul{
-    margin-right: 20px;
-    text-align: right;
+.naviLink nav ul {
+    /*  margin-right: 20px;*/
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-.naviLink ul li{
-    display: inline-block;
+.naviLink ul li a{
+    /* display: inline-block;
+     line-height: 80px;
+     margin: 0 8px;*/
     line-height: 80px;
-    margin: 0 8px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.naviLink ul li a:hover{
+    /*  background: rgba();*/
 }
 
 button{
-    font-family: 'Rajdhani', sans-serif;
+    /*font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     text-align: center;
     color: black;
     background-color: white;
-    border-style: none;
-    padding: 20px;
+    border: none;
+    padding: 15px 32px;
     display: inline-block;
-    margin: 0 15px;
+    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 13px;
+    border-radius: 13px;*/
+    /*
     width: 15%;
     height: 2px;
+    */
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+    background-color: white;
+    border-radius: 13px;
+    padding: 14px 24px;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
 
 }
 
+
+/*
 #btn1{
 
 }
@@ -60,4 +98,140 @@ button{
 #btn4{
 
 }
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_page{
+    background-image: url("../images/head  pic.jpg") ;
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat;
+     vertical-align: middle;
+     min-height: 100vh;*/
+    width: 100%;
+    height: 100vh;
+    /* position: relative;*/
+}
 
+.menu-bar nav{
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    position: fixed;
+/border-bottom: 1px solid #fff;/
+}
+
+.naviLink nav ul {
+    /*  margin-right: 20px;*/
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.naviLink ul li a{
+    /* display: inline-block;
+     line-height: 80px;
+     margin: 0 8px;*/
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.naviLink ul li a:hover{
+    /*  background: rgba();*/
+}
+
+button{
+    /*font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 13px;*/
+    /*
+    width: 15%;
+    height: 2px;
+    */
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+    background-color: white;
+    border-radius: 13px;
+    padding: 8px 50px;
+    color: black;
+    font-size: 17px;
+    /*text-transform: uppercase;*/
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+
+}
+
+
+/*
+#btn1{
+
+}
+
+#btn2{
+
+}
+
+#btn3{
+
+}
+
+#btn4{
+
+}
+*/
+
+audio{
+    position: relative;
+    margin: 100px 5% auto  5%;
+    width: 18%;
+    max-width: 300px;
+    height: 20px;
+   left: 3%;
+    border-color: dimgrey;
+}
+
+#heroText{
+    transform: translate(-50% ,50%);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+
+
+}
+
+#I_m{
+    font-size: 300%;
+    transform: translate(-20% ,10%);
+}
+
+#name{
+    font-size: 300%;
+}
+#heroText h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Red Rose', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+}
