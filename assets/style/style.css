@@ -132,17 +132,38 @@ button{
     outline: black;
 
 }
-#heroText  p{
+#heroText  h3{
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     font-family: 'Red Rose', cursive;
     color: white;
     text-shadow: 2px 2px black;
-    font-size: 200%;
-    transform: translate(-10% ,10%);
+    font-size: 190%;
+    transform: translate(-10% ,5%);
     border-color: black;
     top: 4%;
+    letter-spacing: 0.90px;
     /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+}
+
+#heroText h4{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 180%;
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Red Hat Display', sans-serif;
+    transform: translate(-0.01%,-25%);
+    letter-spacing: 0.90px;
+}
+
+#heroText abbr{
+    color: red;
+    text-decoration: none;
+}
+
+.mark\&{
+    transform: translate(-0.01% ,5%);
 }
 
 /*social media links*/
@@ -178,4 +199,15 @@ button{
     height: 70px;
     margin-left: 15px;
     margin-bottom: 22px;
+}
+#softare_engineering{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Rose', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 80%;
+    transform: translate(-10% ,10%);
+    border-color: black;
+    top: 4%;
 }
