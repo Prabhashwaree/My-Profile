@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -6,6 +7,125 @@
 body{
     max-width: 100vw;
 }
+button{
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+    padding: 8px 40px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    /*font-weight: 5px;*/
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+}
+
+/*----------------------------------Header------------------------------------*/
+
+header{
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.2);
+    width:100vw;
+}
+#homeBtn{
+    padding: 6px 16px;
+
+}
+
+.naviLink{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.naviLink li{
+    list-style: none;
+    margin: 0 10px;
+}
+.naviLink li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*----------------------------------Main Page------------------------------------*/
+
+.main_page{
+    background-image: url("../images/head  pic.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    width: 100%;
+    height: 100%;
+}
+audio{
+    position: relative;
+    margin: 100px 5% auto  5%;
+    width: 18%;
+    max-width: 300vw;
+    height: 3vh;
+    left: 3%;
+    border-color: dimgrey;
+}
+
+/*----------------------------------second menubar------------------------------------*/
+
+.secondary-menu{
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 0;
+    align-items: center;
+    position: sticky;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#naviLink2{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+#naviLink2 li{
+    list-style: none;
+    margin: 0  53px;
+}
+#naviLink2 li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#naviLink2 li :hover{
+    background-color: cornflowerblue;
+}
+/*.menu-bar{
+    justify-content: right;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    background-color: #676565;
+}*/
+/*
 .main_page{
     background-image: url("../images/head  pic.jpg") ;
     background-size: cover;
@@ -18,7 +138,7 @@ body{
     background: rgba(0,0,0,0.2);
     top: 0;
     left: 0;
-    /*height: 100px;*/
+    !*height: 100px;*!
     width: 100%;
     padding: 0px 40px;
     box-sizing: border-box;
@@ -70,7 +190,7 @@ audio{
 }
 
 .naviLink nav ul {
-    /*  margin-right: 20px;*/
+    !*  margin-right: 20px;*!
     list-style: none;
     float: right;
     margin: 0;
@@ -78,9 +198,9 @@ audio{
     display: flex;
 }
 .naviLink ul li a{
-    /* display: inline-block;
+    !* display: inline-block;
      line-height: 80px;
-     margin: 0 8px;*/
+     margin: 0 8px;*!
     float:left;
     line-height: 40px;
     color: #fff;
@@ -93,19 +213,6 @@ audio{
     margin: 0 40px;
 }
 
-button{
-    font-family: 'Rajdhani', sans-serif;
-    border: none;
-    background-color: white;
-    border-radius: 13px;
-    padding: 8px 60px;
-    color: black;
-    font-size: 17px;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-}
 
 #home{
     transform:translate(50% ,30%);
@@ -128,7 +235,7 @@ button{
     font-family: 'Red Rose', cursive;
     color: white;
     text-shadow: 2px 2px #000000;
-    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    !*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*!
     outline: black;
 
 }
@@ -143,7 +250,7 @@ button{
     border-color: black;
     top: 4%;
     letter-spacing: 0.90px;
-    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    !*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*!
 }
 
 #heroText h4{
@@ -166,7 +273,7 @@ button{
     transform: translate(-0.01% ,5%);
 }
 
-/*social media links*/
+!*social media links*!
 .social_media_links_contains{
     position: revert;
     float: right;
@@ -211,3 +318,13 @@ button{
     border-color: black;
     top: 4%;
 }
+---------------------otivate-word---------------------
+
+.Motivate-word p{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Rose', cursive;
+    font-size: 20px;
+
+}
+*/
