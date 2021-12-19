@@ -7,40 +7,73 @@
 body{
     max-width: 100vw;
 }
-button{
-    font-family: 'Rajdhani', sans-serif;
-    border: none;
-    background-color: white;
-    border-radius: 7px;
-    padding: 7px 50px;
-    color: black;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    /*font-weight: 5px;*/
-    transition: all 0.3s ease;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-
-}
-
 /*----------------------------------Header------------------------------------*/
 
 header{
-    justify-content: space-around;
-    top: 0;
-    left: 0;
-    display: flex;
-    z-index: 10;
-    align-items: center;
     position: fixed;
+    height: 10vh;
+    top: 0;
+    display: flex;
+    background-color: transparent;
     background-color: rgba(0,0,0,0.2);
     width:100vw;
 }
-#homeBtn{
-    padding: 20px 5px;
+
+#home{
+    height: 5vh;
+    width: 3vw;
+    box-shadow: -1px 1px 10px -1px black;
+    background-color: white;
+    border-radius: 5px;
+    left: 17px;
+    position: absolute;
+    top: 6px;
+}
+#small-rectangle{
+    height: 4.6vh;
+    width: 3vw;
+    box-shadow: -1px 1px 10px -1px black;
+    background-color: white;
+    border-radius: 5px;
+    top: 16px;
+    left: 29px;
+    position: relative;
+}
+/*.naviLink0{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    font-size: 18px;
+    list-style: none;
+}*/
+.naviLink0 li a{
+    text-decoration: none;
+    color: black;
+}
+.naviLink0>li{
+    position: absolute;
+    display: inline-block;
+    /*padding: 0 10px 0 10px;*/
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background-color: white;
+    /*right: 0;*/
+    padding: 7px 50px;
+    /*margin: 0 10px;*/
 
 }
+.naviLink0>li>a:hover{
+    cursor: pointer;
+    color: blue;
+}
+/*
+#homeBtn{
+    padding: 20px 5px;
+}*/
 
+/*
 .naviLink{
     display: flex;
     list-style: none;
@@ -58,6 +91,29 @@ header{
     color: black;
     letter-spacing: 1px;
     font-weight: bold;
+}
+*/
+
+/*
+button{
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+    padding: 7px 50px;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    !*font-weight: 5px;*!
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+}
+*/
+
+button{
+
 }
 
 /*----------------------------------Main Page------------------------------------*/
@@ -83,7 +139,11 @@ audio{
 
 /*----------------------------------second menubar------------------------------------*/
 
-.secondary-menu{
+
+
+
+
+/*.secondary-menu{
     justify-content: space-between;
     bottom: 0;
     left: 0;
@@ -115,7 +175,7 @@ audio{
 }
 #naviLink2 li :hover{
     background-color: cornflowerblue;
-}
+}*/
 /*.menu-bar{
     justify-content: right;
     top: 0;
