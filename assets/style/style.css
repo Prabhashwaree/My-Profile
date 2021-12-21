@@ -67,8 +67,8 @@ header{
 #heroText{
     transform: translate(-50% ,50%);
     position: absolute;
-    top: 5%;
-    left: 24%;
+    top: 0%;
+    left: 26%;
     text-align: center;
 }
 #I_m{
@@ -87,7 +87,8 @@ header{
     text-shadow: 2px 2px #000000;
     /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     outline: black;
-    font-size: 275%;
+    font-size: 290%;
+    letter-spacing: 0.3vw;
 
 }
 #heroText  h3{
@@ -115,16 +116,54 @@ header{
     letter-spacing: 0.90px;
     text-shadow: 2px 2px #000000;
 }
+c
 
 #heroText abbr{
     color: red;
     text-decoration: none;
     text-shadow: 2px 2px #000000;
 }
-/*.mark h3{
+.mark h3{
     transform: translate(-0.01% ,5%);
-    left: 20%;
-}*/
+    left: 100%;
+}
+#ijse{
+    color: red;
+    font-size: 100%;
+    text-shadow: 2px 2px black;
+
+}
+.sosial_media_links li a i{
+    color: rgb(255, 255, 255);
+    /*     width: 20vw; */
+    height: 7vh;
+    border-radius: 10px;
+
+    left:96%;
+    position:relative;
+    top:-45px;
+    font-size:25px
+    /* text-shadow:3px 6px rgba(255,165,0,.75) */
+}
+#vertical_line1{
+    height: 15vh;
+    width: 0.200vw;
+    background-color: white;
+    /*     border: 1px solid black; */
+    left: 96.6%;
+    position:relative;
+    top:-55px;
+}
+#vertical_line2{
+    height: 15vh;
+    width: 0.200vw;
+    background-color: white;
+    /*     border: 1px solid black; */
+    left: 96.6%;
+    position:relative;
+    top:-50px;
+}
+
 
 /*#2-header-bar{
     position: relative;
@@ -137,16 +176,38 @@ header{
     width:100vw;
     justify-content: center;
 }*/
-.secondary-menu .naviLink0 li{
-    position: relative;
-    text-align: center;
-    margin: 0 41px;
+.secondary-menu{
+    position: absolute;
+    height: 9vh;
+    width: 100vw;
+    margin: 0 0.1%;
     padding: 7px 50px;
-    right: 0;
-    justify-content: space-around;
-    bottom: 0;
-    left: 0;
+    justify-content: space-between;
+    bottom:2%;
+    display: flex;
+    background-color: rgba(0,0,0,0.2);
+
 }
+#naviLink1 li{
+    position: relative;
+    bottom: 1px;
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background-color: white;
+    padding: 8px 58px;
+    margin: 0 37px;
+    text-align: center;
+
+
+}
+#naviLink1 li a{
+    text-decoration: none;
+    color: black;
+
+}
+
 
 
 /*
@@ -189,7 +250,6 @@ button{
     !*font-weight: 5px;*!
     transition: all 0.3s ease;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-
 }
 */
 
@@ -234,7 +294,6 @@ audio{
     position: sticky;
     background-color: rgba(0,0,0,0.2);
 }
-
 #naviLink2{
     text-decoration: none;
     color: black;
@@ -243,7 +302,6 @@ audio{
     flex-wrap: wrap;
     margin: 8px 0;
 }
-
 #naviLink2 li{
     list-style: none;
     margin: 0  53px;
@@ -274,7 +332,6 @@ audio{
     width: 100%;
     height: 100vh;
 }
-
 .menu-bar nav{
     background: rgba(0,0,0,0.2);
     top: 0;
@@ -286,14 +343,12 @@ audio{
     position: fixed;
     overflow:auto;
 }
-
 .menu-bar2 {
     background: rgba(0,0,0,0.2);
     position:absolute;
     bottom: 0;
     width:100%;
 }
-
 .menu-bar2 a{
     float: left;
     display:block;
@@ -303,7 +358,6 @@ audio{
     text-decoration:none;
     font-size:17px;
 }
-
 .menu-bar2 nav ul{
     list-style:none;
     float:right;
@@ -311,7 +365,6 @@ audio{
     padding:0;
     display:flex;
 }
-
 audio{
     position: relative;
     margin: 100px 5% auto  5%;
@@ -321,7 +374,6 @@ audio{
     left: 3%;
     border-color: dimgrey;
 }
-
 #heroText{
     transform: translate(-50% ,50%);
     position: absolute;
@@ -329,7 +381,6 @@ audio{
     left: 20%;
     text-align: center;
 }
-
 .naviLink nav ul {
     !*  margin-right: 20px;*!
     list-style: none;
@@ -353,8 +404,6 @@ audio{
 .naviLink2 ul li {
     margin: 0 40px;
 }
-
-
 #home{
     transform:translate(50% ,30%);
     background-color:white;
@@ -362,12 +411,10 @@ audio{
     padding:5px 15px;
     transition:all 0.03s ease;
 }
-
 #I_m{
     font-size: 300%;
     transform: translate(-20% ,10%);
 }
-
 #name{
     font-size: 300%;
 }
@@ -378,7 +425,6 @@ audio{
     text-shadow: 2px 2px #000000;
     !*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*!
     outline: black;
-
 }
 #heroText  h3{
     font-family: 'Rajdhani', sans-serif;
@@ -393,7 +439,6 @@ audio{
     letter-spacing: 0.90px;
     !*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*!
 }
-
 #heroText h4{
     color: white;
     text-shadow: 2px 2px black;
@@ -404,44 +449,35 @@ audio{
     transform: translate(-0.01%,-25%);
     letter-spacing: 0.90px;
 }
-
 #heroText abbr{
     color: red;
     text-decoration: none;
 }
-
 .mark\&{
     transform: translate(-0.01% ,5%);
 }
-
 !*social media links*!
 .social_media_links_contains{
     position: revert;
     float: right;
     transform: translate(-200%,22%);
 }
-
 .sosial_media_links{
     list-style: none;
 }
-
 .sosial_media_links li{
     margin-bottom: 20px;
     text-align: center;
 }
-
 .sosial_media_links li img{
     object-fit: cover;
     width: 30px;
 }
-
 #vertical_line{
     border-left: 3px solid white;
     height: 70px;
     margin-left: 15px;
-
 }
-
 #vertical_line1{
     border-left: 3px solid white;
     height: 70px;
@@ -460,12 +496,10 @@ audio{
     top: 4%;
 }
 ---------------------otivate-word---------------------
-
 .Motivate-word p{
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     font-family: 'Red Rose', cursive;
     font-size: 20px;
-
 }
 */
