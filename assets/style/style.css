@@ -14,60 +14,141 @@ header{
     height: 10vh;
     top: 0;
     display: flex;
-    background-color: transparent;
     background-color: rgba(0,0,0,0.2);
     width:100vw;
+    justify-content: right;
 }
 
 #home{
     height: 5vh;
-    width: 3vw;
+    width: 3.6vw;
     box-shadow: -1px 1px 10px -1px black;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     left: 17px;
     position: absolute;
     top: 6px;
 }
 #small-rectangle{
-    height: 4.6vh;
-    width: 3vw;
+    height: 4.8vh;
+    width: 3.6vw;
     box-shadow: -1px 1px 10px -1px black;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     top: 16px;
     left: 29px;
-    position: relative;
+    position: fixed;
 }
-/*.naviLink0{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 30px;
-    font-size: 18px;
-    list-style: none;
-}*/
+
 .naviLink0 li a{
     text-decoration: none;
     color: black;
 }
 .naviLink0>li{
-    position: absolute;
+    position: relative;
+    top: 10px;
+    right: 50px;
     display: inline-block;
-    /*padding: 0 10px 0 10px;*/
     font-family: 'Rajdhani', sans-serif;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     background-color: white;
     /*right: 0;*/
     padding: 7px 50px;
-    /*margin: 0 10px;*/
+    margin: 0 10px;
+    text-align: center;
+
 
 }
 .naviLink0>li>a:hover{
     cursor: pointer;
     color: blue;
 }
+#heroText{
+    transform: translate(-50% ,50%);
+    position: absolute;
+    top: 5%;
+    left: 24%;
+    text-align: center;
+}
+#I_m{
+    font-size: 300%;
+    transform: translate(-20% ,10%);
+    text-shadow: 2px 2px #000000;
+}
+
+#name{
+    font-size: 300%;
+}
+#heroText h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Red Rose', cursive;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    outline: black;
+    font-size: 275%;
+
+}
+#heroText  h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Rose', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 190%;
+    transform: translate(-10% ,5%);
+    border-color: black;
+    top: 4%;
+    letter-spacing: 0.90px;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+}
+
+#heroText h4{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 160%;
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Red Hat Display', sans-serif;
+    transform: translate(-0.01%,-25%);
+    letter-spacing: 0.90px;
+    text-shadow: 2px 2px #000000;
+}
+
+#heroText abbr{
+    color: red;
+    text-decoration: none;
+    text-shadow: 2px 2px #000000;
+}
+/*.mark h3{
+    transform: translate(-0.01% ,5%);
+    left: 20%;
+}*/
+
+/*#2-header-bar{
+    position: relative;
+    height: 10vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    !*display: flex;*!
+    background-color: red;
+    width:100vw;
+    justify-content: center;
+}*/
+.secondary-menu .naviLink0 li{
+    position: relative;
+    text-align: center;
+    margin: 0 41px;
+    padding: 7px 50px;
+    right: 0;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+}
+
+
 /*
 #homeBtn{
     padding: 20px 5px;
