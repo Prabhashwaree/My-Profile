@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div{
+            position: absolute;
+            height: 50%;
+            width: 50vw;
+        }
+        div:nth-child(1){
+            width: 50%;
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        div:nth-child(1)>div{
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+        }
+
+        div:nth-child(1)>div>div{
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 0;
+        }
+        div:nth-child(5){
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 135px;
+
+        }
+        /*div:nth-child(2){
+            background-color: white;
+            border-radius: 100%;
+            width: 130px;
+            height: 130px;
+            bottom: -80px;
+            right: -80px;
+            border: 1px solid black;
+        }*/
+        /*------------------------orange-----------------------------------------------------*/
+
+
+        div:nth-child(2){
+            width: 50%;
+            background-color: orange;
+            bottom: 0;
+            left: 0;
+        }
+        div:nth-child(2)>div{
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+        }
+        div:nth-child(2)>div>div{
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 0;
+        }
+        div:nth-child(6){
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 135px;
+        }
+
+
+        /*div:nth-child(2){
+            background-color: white;
+            border-radius: 100%;
+            width: 130px;
+            height: 130px;
+            bottom: -80px;
+            right: -80px;
+            border: 1px solid black;
+        }*/
+
+         /*------------------------green-----------------------------------------------------*/
+
+
+        div:nth-child(3){
+            width: 50%;
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+        div:nth-child(3)>div{
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+        }
+        div:nth-child(3)>div>div{
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 0;
+        }
+        div:nth-child(7){
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 135px;
+        }
+
+        /*div:nth-child(3){
+            background-color: white;
+            border-radius: 100%;
+            width: 130px;
+            height: 130px;
+            bottom: -80px;
+            right: -80px;
+            border: 1px solid black;
+        }*/
+
+
+        /*------------------------deeppink-----------------------------------------------------*/
+
+
+        div:nth-child(4){
+            width: 50%;
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+        div:nth-child(4)>div{
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 100%;
+        }
+        div:nth-child(4)>div>div{
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 0;
+        }
+        div:nth-child(8){
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 135px;
+        }
+
+        /*div:nth-child(4){
+            background-color: white;
+            border-radius: 100%;
+            width: 130px;
+            height: 130px;
+            bottom: -80px;
+            right: -80px;
+            border: 1px solid black;
+        }*/
+
+
+        /*------------------------haf ball-----------------------------------------------------*/
+
+        div:nth-child(9){
+            background-color: white;
+            width: 175px;
+            height: 85px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-bottom-left-radius: 108px;
+            border-bottom-right-radius: 108px;
+        }
+
+
+        div:nth-child(10){
+            background-color: white;
+            width: 175px;
+            height: 85px;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-top-left-radius: 108px;
+            border-top-right-radius: 108px;
+        }
+
+
+        /*div:nth-child(11){
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            bottom: -80px;
+            right: 675px;
+            border-bottom-right-radius: 250px;
+            position: absolute;
+        }*/
+        div:nth-child(11){
+            background-color: white;
+            border-radius: 0;
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        div:nth-child(11)>div {
+            background-color: red;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+
+<div>
+    <div></div>
+</div>
+
+
+
+
+</body>
+</html>
