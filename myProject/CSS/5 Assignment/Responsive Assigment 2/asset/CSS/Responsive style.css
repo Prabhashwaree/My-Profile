@@ -1,0 +1,122 @@
+/* -----------------header--------------------*/
+/* iphone X */
+
+@media all and (min-width: 375px) and (max-width: 812px) {
+
+
+    header {
+        position: relative;
+        height: 75px;
+        border-bottom: 4px solid black;
+        box-shadow: -2px 6px 9px -4px black;
+    }
+
+
+    header > img {
+        position: absolute;
+        width: 15%;
+        top: 0;
+        bottom: 0;
+        left: 2%;
+    }
+
+    header > nav > ul {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        font-size: 18px;
+    }
+
+    header > nav > ul > li {
+        position: relative;
+        display: inline-block;
+        padding: 0 10px 0 10px;
+
+    }
+
+    header > nav > ul > li:hover {
+        cursor: pointer;
+        color: #4b0d7e;
+    }
+
+    /*-------------------Main-------------------------*/
+    main > nav {
+        position: absolute;
+        /*height: 600%;*/
+        width: 22vw;
+        top: 84px;
+        bottom: 0;
+        background-color: #4b0d7e;
+        /*border-bottom: 4px solid black;*/
+        box-shadow: -2px 6px 9px -4px black;
+    }
+
+    body > main > nav > ul > li {
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        left: 0;
+        margin: auto;
+        font-size: 16px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+    }
+
+    body > main > nav > ul > li:hover {
+        cursor: pointer;
+        color: darkgray;
+    }
+
+    /*-----------------------------------------------------------------*/
+    body > main > section > img:nth-child(1) {
+        position: relative;
+        width: 24.5vw;
+        border: 1px solid black;
+        box-shadow: -2px 6px 9px -4px black;
+    }
+
+    body > main > section > img:nth-child(2) {
+        position: relative;
+        width: 24.5vw;
+        border: 1px solid black;
+        box-shadow: -2px 6px 9px -4px black;
+    }
+
+    body > main > section > img:nth-child(3) {
+        position: relative;
+        width: 24.5vw;
+        border: 1px solid black;
+        box-shadow: -2px 6px 9px -4px black;
+    }
+
+    body > main > section {
+        right: 10px;
+        position: absolute;
+        top: 92px;
+    }
+
+    /* -----------------------------------------------------------------------------------------------*/
+    body > main > section > section {
+        right: 10px;
+        position: absolute;
+
+    }
+
+    body > main > section > p {
+        /* !*text-align: center;*!
+         position: absolute;
+         right: 8px;
+
+         padding-bottom: 15px;
+         font-family: 'Barlow Condensed', sans-serif;
+         !*font-size: 15px;*!
+         right: 7px;
+         position: absolute;
+         top: 98%;
+         font-size: 14px;*/
+    }
+
+    /*-------------------Footer-------------------------*/
+}
