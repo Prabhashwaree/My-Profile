@@ -84,12 +84,13 @@ button:hover {
     top: 5%;
     left: 26%;
     text-align: center;
+    
 }
 
 #I_m {
     font-size: 300%;
     transform: translate(-20%, 10%);
-    text-shadow: 2px 2px #000000;
+    text-shadow: 10px 10px 10px #000000;
 }
 
 #name{
@@ -104,6 +105,7 @@ button:hover {
     outline: black;
     font-size: 290%;
     letter-spacing: 0.3vw;
+    text-shadow: 10px 10px 10px #000000;
 
 }
 #heroText  h3{
@@ -111,7 +113,7 @@ button:hover {
     font-family: 'Red Hat Display', sans-serif;
     font-family: 'Red Rose', cursive;
     color: white;
-    text-shadow: 2px 2px black;
+    text-shadow: 10px 10px 10px #000000;
     font-size: 190%;
     transform: translate(-10% ,5%);
     border-color: black;
@@ -129,24 +131,26 @@ button:hover {
     font-family: 'Red Hat Display', sans-serif;
     transform: translate(-0.01%,-25%);
     letter-spacing: 0.90px;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 10px 10px 10px #000000;
 }
 
 
 #heroText abbr{
     color: red;
     text-decoration: none;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 10px 10px 10px #000000;
 }
 .mark h3{
     transform: translate(-0.01% ,5%);
     left: 100%;
+    text-shadow: 10px 10px 10px #000000;
 }
 
 #ijse {
     color: red;
     font-size: 100%;
-    text-shadow: 2px 2px black;
+    text-shadow: 10px 10px 10px #000000;
+
 
 }
 
@@ -345,3 +349,47 @@ figure .Motivate-word {
     margin: 10px 0px;
     
 }
+/*----------------------------------2 st Page(About)------------------------------------*/
+
+#about-Me{
+    height: 75vh;
+    position: relative;
+    background-color: #6e6e6e;
+}
+#topic-About{
+    width:20vw;
+    height:6vh;
+    background-color:white;
+/*     border:1px solid black; */
+    top:-1px;
+    position:relative;
+}
+#about-Me div{
+    top:80px;
+    position:relative;
+    left:3%
+}
+#about-word{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+  font-style: normal;
+}
+#rectangle-shape{
+    width:60vw;
+    height:42vh;
+    background-color:white;
+/*     border:1px solid black; */
+    top:-168px;
+    position:relative;
+    left:30%
+}
+#hello{
+    font-family: 'Playfair Display', serif;
+    font-size:75px;
+    top:-65px;
+    right:30px;
+    position:relative;
+    text-shadow: 10px 10px 10px #000000;
+}
+
