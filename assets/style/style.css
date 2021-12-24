@@ -47,6 +47,9 @@ header{
         background-color: #f24600;
         width: 13vw;
         height: 7vh;
+        /* transition-property: width, height;
+        transition-duration: 6s; */
+        font-family: 'Rajdhani', sans-serif;   
 }
 
 button:hover {
