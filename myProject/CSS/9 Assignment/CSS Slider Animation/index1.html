@@ -3,8 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+<style>
+
+main{
+    width: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+}
+
+@keyframes test{
+    0%,15%{
+        transform: translateX(0);
+
+    }
+    25%,40%{
+        transform: translateX(-25%);
+
+    }
+    50%,70%{
+        transform: translateX(-50%);
+
+    }
+    80%,100%{
+
+        transform: translateX(-75%);
+    }
+}
+
+main>section{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+
+}
+main>section>div{
+    width: 100%;
+
+}
+section>div:nth-child(1){
+    background: url("asset/image/1.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+section>div:nth-child(2){
+    background: url("asset/image/2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+section>div:nth-child(3){
+    background: url("asset/image/3.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+section>div:nth-child(4){
+    background: url("asset/image/4.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+</style>
+
+
 </head>
 <body>
-
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+ 
+</section>
+</main>
 </body>
 </html>
