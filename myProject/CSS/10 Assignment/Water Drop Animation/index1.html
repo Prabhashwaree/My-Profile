@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+<style>
+
+section{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2.5px solid red;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    animation-name: drop_water;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes drop_water{
+    0%{
+        width: 1px;
+        height: 1px;  
+        
+    }
+    100%{
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgb(207, 160, 176);
+        opacity: 0;
+    }
+
+}
+    
+</style>
+
 </head>
 <body>
+<section>
 
+</section>
 </body>
 </html>
