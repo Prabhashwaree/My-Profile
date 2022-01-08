@@ -32,9 +32,6 @@ header{
     top: 10px;
     right: 50px;
     display: inline-block;
-
-
-
 }
 .naviLink0 button{
     background-color: white;
@@ -514,7 +511,7 @@ figure .Motivate-word {
     height: 120vh;
     position: relative;
     background-color: #ffffff;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 #A_img1{
     filter: drop-shadow(5px 10px 5px black);
@@ -605,27 +602,27 @@ figure .Motivate-word {
 }
 
 
-/*----------------------------------4 st Page(Activities)------------------------------------*/
+/*----------------------------------4 st Page(Skill)------------------------------------*/
 
-#Activities_topic_Rectangle{
+#skil_rectangle{
     width:20vw;
     height:6vh;
     background-color:white;
-    border:1px solid black;
-    top:-65px;
+    /* border:1px solid black; */
+    top:-8px;
     position:relative;
 }
 
-#Activities_topic_Rectangle #Activities{
+#skil_rectangle #Skills{
     text-align: center;
     color: #000000;
     text-shadow: 10px 10px 10px #000000;
     font-style: normal;
     left: -2%;
     position: relative;
-    top: 0;
+    top: 5px;
 }
-#Activities_topic_Rectangle #Activities{
+/* #Activities_topic_Rectangle #Activities{
     text-align: center;
     color: #000000;
     text-shadow: 10px 10px 10px #000000;
@@ -633,7 +630,69 @@ figure .Motivate-word {
     left: 20%;
     position: absolute;
     top: 20%;
+} */
+#skil_big_rectangle{
+    height: 60vh;
+    position: relative;
+    background-color: #6e6e6e;
+    top: -35px;
+    
 }
+/* #fun_activities{
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    font-size: 20px;
+    color: white;
+}
+#Activities_big_rectangle #Activiti_img_1{
+    top: 25%;
+    position: absolute;
+    left: 10%;
+}
+#Activiti_img_2{
+    top: 25%;
+    position: absolute;
+    left: 40%;
+}
+#Activiti_img_3{
+    top: 25%;
+    position: absolute;
+    left: 70%;
+} */
+
+#skil_set{
+    left: 26%;
+    top:40%;
+    position: absolute;
+}
+#skil_1{
+    border-radius: 20px;
+}
+#skil_2{
+    border-radius: 20px;
+}
+#skil_3{
+    border-radius: 20px;
+}
+#skil_4{
+    border-radius: 20px;
+}
+#skil_5{
+    border-radius: 20px;
+}
+#skil_6{
+    border-radius: 20px;
+}
+#skil_set :hover{
+    width: 10vw;
+    height: 20vh;
+    margin: 0 10px;
+    padding: 7px 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
 
 
 
