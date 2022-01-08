@@ -664,6 +664,7 @@ figure .Motivate-word {
 #skil_set{
     left: 26%;
     top:40%;
+    filter: drop-shadow(5px 10px 5px black);
     position: absolute;
 }
 #skil_1{
@@ -688,11 +689,99 @@ figure .Motivate-word {
     width: 10vw;
     height: 20vh;
     margin: 0 10px;
-    padding: 7px 50px;
+    border-radius: 20px;
     position: absolute;
     cursor: pointer;
+    filter: drop-shadow(5px 10px 5px black);
 }
 
+/*----------------------------------4 st Page(Experience)------------------------------------*/
 
+#experience_rectangle{
+    width:20vw;
+    height:6vh;
+    background-color:white;
+    border:1px solid black;
+    top:-98px;
+    position:relative;
+}
+#experience_rectangle #Experience{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    left: -2%;
+    position: relative;
+    top: 5px;
+}
+#experience_big_rectangle{
+    height: 120vh;
+    position: relative;
+    background-color: #ffffff;
+    border:1px solid black;
+}
 
-
+#experience_paragraph{
+    top: 0;
+    left: 8%;
+    position: relative;
+}
+#main_pic{
+    left: 15%;
+    top: 3%;
+    filter: drop-shadow(5px 10px 5px black);
+    position: relative;
+}
+/* #experience_1step{
+    left: 22.9%;
+    top: 55%;
+    position: absolute;
+} */
+#Month_2019_06{
+    color: white;
+    filter: drop-shadow(5px 10px 5px black);
+    top: 422px;
+    left: 22.5%;
+    position: absolute;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Rajdhani', sans-serif;
+}
+#TRAINING{
+    top: 455px;
+    left: 23.5%;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 2px;
+    filter: drop-shadow(5px 10px 5px black);
+}
+#helth_img{
+    border-radius: 16px;
+    left: 29.4%;
+    top: 440px;
+    position: absolute;
+    filter: drop-shadow(5px 10px 5px black);
+}
+#STEP1{
+    filter: drop-shadow(5px 10px 5px black);
+    top: 67%;
+    left: 26.2%;
+    color: #cb1b4a;
+    position: absolute;
+    font-size: 16;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
+}
+#I_worked_paragraph{
+    top: 70%;
+    left: 23%;
+    text-align: center;
+    text-align: left;
+    position: absolute;
+}
+#I_worked_paragraph a{
+    text-decoration: none;
+}
