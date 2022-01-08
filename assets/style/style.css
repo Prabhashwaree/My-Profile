@@ -747,7 +747,7 @@ figure .Motivate-word {
 #Month_2019_06{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 422px;
+    top: 430px;
     left: 22.5%;
     position: absolute;
     font-size: 12px;
@@ -755,7 +755,7 @@ figure .Motivate-word {
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING{
-    top: 455px;
+    top: 465px;
     left: 23.5%;
     position: absolute;
     color: white;
@@ -767,13 +767,13 @@ figure .Motivate-word {
 #helth_img{
     border-radius: 16px;
     left: 29.4%;
-    top: 440px;
+    top: 451px;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black);
 }
 #STEP1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 67%;
+    top: 68%;
     left: 26.2%;
     color: #cb1b4a;
     position: absolute;
@@ -783,7 +783,7 @@ figure .Motivate-word {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph{
-    top: 70%;
+    top: 72%;
     left: 23%;
     text-align: center;
     text-align: left;
@@ -798,7 +798,7 @@ figure .Motivate-word {
 #Month_2020_10{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 47.2%;
+    top: 48%;
     left: 33.8%;
     position: absolute;
     font-size: 12px;
@@ -806,7 +806,7 @@ figure .Motivate-word {
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING1{
-    top: 51.8%;
+    top: 53%;
     left: 34%;
     position: absolute;
     color: white;
@@ -818,13 +818,13 @@ figure .Motivate-word {
 #bank_img{
     border-radius: 16px;
     left: 40%;
-    top: 50.5%;
+    top: 51.5%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black); 
 }
 #STEP2{
     filter: drop-shadow(5px 10px 5px black);
-    top: 58%;
+    top: 59%;
     left: 37%;
     color: #CED44E;
     position: absolute;
@@ -834,7 +834,7 @@ figure .Motivate-word {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph1{
-    top: 62%;
+    top: 63.5%;
     left: 34%;
     text-align: center;
     text-align: left;
@@ -848,7 +848,7 @@ figure .Motivate-word {
 
 
 #TRAINING2{
-    top: 43.5%;
+    top: 44%;
     left:47.5%;
     position: absolute;
     color: white;
@@ -859,7 +859,7 @@ figure .Motivate-word {
 }
 #STEP3{
     filter: drop-shadow(5px 10px 5px black);
-    top: 50%;
+    top: 51%;
     left: 48.5%;
     color: #42afb6;
     position: absolute;
@@ -876,7 +876,7 @@ figure .Motivate-word {
 
 
 #PERMANENT1{
-    top: 34.6%;
+    top: 36%;
     right:35.8%;
     position: absolute;
     color: white;
@@ -887,7 +887,7 @@ figure .Motivate-word {
 }
 #STEP4{
     filter: drop-shadow(5px 10px 5px black);
-    top: 40.9%;
+    top: 42%;
     right:38%;
     color: #fcb414;
     position: absolute;
@@ -905,7 +905,7 @@ figure .Motivate-word {
 
 
 #OWNER{
-    top: 26.8%;
+    top: 28%;
     right:26%;
     position: absolute;
     color: white;
@@ -916,7 +916,7 @@ figure .Motivate-word {
 }
 #STEP5{
     filter: drop-shadow(5px 10px 5px black);
-    top: 33%;
+    top: 34%;
     right:26.8%;
     color: #074d67;
     position: absolute;
@@ -932,7 +932,35 @@ figure .Motivate-word {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;  
 }
 #man{
-    top: 275px;
+    top: 200px;
     left: -6%; 
     position: absolute;
+    z-index: 1;
+}
+
+
+/*----------------------------------4 st Page(Experience)------------------------------------*/
+
+#Project_rectangle{
+    width:20vw;
+    height:8vh;
+    background-color:white;
+    /* border:1px solid black; */
+    top:-2x;
+    position:relative;
+}
+#Project{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    left: -2%;
+    position: relative;
+    top: 22px;
+}
+#Project_big_rectangle{
+    height: 60vh;
+    position: relative;
+    background-color: #6e6e6e;
+    top: -100px;
 }
