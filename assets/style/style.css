@@ -1147,7 +1147,7 @@ figure .Motivate-word {
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-260px;
+    top:-225px;
     left:79.7%;
     position:relative;
 }
@@ -1161,7 +1161,7 @@ figure .Motivate-word {
     top: 4px;
 }
 #contact_and_comment_big_rectangle{
-    height: 85vh;
+    height: 90vh;
     position: relative;
     background-color: #6e6e6e;
     top: -100px;
@@ -1293,5 +1293,81 @@ figure .Motivate-word {
     top: 55%;
     left: 80%;
     filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
+    position: absolute;
+}
+#contact_link{
+    right: 130px;
+    top: 72%;
+    text-decoration: none;
+    position: absolute;
+}
+#link1{
+    text-decoration: none;
+    color: black;
+    top: -7px;
+    right: -2%;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+}
+#link1:hover{
+    color: rgb(32, 16, 173);
+}
+#link2{
+    text-decoration: none;
+    color: black;
+    top: -7px;
+    right: -2%;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+}
+#link2:hover{
+    color: rgb(32, 16, 173);
+}
+#link3{
+    text-decoration: none;
+    color: black;
+    top: -7px;
+    right: -2%;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+}
+#link3:hover{
+    color: rgb(32, 16, 173);
+}
+#link4{
+    text-decoration: none;
+    color: black;
+    top: -7px;
+    right: -2%;
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+}
+#link4:hover{
+    color: rgb(32, 16, 173);
+}
+#thanku_girl{
+    border-radius: 50%;
+    top: 80%;
+    right: 3%;
+    position: absolute;
+}
+
+
+/*----------------------------------4 st Page(comment)------------------------------------*/
+
+#comment_center{
+    left: 7%;
+    top: 5%;
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    position: absolute;
+}
+#input1{
+    width: 10%;
+    height: 10%;
+    left: 7%;
+    top: 10%;
     position: absolute;
 }
