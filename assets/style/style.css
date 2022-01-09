@@ -1137,3 +1137,87 @@ figure .Motivate-word {
     top: 45%;
     position: absolute;
 }
+
+
+
+/*----------------------------------4 st Page(Contact)------------------------------------*/
+
+#Contact_rectangle{
+    width:20vw;
+    height:6vh;
+    background-color:white;
+    /* border:1px solid black; */
+    top:-260px;
+    left:79.7%;
+    position:relative;
+}
+#Contact_rectangle #Contact{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    right: 30%;
+    position: absolute;
+    top: 4px;
+}
+#contact_and_comment_big_rectangle{
+    height: 85vh;
+    position: relative;
+    background-color: #6e6e6e;
+    top: -100px;
+}
+#location_rectangle{
+    width: 28vw;
+    height: 12vh;
+    right: 15%;
+    background-color: #ffffff;
+    box-shadow: 8px 10px 8px #000000;
+    /* border:1px solid black; */
+    top: 17%;
+    position: absolute;
+}
+#gmail_rectangle{
+    width: 28vw;
+    height: 12vh;
+    right: 15%;
+    background-color: #ffffff;
+    box-shadow: 8px 10px 8px #000000;
+    /* border:1px solid black; */
+    top: 34%;
+    position: absolute; 
+}
+#tell_rectangle{
+    width: 28vw;
+    height: 12vh;
+    right: 15%;
+    background-color: #ffffff;
+    box-shadow: 8px 10px 8px #000000;
+    /* border:1px solid black; */
+    top: 51%;
+    position: absolute; 
+}
+#LOCATION1{
+    color: #ccc8c8;
+    font-family: 'Red Rose', cursive;
+    left: 58%;
+    font-size: 15px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 19%;
+    position: absolute;
+}
+#address{
+    font-family: 'Rajdhani', sans-serif;
+    left: 60%;
+    font-size: 12px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 23.5%;
+    letter-spacing: 1px;
+    position: absolute; 
+}
+#location_img{
+    top: 21.5%;
+    left: 80%;
+    position: absolute;
+}
