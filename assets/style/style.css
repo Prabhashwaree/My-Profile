@@ -1371,3 +1371,25 @@ figure .Motivate-word {
     top: 10%;
     position: absolute;
 }
+
+
+
+/*----------------------------------4 st Page(Footer)------------------------------------*/
+
+#footer_rectangle{
+    height: 28vh;
+    width: 98.8vw;
+    background-color: #000000;
+    /* border:1px solid black; */
+    top: 862.8%;
+    position: absolute;
+}
+#footer_paragraph{
+    top: 43%;
+    left: 39%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+}
