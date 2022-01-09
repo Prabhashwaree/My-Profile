@@ -939,7 +939,7 @@ figure .Motivate-word {
 }
 
 
-/*----------------------------------4 st Page(Experience)------------------------------------*/
+/*----------------------------------4 st Page(Project)------------------------------------*/
 
 #Project_rectangle{
     width:20vw;
@@ -959,8 +959,79 @@ figure .Motivate-word {
     top: 22px;
 }
 #Project_big_rectangle{
-    height: 60vh;
+    height: 85vh;
     position: relative;
     background-color: #6e6e6e;
     top: -100px;
+}
+
+
+/*----------------------------------4 st Page(Education)------------------------------------*/
+
+#Education_rectangle{
+    width:20vw;
+    height:6vh;
+    background-color:white;
+    border:1px solid black;
+    top:-83px;
+    position:relative;
+} 
+#Education_rectangle #Education{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    left: -2%;
+    position: relative;
+    top: 9px;
+}
+#Education_big_rectangle{
+    height: 120vh;
+    position: relative;
+    background-color: #ffffff;
+    border:1px solid black;
+    top: -55px;
+}
+#Education_Pictures{
+    left: 10%;
+    top: 20%;
+    position: absolute;
+
+}
+#hat_img{
+    right: 17%;
+    top: 1%;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    filter: drop-shadow(5px 10px 5px black);
+    position: absolute;
+    
+}
+#School{
+    left: 25%;
+    border-radius: 50%;
+    filter: drop-shadow(5px 10px 5px black);
+    top: 68%;
+    position: absolute;
+}
+#Nysc_img{
+    left: 32.5%;
+    border-radius: 50%;
+    filter: drop-shadow(5px 10px 5px black);
+    top: 56%;
+    position: absolute;
+}
+#Esoft_img{
+    left: 40.3%;
+    border-radius: 50%;
+    filter: drop-shadow(5px 10px 5px black);
+    top: 44%;
+    position: absolute;
+}
+#IJSE_img{
+    left: 47.8%;
+    border-radius: 50%;
+    filter: drop-shadow(5px 10px 5px black);
+    top: 33%;
+    position: absolute;
 }
