@@ -1209,7 +1209,7 @@ figure .Motivate-word {
 #address{
     font-family: 'Rajdhani', sans-serif;
     left: 60%;
-    font-size: 12px;
+    font-size: 13px;
     /* border:1px solid black; */
     z-index: 1;
     top: 23.5%;
@@ -1219,5 +1219,79 @@ figure .Motivate-word {
 #location_img{
     top: 21.5%;
     left: 80%;
+    position: absolute;
+}
+#location_img:hover{
+    top: 21%;
+    left: 80%;
+    filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
+    position: absolute;
+}
+
+
+
+#email1{
+    color: #ccc8c8;
+    font-family: 'Red Rose', cursive;
+    left: 58%;
+    font-size: 15px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 37%;
+    position: absolute;
+}
+#gmail_Prabhashwaree{
+    font-family: 'Rajdhani', sans-serif;
+    left: 60%;
+    font-size: 13px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 42%;
+    letter-spacing: 1px;
+    position: absolute; 
+}
+#gmail_pic{
+    top: 39%;
+    left: 80%;
+    position: absolute;
+}
+#gmail_pic:hover{
+    top: 38%;
+    left: 80%;
+    filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
+    position: absolute;
+}
+
+
+#PHONE{
+    color: #ccc8c8;
+    font-family: 'Red Rose', cursive;
+    left: 58%;
+    font-size: 15px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 54%;
+    position: absolute;
+}
+#number{
+    font-family: 'Rajdhani', sans-serif;
+    left: 60%;
+    font-size: 13px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 59%;
+    letter-spacing: 1px;
+    position: absolute;   
+}
+#phone1{
+    top: 56%;
+    left: 80%;
+    transform: rotate(15deg);
+    position: absolute;
+}
+#phone1:hover{
+    top: 55%;
+    left: 80%;
+    filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
     position: absolute;
 }
