@@ -633,7 +633,7 @@ figure .Motivate-word {
     top: 20%;
 } */
 #skil_big_rectangle{
-    height: 75vh;
+    height: 60vh;
     position: relative;
     background-color: #6e6e6e;
     top: -35px;
@@ -705,7 +705,7 @@ figure .Motivate-word {
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-100px;
+    top:-98px;
     position:relative;
 }
 #experience_rectangle #Experience{
