@@ -567,7 +567,7 @@ figure .Motivate-word {
     width: 18%;
     height: 5%;
     left: -17%;
-    top: 25%;
+    top: 20%;
     background-color: #506b65;
     margin: 20px;
     cursor: pointer;
@@ -584,6 +584,10 @@ h4{
     font-size: 16px;
     color: white;
     top: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
     text-align: center;
     position: absolute; 
     text-decoration: none; 
