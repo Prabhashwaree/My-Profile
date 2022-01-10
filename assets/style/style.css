@@ -205,30 +205,6 @@ button:hover {
     height: 10vh;
 }
 
-.sosial_media_links li a i:hover {
-    cursor: pointer;
-    color: #f24600;
-}
-
-.sosial_media_links li a i:hover {
-    cursor: pointer;
-    color: #f24600;
-}
-
-.sosial_media_links li a i:hover {
-    cursor: pointer;
-    color: #f24600;
-}
-
-.sosial_media_links li a i:hover {
-    cursor: pointer;
-    color: #f24600;
-}
-
-.sosial_media_links li a i:hover {
-    cursor: pointer;
-    color: #f24600;
-}
 
 #vertical_line1 {
     height: 15vh;
@@ -303,9 +279,7 @@ button:hover{
     cursor: pointer;
     background-color: #f24600;
     font-family: 'Rajdhani', sans-serif;   
-
 }
-
 
 .main_page {
     background-image: url("../images/head  pic.jpg");
@@ -313,10 +287,10 @@ button:hover{
     background-position: center;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
+    /* border:1px solid black; */
     width: 100%;
     height: 95vh;
 }
-
 audio {
     position: relative;
     margin: 100px 5% auto 5%;
@@ -328,22 +302,21 @@ audio {
     top: 5px;
 }
 
-
 /*----------------------------------1 st Page(Motivate word)------------------------------------*/
 
 #motivate-rectangle {
-    height: 50vh;
+    top: -20px;
+    height: 60vh;
+    position: relative;
     /* border: 1px solid black; */
     background-color: white;
 }
 
-figure .Motivate-word {
+figure {
     text-align: center;
+    top: 35%;
     font-size: 15px;
-    top: 135%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    /* border: 1px solid black; */
     margin: auto;
     position: absolute;
     font-family: 'Open Sans', sans-serif;
@@ -351,16 +324,6 @@ figure .Motivate-word {
     letter-spacing: 0.1vw;
     
 }
-
-/* #writer {
-    font-size: 18px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    
-} */
 
 #writer {
     font-size: 16px;
@@ -374,19 +337,22 @@ figure .Motivate-word {
     letter-spacing: 0.1vw;
 }
 #motivate-rectangle img{
-    position: absolute;
     left: 69%;
-    top: 106%;
+    top: 19%;
     transform: rotate(7deg);
     margin: 10px 0px;
+    z-index:1;
+    position: absolute;
     
 }
 /*----------------------------------2 st Page(About)------------------------------------*/
 
 #about-Me{
     height: 75vh;
+    top: -39px;
     position: relative;
     background-color: #6e6e6e;
+    /* border:1px solid black; */
 }
 #topic-About{
     width:20vw;
@@ -418,6 +384,7 @@ figure .Motivate-word {
     position:relative;
     left:30%
 }
+
 #hello{
     font-family: 'Playfair Display', serif;
     font-size:75px;
@@ -442,30 +409,15 @@ figure .Motivate-word {
         top: 0%;
         left: -15%;
         color: rgb(4, 53, 4);
-        filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
-        
+        filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));  
     }
-
 } 
 #rectangle-shape #about_details{
-    left: 48px;
-    position: absolute;
-    top: 13%;
-}
-#rectangle-shape #about_details #age{
-    position: absolute;
-    top: 150%;
-}
-#rectangle-shape #about_details #Iam_Software{
-    position: absolute;
-    top: 450%;
-    
+    left: 60px;
+    top: 20%;
+    position: relative;
 }
 
-#rectangle-shape #about_details #thank_you{
-    position: absolute;
-    top: 750%;
-}
 #top{
     
     width: 45vw;
@@ -499,29 +451,18 @@ figure .Motivate-word {
     position: absolute;
     right: 2.5%;
 }
-/* #galary_rectangle{
-    width:20vw;
-    height:6vh;
-    background-color:white;
-    border:1px solid black;
-    top:890%;
-    position:absolute;
-    /* border: 1px solid rgb(51, 43, 43); 
-} */
 
 #navi_phone_gmail{
     right: 15%;
     position: absolute;
     top:85%;
-    bottom: 20px;
-    
-    
+    bottom: 20px;  
 }
 #navi_phone_gmail a{
     text-decoration: none;
     color: black;
 } 
-#phone{
+#navi_phone_gmail img:nth-child(1){
     border-radius: 20%;
     background-color: white;
     top: 6px;
@@ -531,9 +472,9 @@ figure .Motivate-word {
 #gmail{
     border-radius: 20%;
     background-color: white;
-    top: 6px;
-    position: relative;
+    top: 7px;
     right: 10px;
+    position: relative;
 }
 
 
@@ -553,10 +494,11 @@ figure .Motivate-word {
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-68%;
+    top:-5%;
     position:relative;
 }
 #Assignment_big_rectangle{
+    top: -80px;
     height: 120vh;
     position: relative;
     background-color: white;
@@ -579,7 +521,7 @@ figure .Motivate-word {
     cursor: pointer;
     background-color: #9e9c06;
     transition-property: width;
-    transition: all 2s;
+    transition: all 1s;
 }
 h4{
     font-size: 16px;
@@ -626,135 +568,67 @@ h4{
     background-color:#9e9c06;
     position: absolute;
 }
-#A_img1{
+#rectangle_image1 img{
     filter: drop-shadow(5px 10px 5px black);
     top: 50%;
     left: 46%;
     z-index: 1;
     position: absolute;
-    
 }
-#A_think0{
-    top: 50%;
-    left: 46%;
-    z-index: 1;
-    position: absolute;
-    
-}
-#git_A_1{
+
+#rectangle_image1 a{
     text-decoration: none;
-    top: 78%;
-    left: 48%;
+    top: 74%;
+    left: 47%;
     z-index: 1;
     position: absolute;
     color: black;
     animation-name: image_move;
+    border: 2px solid black;
 }
-/* #ass_sec1{
-    filter: drop-shadow(5px 10px 5px rgb(238, 255, 7));
-    cursor: pointer;
-    top: 16%;
-    left: 32%;
-    position: absolute;
-    animation-name: image_move;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
 
-}
-@keyframes image_move{
-    0%{
-
-        filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
-    }
-    100%{
-        top: 10%;
-        left: 15%;
-        filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
-        
-    }
-
-} */
-
-/* #ass_sec1:hover{
-    filter: drop-shadow(5px 10px 5px rgb(238, 255, 7));
-    cursor: pointer;
-    top: 16%;
-    left: 32%;
-    position: absolute;
-} */
-/* #rectangle_image{
-    top: 20%;
-    left: 35%;
-    width: 150px;
-    height: 200px;
-    position: absolute;
-} */
-
-/* #A_img1 :hover{
-    cursor: pointer;
-    top: 17%;
-    left: 30%;
-    position: absolute;
-} */
-#A_img2{
+#rectangle_image2 img{
     filter: drop-shadow(5px 10px 5px black);
     left: 20%;
     position: absolute;
     top: 12%;
 }
-#A_think1{
-    left: 20%;
-    position: absolute;
-    top: 13%; 
-}
-#git_A_2{
+
+#rectangle_image2 a{
     text-decoration: none;
     top: 28%;
     left: 21%;
     position: absolute;
     color: black; 
+    border: 2px solid black;
 }
-#A_img3{
+#rectangle_image3 img{
     filter: drop-shadow(5px 10px 5px black);
     top: 30%;
     left: 34%;
     position: absolute; 
 }
-#A_think2{
-    top: 30%;
-    left: 34%;
-    position: absolute;
-    
-}
-#git_A_3{
+#rectangle_image3 #link_assignment3{
     text-decoration: none;
-    top: 33%;
-    left: 40%;
+    top: 46%;
+    left: 35%;
     position: absolute;
     color: black; 
+    border: 2px solid black;
 }
-#A_img4{
+#rectangle_image4 img{
     filter: drop-shadow(5px 10px 5px black);
     top: 63%;
     left: 57%;
     z-index: 1;
     position: absolute;   
 }
-#A_think3{
-    top: 63%;
-    left: 57%;
-    z-index: 1;
-    position: absolute;
-   
-}
-#git_A_4{
+#rectangle_image4 #link_assignment4{
     text-decoration: none;
-    top: 91%;
-    left: 60%;
+    top: 87%;
+    left: 59%;
     z-index: 1;
+    border: 2px solid black;
     position: absolute;
     color: black; 
 }
@@ -791,10 +665,12 @@ h4{
     top: 20%;
 } */
 #skil_big_rectangle{
+    top: -161px;
     height: 60vh;
     position: relative;
     background-color: #6e6e6e;
-    top: -35px;
+    border:1px solid black;
+    
     
 }
 /* #fun_activities{
@@ -876,10 +752,11 @@ h4{
     top: 8px;
 }
 #experience_big_rectangle{
+    top: -198px;
     height: 120vh;
     position: relative;
     background-color: #ffffff;
-    /* border:1px solid black; */
+    border:1px solid black;
 }
 
 #experience_paragraph{
@@ -1121,7 +998,8 @@ h4{
     height: 85vh;
     position: relative;
     background-color: #6e6e6e;
-    top: 8%;
+    border:1px solid black;
+    top:-245px;
 }
 
 
@@ -1148,8 +1026,8 @@ h4{
     height: 120vh;
     position: relative;
     background-color: #ffffff;
-    /* border:1px solid black; */
-    top: -55px;
+    border:1px solid black;
+    top: -260px;
 }
 #Education_Pictures{
     left: 10%;
@@ -1323,7 +1201,8 @@ h4{
     height: 90vh;
     position: relative;
     background-color: #6e6e6e;
-    top: -100px;
+    border:1px solid black;
+    top: -299px;
 }
 #location_rectangle{
     width: 28vw;
@@ -1540,8 +1419,8 @@ h4{
     width: 98.8vw;
     background-color: #000000;
     /* border:1px solid black; */
-    top: 867%;
-    position: absolute;
+    top: -300px;
+    position: relative;
 }
 #footer_paragraph{
     top: 47%;
