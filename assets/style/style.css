@@ -85,7 +85,8 @@ button:hover {
 #heroText {
     transform: translate(-50%, 50%);
     position: absolute;
-    top: 5%;
+    top: 18%;
+    position: absolute;
     left: 26%;
     text-align: center;
     
@@ -121,8 +122,10 @@ button:hover {
     font-size: 190%;
     transform: translate(-10% ,5%);
     border-color: black;
-    top: 4%;
+    top: 78%;
+    left: 17%;
     letter-spacing: 0.90px;
+    position: absolute;
     /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
 }
 
@@ -131,11 +134,35 @@ button:hover {
     text-shadow: 2px 2px black;
     font-size: 160%;
     font-style: italic;
+    top: 115%;
+    left: 20%;
+    position: absolute;
     font-weight: normal;
     font-family: 'Red Hat Display', sans-serif;
     transform: translate(-0.01%,-25%);
     letter-spacing: 0.90px;
     text-shadow: 10px 10px 10px #000000;
+}
+#heroText p{
+    color: white;
+    font-size: 160%;
+    font-style: italic;
+    top: 160%;
+    left: 25%;
+    position: absolute;
+    font-weight: normal;
+    font-family: 'Red Hat Display', sans-serif;
+    transform: translate(-0.01%,-25%);
+    letter-spacing: 0.90px;
+    text-shadow: 10px 10px 10px #000000;
+}
+#heroText h5{
+    top: 130%;
+    left: 37%;
+    margin: 0;
+    font-size: 200%;
+    color: white;
+    position:absolute;
 }
 
 
@@ -395,11 +422,31 @@ figure .Motivate-word {
     font-family: 'Playfair Display', serif;
     font-size:75px;
     top:-65px;
-    right:30px;
-    position:relative;
+    left:-40px;
+    position:absolute;
     text-shadow: 10px 10px 10px #000000;
+    animation-name: word_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
+@keyframes word_move{
+    0%{
+
+        filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+    }
+    100%{
+        top: 0%;
+        left: -15%;
+        color: rgb(4, 53, 4);
+        filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
+        
+    }
+
+} 
 #rectangle-shape #about_details{
     left: 48px;
     position: absolute;
@@ -452,15 +499,15 @@ figure .Motivate-word {
     position: absolute;
     right: 2.5%;
 }
-#galary_rectangle{
+/* #galary_rectangle{
     width:20vw;
     height:6vh;
     background-color:white;
-/*     border:1px solid black; */
-    top:-105px;
-    position:relative;
-    /* border: 1px solid rgb(51, 43, 43); */
-}
+    border:1px solid black;
+    top:890%;
+    position:absolute;
+    /* border: 1px solid rgb(51, 43, 43); 
+} */
 
 #navi_phone_gmail{
     right: 15%;
@@ -497,16 +544,16 @@ figure .Motivate-word {
     color: #000000;
     text-shadow: 10px 10px 10px #000000;
     font-style: normal;
-    left: -2%;
-    position: relative;
-    top: 20%;
+    left: 18%;
+    position: absolute;
+    top: 30%;
 }
 #Assignment_Rectangle{
     width:20vw;
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-65px;
+    top:-68%;
     position:relative;
 }
 #Assignment_big_rectangle{
@@ -514,6 +561,44 @@ figure .Motivate-word {
     position: relative;
     background-color: #ffffff;
     /* border:1px solid black; */
+}
+
+.sec1{
+    width: 18%;
+    height: 5%;
+    left: -17%;
+    top: 25%;
+    background-color: #506b65;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.sec1:hover{
+    left: -30px;
+    cursor: pointer;
+    background-color: #9e9c06;
+    transition-property: width;
+    transition: all 2s;
+}
+h4{
+    font-size: 16px;
+    color: white;
+    top: 5px;
+    text-align: center;
+    position: absolute; 
+    text-decoration: none; 
+}
+.sec1 i{
+    color: #9e9c06;
+    width: 30px;
+    /* border: 1px solid black; */
+    height: 30px;
+    position: absolute;
+    left: 83%;
+    top: 1px;
+    bottom: 30px;
+    margin: 7px;
+    text-align: center;
 }
 
 #btn1_viewmore{
@@ -554,7 +639,43 @@ figure .Motivate-word {
     left: 37%;
     position: absolute;
     color: black;
+    animation-name: image_move;
 }
+/* #ass_sec1{
+    filter: drop-shadow(5px 10px 5px rgb(238, 255, 7));
+    cursor: pointer;
+    top: 16%;
+    left: 32%;
+    position: absolute;
+    animation-name: image_move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+@keyframes image_move{
+    0%{
+
+        filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+    }
+    100%{
+        top: 10%;
+        left: 15%;
+        filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
+        
+    }
+
+} */
+
+/* #ass_sec1:hover{
+    filter: drop-shadow(5px 10px 5px rgb(238, 255, 7));
+    cursor: pointer;
+    top: 16%;
+    left: 32%;
+    position: absolute;
+} */
 /* #rectangle_image{
     top: 20%;
     left: 35%;
