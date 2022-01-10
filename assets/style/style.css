@@ -34,6 +34,7 @@ header{
     display: inline-block;
 }
 .naviLink0 button{
+    filter: drop-shadow(10px 10px 10px black);
     background-color: white;
     padding: 7px 50px;
     font-size: 15px;
@@ -162,7 +163,7 @@ button:hover {
     /*     width: 20vw; */
     height: 7vh;
     border-radius: 10px;
-
+    filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
     left: 96%;
     position: relative;
     top: -45px;
@@ -252,6 +253,7 @@ button:hover {
     background-color: white;
     padding: 8px 58px;
     border-radius: 7px;
+    filter: drop-shadow(10px 10px 10px black);
     margin: 0 35px;
     font-family: 'Rajdhani', sans-serif;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0; 
@@ -513,9 +515,30 @@ figure .Motivate-word {
     background-color: #ffffff;
     /* border:1px solid black; */
 }
+
+#btn1_viewmore{
+    width:13vw;
+    height:6vh;
+    background-color:rgb(103, 121, 119);
+    /* border:1px solid black; */
+    border-radius: 8px;
+    top:45px;
+    right: 13%;
+    position:absolute;
+    filter: drop-shadow(5px 10px 5px black); 
+}
+#btn1_viewmore:hover{
+    width:13vw;
+    height:7vh;
+    right: 12%;
+    cursor: pointer;
+    top: 36px;
+    background-color:rgb(23, 228, 211);
+    position: absolute;
+}
 #A_img1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 20%;
+    top: 17%;
     left: 35%;
     position: absolute;
     
@@ -523,7 +546,7 @@ figure .Motivate-word {
 #A_think0{
     left: 35%;
     position: absolute;
-    top: 20%; 
+    top: 17%; 
 }
 #git_A_1{
     text-decoration: none;
@@ -550,16 +573,16 @@ figure .Motivate-word {
     filter: drop-shadow(5px 10px 5px black);
     left: 50%;
     position: absolute;
-    top: 15%;
+    top: 12%;
 }
 #A_think1{
     left: 50.5%;
     position: absolute;
-    top: 15%; 
+    top: 13%; 
 }
 #git_A_2{
     text-decoration: none;
-    top: 18%;
+    top: 15%;
     left: 54.5%;
     position: absolute;
     color: black; 
@@ -584,7 +607,7 @@ figure .Motivate-word {
 }
 #A_img4{
     filter: drop-shadow(5px 10px 5px black);
-    top: 57%;
+    top: 59%;
     left: 50%;
     position: absolute;   
 }
@@ -595,7 +618,7 @@ figure .Motivate-word {
 }
 #git_A_4{
     text-decoration: none;
-    top: 83%;
+    top: 88%;
     left: 53%;
     position: absolute;
     color: black; 
@@ -735,9 +758,9 @@ figure .Motivate-word {
 }
 #main_pic{
     left: 20%;
-    top: 3%;
+    top: 7%;
     filter: drop-shadow(5px 10px 5px black);
-    position: relative;
+    position: absolute;
 }
 /* #experience_1step{
     left: 22.9%;
@@ -747,7 +770,7 @@ figure .Motivate-word {
 #Month_2019_06{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 430px;
+    top: 58%;
     left: 27.5%;
     position: absolute;
     font-size: 12px;
@@ -755,7 +778,7 @@ figure .Motivate-word {
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING{
-    top: 465px;
+    top: 63%;
     left: 27.9%;
     position: absolute;
     color: white;
@@ -767,13 +790,13 @@ figure .Motivate-word {
 #helth_img{
     border-radius: 16px;
     left: 34%;
-    top: 451px;
+    top:60.8%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black);
 }
 #STEP1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 68%;
+    top: 69.5%;
     left: 31.8%;
     color: #cb1b4a;
     position: absolute;
@@ -783,7 +806,7 @@ figure .Motivate-word {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph{
-    top: 72%;
+    top: 73%;
     left: 27.9%;
     text-align: center;
     text-align: left;
@@ -877,7 +900,7 @@ figure .Motivate-word {
 
 
 #PERMANENT1{
-    top: 36%;
+    top: 34%;
     right:30.7%;
     position: absolute;
     color: white;
@@ -906,7 +929,7 @@ figure .Motivate-word {
 
 
 #OWNER{
-    top: 28%;
+    top: 25%;
     right:21%;
     position: absolute;
     color: white;
@@ -917,7 +940,7 @@ figure .Motivate-word {
 }
 #STEP5{
     filter: drop-shadow(5px 10px 5px black);
-    top: 34%;
+    top: 32%;
     right:21.8%;
     color: #074d67;
     position: absolute;
@@ -934,7 +957,7 @@ figure .Motivate-word {
 }
 #man{
     top: 220px;
-    left: 2%; 
+    left: -1%; 
     position: absolute;
     z-index: 1;
 }
@@ -957,13 +980,13 @@ figure .Motivate-word {
     font-style: normal;
     left: -2%;
     position: relative;
-    top: 22px;
+    top: 15px;
 }
 #Project_big_rectangle{
     height: 85vh;
     position: relative;
     background-color: #6e6e6e;
-    top: -100px;
+    top: 8%;
 }
 
 
@@ -974,7 +997,7 @@ figure .Motivate-word {
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-83px;
+    top:-34px;
     position:relative;
 } 
 #Education_rectangle #Education{
@@ -1044,35 +1067,35 @@ figure .Motivate-word {
     left: 25%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 68%;
+    top: 72%;
     position: absolute;
 }
 #School:hover{
     left: 24%;
-    top: 445px;
+    top: 71%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 #Nysc_img{
     left: 32.5%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 56%;
+    top: 59%;
     position: absolute;
 }
 #Nysc_img:hover{
     left: 32%;
-    top: 356px;
+    top: 58%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 #Esoft_img{
     left: 40.3%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 44%;
+    top: 48%;
     position: absolute;
 }
 #Esoft_img:hover{
@@ -1098,7 +1121,7 @@ figure .Motivate-word {
 }
 #School_paragraph{
     left: 31%;
-    top: 78%;
+    top: 83.5%;
     font-size: 12px;
     text-shadow: 10px 10px 10px #000000;
     color: white;
@@ -1108,7 +1131,7 @@ figure .Motivate-word {
 }
 #Nysc_paragraph{
     left: 39.5%;
-    top: 67.8%;
+    top: 72%;
     color: white;
     font-size: 13px;
     text-shadow: 10px 10px 10px #000000;
@@ -1118,7 +1141,7 @@ figure .Motivate-word {
 }
 #Esoft_paragraph{
     left: 46%;
-    top: 56.5%;
+    top: 60%;
     color: white;
     /* border: 1px solid black; */
     font-size: 13px;
@@ -1128,14 +1151,14 @@ figure .Motivate-word {
     position: absolute;
 }
 #IJSE_paragraph{
-    left: 50%;
+    left: 52.8%;
     color: white;
     /* border: 1px solid black; */
     font-size: 13px;
     font-family: 'Rajdhani', sans-serif;
     text-shadow: 10px 10px 10px #000000;
     text-align: center;
-    top: 45%;
+    top: 48%;
     position: absolute;
 }
 
@@ -1382,11 +1405,11 @@ figure .Motivate-word {
     width: 98.8vw;
     background-color: #000000;
     /* border:1px solid black; */
-    top: 862.8%;
+    top: 867%;
     position: absolute;
 }
 #footer_paragraph{
-    top: 43%;
+    top: 47%;
     left: 39%;
     text-align: center;
     color: white;
