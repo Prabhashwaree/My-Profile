@@ -494,12 +494,12 @@ figure {
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-5%;
+    top:-4%;
     position:relative;
 }
 #Assignment_big_rectangle{
     top: -80px;
-    height: 120vh;
+    height: 145vh;
     position: relative;
     background-color: white;
     /* border:1px solid black; */
@@ -578,7 +578,7 @@ h4{
 
 #rectangle_image1 a{
     text-decoration: none;
-    top: 74%;
+    top: 70%;
     left: 47%;
     z-index: 1;
     position: absolute;
@@ -625,7 +625,7 @@ h4{
 }
 #rectangle_image4 #link_assignment4{
     text-decoration: none;
-    top: 87%;
+    top: 83%;
     left: 59%;
     z-index: 1;
     border: 2px solid black;
@@ -639,10 +639,11 @@ h4{
 #skil_rectangle{
     width:20vw;
     height:6vh;
+    left: 0;
     background-color:white;
     /* border:1px solid black; */
-    top:-8px;
-    position:relative;
+    top:0px;
+    position:absolute;
 }
 
 #skil_rectangle #Skills{
@@ -655,81 +656,33 @@ h4{
     top: 5px;
     
 }
-/* #Activities_topic_Rectangle #Activities{
-    text-align: center;
-    color: #000000;
-    text-shadow: 10px 10px 10px #000000;
-    font-style: normal;
-    left: 20%;
-    position: absolute;
-    top: 20%;
-} */
+
 #skil_big_rectangle{
-    top: -161px;
     height: 60vh;
     position: relative;
     background-color: #6e6e6e;
-    border:1px solid black;
-    
-    
+    top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-/* #fun_activities{
-    position: absolute;
-    right: 15%;
-    top: 15%;
-    font-size: 20px;
-    color: white;
-}
-#Activities_big_rectangle #Activiti_img_1{
-    top: 25%;
-    position: absolute;
-    left: 10%;
-}
-#Activiti_img_2{
-    top: 25%;
-    position: absolute;
-    left: 40%;
-}
-#Activiti_img_3{
-    top: 25%;
-    position: absolute;
-    left: 70%;
-} */
 
 #skil_set{
-    left: 26%;
-    top:40%;
+    width: 80%;
     filter: drop-shadow(5px 10px 5px black);
     position: absolute;
+    /* border: 1px solid red; */
     justify-content: space-between;
-    
+    display: flex; 
 }
-#skil_1{
+#skil_set img{
     border-radius: 20px;
 }
-#skil_2{
-    border-radius: 20px;
-}
-#skil_3{
-    border-radius: 20px;
-}
-#skil_4{
-    border-radius: 20px;
-}
-#skil_5{
-    border-radius: 20px;
-}
-#skil_6{
-    border-radius: 20px;
-}
+
 #skil_set :hover{
-    width: 10vw;
-    height: 20vh;
-    margin: 0 10px;
-    border-radius: 20px;
-    position: absolute;
-    cursor: pointer;
-    filter: drop-shadow(5px 10px 5px black);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 /*----------------------------------4 st Page(Experience)------------------------------------*/
@@ -739,7 +692,7 @@ h4{
     height:6vh;
     background-color:white;
     /* border:1px solid black; */
-    top:-98px;
+    top:-5%;
     position:relative;
 }
 #experience_rectangle #Experience{
@@ -756,7 +709,7 @@ h4{
     height: 120vh;
     position: relative;
     background-color: #ffffff;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 
 #experience_paragraph{
@@ -968,7 +921,7 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;  
 }
 #man{
-    top: 220px;
+    top: 27%;
     left: -1%; 
     position: absolute;
     z-index: 1;
@@ -1393,36 +1346,71 @@ h4{
 
 /*----------------------------------4 st Page(comment)------------------------------------*/
 
-#comment_center{
-    left: 7%;
-    top: 5%;
-    text-align: center;
-    color: #000000;
-    text-shadow: 10px 10px 10px #000000;
-    font-style: normal;
+.placeholder{
     position: absolute;
+    top: 100px;
+    left: 100px;
 }
-#input1{
-    width: 10%;
-    height: 10%;
-    left: 7%;
-    top: 10%;
-    position: absolute;
+.placeholder input{
+    color: #c4c4c4;
+    background-color: white;
+    width: 25vw;
+    height: 8vh;
+    border: none;
+    border-radius: 4px;
+}
+.placeholder textarea{
+    color: #C4C4C4;
+    background-color:  #EFEFEF;
+    width: 33vw;
+    height: 28vh;
+    border-radius:4px;
+    border: none;
 }
 
+#date{
+    color: #C4C4C4;
+    background-color:  #EFEFEF;
+    width: 20vw;
+    height: 6vh;
+    border-radius:4px;
+    border: none;
+}
+
+.select-item{
+    color: #C4C4C4;
+    background-color:  #EFEFEF;
+    width: 10vw;
+    left: 20px;
+    position: relative;
+    height: 6vh;
+    border-radius:4px;
+    border: none;
+}
+
+.save{
+    position:relative;
+    width: 160px;
+    background-color: #660058;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+}
 
 
 /*----------------------------------4 st Page(Footer)------------------------------------*/
 
-#footer_rectangle{
+footer{
     height: 28vh;
     width: 98.8vw;
     background-color: #000000;
     /* border:1px solid black; */
-    top: -300px;
+    top: 0;
     position: relative;
 }
-#footer_paragraph{
+footer pre{
     top: 47%;
     left: 39%;
     text-align: center;
