@@ -559,7 +559,7 @@ figure .Motivate-word {
 #Assignment_big_rectangle{
     height: 120vh;
     position: relative;
-    background-color: #ffffff;
+    background-color: white;
     /* border:1px solid black; */
 }
 
@@ -568,6 +568,7 @@ figure .Motivate-word {
     height: 5%;
     left: -17%;
     top: 20%;
+    border:1px solid #9e9c06;
     background-color: #506b65;
     margin: 20px;
     cursor: pointer;
@@ -609,7 +610,7 @@ h4{
     width:13vw;
     height:6vh;
     background-color:rgb(103, 121, 119);
-    /* border:1px solid black; */
+    border:1px solid #9e9c06;
     border-radius: 8px;
     top:45px;
     right: 13%;
@@ -627,20 +628,24 @@ h4{
 }
 #A_img1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 17%;
-    left: 35%;
+    top: 50%;
+    left: 46%;
+    z-index: 1;
     position: absolute;
     
 }
 #A_think0{
-    left: 35%;
+    top: 50%;
+    left: 46%;
+    z-index: 1;
     position: absolute;
-    top: 17%; 
+    
 }
 #git_A_1{
     text-decoration: none;
-    top: 46%;
-    left: 37%;
+    top: 78%;
+    left: 48%;
+    z-index: 1;
     position: absolute;
     color: black;
     animation-name: image_move;
@@ -696,55 +701,60 @@ h4{
 } */
 #A_img2{
     filter: drop-shadow(5px 10px 5px black);
-    left: 50%;
+    left: 20%;
     position: absolute;
     top: 12%;
 }
 #A_think1{
-    left: 50.5%;
+    left: 20%;
     position: absolute;
     top: 13%; 
 }
 #git_A_2{
     text-decoration: none;
-    top: 15%;
-    left: 54.5%;
+    top: 28%;
+    left: 21%;
     position: absolute;
     color: black; 
 }
 #A_img3{
     filter: drop-shadow(5px 10px 5px black);
-    top: 53%;
-    left: 31.3%;
+    top: 30%;
+    left: 34%;
     position: absolute; 
 }
 #A_think2{
-    left: 31.8%;
+    top: 30%;
+    left: 34%;
     position: absolute;
-    top: 53%; 
+    
 }
 #git_A_3{
     text-decoration: none;
-    top: 56.5%;
-    left: 38%;
+    top: 33%;
+    left: 40%;
     position: absolute;
     color: black; 
 }
 #A_img4{
     filter: drop-shadow(5px 10px 5px black);
-    top: 59%;
-    left: 50%;
+    top: 63%;
+    left: 57%;
+    z-index: 1;
     position: absolute;   
 }
 #A_think3{
-    left: 50%;
+    top: 63%;
+    left: 57%;
+    z-index: 1;
     position: absolute;
-    top: 59%; 
+   
 }
 #git_A_4{
     text-decoration: none;
-    top: 88%;
-    left: 53%;
+    top: 91%;
+    left: 60%;
+    z-index: 1;
     position: absolute;
     color: black; 
 }
