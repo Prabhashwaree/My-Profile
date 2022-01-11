@@ -1132,16 +1132,23 @@ h4{
 
 /*----------------------------------4 st Page(Contact)------------------------------------*/
 
+#contact_and_comment_big_rectangle{
+    height: 90vh;
+    position: relative;
+    background-color: #6e6e6e;
+    top: -298px;
+    z-index: 1;
+}
+
 #Contact_rectangle{
     width:20vw;
     height:6vh;
     background-color:white;
-    /* border:1px solid black; */
-    top:-225px;
-    left:79.7%;
-    position:relative;
+    top:0;
+    left:79.8%;
+    position:absolute;
 }
-#Contact_rectangle #Contact{
+#Contact_rectangle h2{
     text-align: center;
     color: #000000;
     text-shadow: 10px 10px 10px #000000;
@@ -1150,13 +1157,7 @@ h4{
     position: absolute;
     top: 4px;
 }
-#contact_and_comment_big_rectangle{
-    height: 90vh;
-    position: relative;
-    background-color: #6e6e6e;
-    border:1px solid black;
-    top: -299px;
-}
+
 #location_rectangle{
     width: 28vw;
     height: 12vh;
@@ -1167,6 +1168,29 @@ h4{
     top: 17%;
     position: absolute;
 }
+
+#location_rectangle h3{
+    color: #ccc8c8;
+    font-family: 'Red Rose', cursive;
+    left: 5%;
+    font-size: 15px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 10%;
+    position: absolute;
+}
+
+#location_rectangle p{
+    font-family: 'Rajdhani', sans-serif;
+    left: 15%;
+    font-size: 13px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 40%;
+    letter-spacing: 1px;
+    position: absolute; 
+}
+
 #gmail_rectangle{
     width: 28vw;
     height: 12vh;
@@ -1177,6 +1201,30 @@ h4{
     top: 34%;
     position: absolute; 
 }
+
+#gmail_rectangle h3{
+    color: #ccc8c8;
+    font-family: 'Red Rose', cursive;
+    left: 5%;
+    font-size: 15px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 15%;
+    position: absolute;
+}
+
+#gmail_rectangle p{
+    font-family: 'Rajdhani', sans-serif;
+    left: 15%;
+    font-size: 13px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 55%;
+    letter-spacing: 1px;
+    position: absolute; 
+}
+
+
 #tell_rectangle{
     width: 28vw;
     height: 12vh;
@@ -1187,116 +1235,93 @@ h4{
     top: 51%;
     position: absolute; 
 }
-#LOCATION1{
+
+#tell_rectangle h3{
     color: #ccc8c8;
     font-family: 'Red Rose', cursive;
-    left: 58%;
+    left: 5%;
     font-size: 15px;
     /* border:1px solid black; */
     z-index: 1;
-    top: 19%;
+    top: 15%;
     position: absolute;
 }
+
+#tell_rectangle p{
+    left: 15%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px;
+    /* border:1px solid black; */
+    z-index: 1;
+    top: 55%;
+    letter-spacing: 1px;
+    position: absolute;  
+}
+
 #address{
     font-family: 'Rajdhani', sans-serif;
     left: 60%;
     font-size: 13px;
-    /* border:1px solid black; */
+    border:1px solid black;
     z-index: 1;
     top: 23.5%;
     letter-spacing: 1px;
     position: absolute; 
 }
-#location_img{
-    top: 21.5%;
-    left: 80%;
+#location_rectangle img{
+    top: 23%;
+    left: 85%;
     position: absolute;
 }
-#location_img:hover{
+#location_rectangle img:hover{
     top: 21%;
-    left: 80%;
+    left: 86%;
     filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
     position: absolute;
 }
 
-
-
-#email1{
-    color: #ccc8c8;
-    font-family: 'Red Rose', cursive;
-    left: 58%;
-    font-size: 15px;
-    /* border:1px solid black; */
-    z-index: 1;
-    top: 37%;
-    position: absolute;
-}
-#gmail_Prabhashwaree{
-    font-family: 'Rajdhani', sans-serif;
-    left: 60%;
-    font-size: 13px;
-    /* border:1px solid black; */
-    z-index: 1;
-    top: 42%;
-    letter-spacing: 1px;
-    position: absolute; 
-}
-#gmail_pic{
+#gmail_rectangle img{
     top: 39%;
-    left: 80%;
+    left: 86%;
     position: absolute;
 }
-#gmail_pic:hover{
-    top: 38%;
-    left: 80%;
+#gmail_rectangle img:hover{
+    cursor: pointer;
+    top: 37%;
+    left: 87%;
     filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
     position: absolute;
 }
 
 
-#PHONE{
-    color: #ccc8c8;
-    font-family: 'Red Rose', cursive;
-    left: 58%;
-    font-size: 15px;
-    /* border:1px solid black; */
-    z-index: 1;
-    top: 54%;
-    position: absolute;
-}
-#number{
-    font-family: 'Rajdhani', sans-serif;
-    left: 60%;
-    font-size: 13px;
-    /* border:1px solid black; */
-    z-index: 1;
-    top: 59%;
-    letter-spacing: 1px;
-    position: absolute;   
-}
-#phone1{
-    top: 56%;
-    left: 80%;
+#tell_rectangle img{
+    top: 36%;
+    left: 86%;
     transform: rotate(15deg);
     position: absolute;
 }
-#phone1:hover{
-    top: 55%;
-    left: 80%;
+#tell_rectangle img:hover{
+    top: 35%;
+    left: 87%;
     filter: drop-shadow(7px 10px 7px rgb(255, 0, 0));
     position: absolute;
 }
 #contact_link{
-    right: 130px;
-    top: 72%;
+    right: 10%;
+    top: 75%;
     text-decoration: none;
     position: absolute;
+}
+#contact_link img{
+    left: 10%;
+    top: -18px;
+    position: relative;
 }
 #link1{
     text-decoration: none;
     color: black;
-    top: -7px;
-    right: -2%;
+    top: -25px;
+    right: -12%;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
 }
@@ -1306,8 +1331,8 @@ h4{
 #link2{
     text-decoration: none;
     color: black;
-    top: -7px;
-    right: -2%;
+    top: -25px;
+    right: -12%;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
 }
@@ -1317,8 +1342,8 @@ h4{
 #link3{
     text-decoration: none;
     color: black;
-    top: -7px;
-    right: -2%;
+    top: -25px;
+    right: -12%;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
 }
@@ -1328,8 +1353,8 @@ h4{
 #link4{
     text-decoration: none;
     color: black;
-    top: -7px;
-    right: -2%;
+    top: -25px;
+    right: -12%;
     font-family: 'Rajdhani', sans-serif;
     position: relative;
 }
@@ -1342,7 +1367,6 @@ h4{
     right: 3%;
     position: absolute;
 }
-
 
 /*----------------------------------4 st Page(comment)------------------------------------*/
 
@@ -1407,7 +1431,8 @@ footer{
     width: 98.8vw;
     background-color: #000000;
     /* border:1px solid black; */
-    top: 0;
+    top: -298px;
+    margin-bottom: 0;
     position: relative;
 }
 footer pre{
