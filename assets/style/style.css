@@ -1007,12 +1007,146 @@ h4{
     position: relative;
     top: 15px;
 }
+#Project_rectangle{
+    width:20vw;
+    height:8vh;
+    background-color:white;
+    /* border:1px solid black; */
+    top:-2x;
+    position:relative;
+}
+#Project{
+    text-align: center;
+    color: #000000;
+    text-shadow: 10px 10px 10px #000000;
+    font-style: normal;
+    left: -2%;
+    position: relative;
+    top: 15px;
+}
 #Project_big_rectangle{
     height: 85vh;
     position: relative;
     background-color: #6e6e6e;
     /* border:1px solid black; */
     top:-245px;
+}
+.hi-slide {
+    position: relative;
+     width: 824px; 
+     height: 392px; 
+     top:-60px;
+     margin: 115px auto 0; 
+    }
+ 
+.hi-slide .hi-next,
+.hi-slide .hi-prev{ position: absolute;
+   top: 50%; 
+   width: 40px;
+   height: 40px; 
+   margin-top: -20px;     
+   border-radius: 50px;     
+   line-height: 40px;
+   text-align: center; 
+   cursor: pointer;
+   background-color: #fff; 
+   color: black;               
+   transition: all 0.6s;
+   font-size: 20px; 
+   font-weight: bold;
+   
+ }
+
+.hi-slide .hi-next:hover, 
+ .hi-slide .hi-prev:hover{
+ opacity: 1; 
+ background-color: #fff; 
+ 
+ }
+ 
+.hi-slide .hi-prev {
+   left: -60px;
+  
+  }
+ 
+.hi-slide .hi-prev::before {
+content: '<';
+}
+.hi-slide .hi-next {
+right: -40px; 
+}
+.hi-slide .hi-next::before { 
+content: '>'; 
+}
+
+ .hi-slide > ul { 
+             list-style: none; 
+             position: relative;
+             width: 754px; 
+             height: 292px; 
+           
+ }
+ 
+
+ 
+.hi-slide > ul > li {
+ position: absolute; 
+ z-index: 0; 
+ left: 377px;
+ top: 146px; 
+ width: 0; 
+ height:0; 
+ margin: 0; 
+ padding: 0;              
+ cursor: pointer;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+.hi-slide > ul > li > div{ 
+width: 100%;
+height: 100%;
+background-position: center;
+background-color: white;
+}
+
+
+
+.hi-slide > ul > li > div >h4{
+ position: relative;
+ top:20px;
+ font-size: 15px;
+ color: #000;
+}
+.hi-slide >ul>li>div>img{
+    width: 70%; 
+    position: relative;
+    top:40px;
+    left: 40px;
+    background-position: center;
+
+}
+
+.hi-slide > ul >li >div >a{
+ font-size: 12px;
+ text-decoration: none;
+ color: black;
+ position: absolute;
+ bottom: 10px;;
+ right: 40px;
+ font-weight: 800;
+ 
+}
+
+.hi-slide > ul >li >div >a >p{
+    position: relative;
+    top:-10px;
+}
+.hi-slide > ul >li >div >a >button{
+    color:white;
+    background-color: #006BA8;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 
