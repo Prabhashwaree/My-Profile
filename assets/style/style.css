@@ -1033,12 +1033,12 @@ h4{
     left: 25%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 72%;
+    top: 68%;
     position: absolute;
 }
 #School:hover{
     left: 24%;
-    top: 71%;
+    top: 67%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
@@ -1047,12 +1047,12 @@ h4{
     left: 32.5%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 59%;
+    top: 55%;
     position: absolute;
 }
 #Nysc_img:hover{
     left: 32%;
-    top: 58%;
+    top: 54%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
@@ -1061,15 +1061,15 @@ h4{
     left: 40.3%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 48%;
+    top: 42%;
     position: absolute;
 }
 #Esoft_img:hover{
-    left: 39%;
-    top: 265px;
+    left: 40%;
+    top: 41.5%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 #IJSE_img{
     left: 47.8%;
@@ -1087,7 +1087,7 @@ h4{
 }
 #School_paragraph{
     left: 31%;
-    top: 83.5%;
+    top: 78%;
     font-size: 12px;
     text-shadow: 10px 10px 10px #000000;
     color: white;
@@ -1097,7 +1097,7 @@ h4{
 }
 #Nysc_paragraph{
     left: 39.5%;
-    top: 72%;
+    top: 68%;
     color: white;
     font-size: 13px;
     text-shadow: 10px 10px 10px #000000;
@@ -1107,7 +1107,7 @@ h4{
 }
 #Esoft_paragraph{
     left: 46%;
-    top: 60%;
+    top: 56%;
     color: white;
     /* border: 1px solid black; */
     font-size: 13px;
@@ -1124,7 +1124,7 @@ h4{
     font-family: 'Rajdhani', sans-serif;
     text-shadow: 10px 10px 10px #000000;
     text-align: center;
-    top: 48%;
+    top: 45%;
     position: absolute;
 }
 
@@ -1447,7 +1447,7 @@ h4{
     font-size: 16px;
     cursor: pointer;
     border-radius:7px;
-    box-shadow:0 1px 2px #000000;
+    filter: drop-shadow(5px 10px 5px black); 
 }
 .save:hover{
     position:absolute;
@@ -1456,6 +1456,7 @@ h4{
     left: -6px;
     top: 98%;
     background-color: #fcb414;
+    filter: drop-shadow(5px 10px 5px rgb(172, 245, 138)); 
 }
 
 /*----------------------------------4 st Page(Footer)------------------------------------*/
