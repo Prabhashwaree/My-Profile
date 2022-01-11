@@ -723,7 +723,7 @@ h4{
 }
 #main_pic{
     left: 20%;
-    top: 7%;
+    top: 10%;
     filter: drop-shadow(5px 10px 5px black);
     position: absolute;
 }
@@ -735,7 +735,7 @@ h4{
 #Month_2019_06{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 58%;
+    top: 56%;
     left: 27.5%;
     position: absolute;
     font-size: 12px;
@@ -743,7 +743,7 @@ h4{
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING{
-    top: 63%;
+    top: 61%;
     left: 27.9%;
     position: absolute;
     color: white;
@@ -755,13 +755,13 @@ h4{
 #helth_img{
     border-radius: 16px;
     left: 34%;
-    top:60.8%;
+    top:59%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black);
 }
 #STEP1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 69.5%;
+    top: 68%;
     left: 31.8%;
     color: #cb1b4a;
     position: absolute;
@@ -771,7 +771,7 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph{
-    top: 73%;
+    top: 72%;
     left: 27.9%;
     text-align: center;
     text-align: left;
@@ -787,7 +787,7 @@ h4{
 #Month_2020_10{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 48%;
+    top: 47%;
     left: 38.5%;
     position: absolute;
     font-size: 12px;
@@ -795,7 +795,7 @@ h4{
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING1{
-    top: 53%;
+    top: 52%;
     left: 39%;
     position: absolute;
     color: white;
@@ -807,7 +807,7 @@ h4{
 #bank_img{
     border-radius: 16px;
     left: 44.8%;
-    top: 51.5%;
+    top: 50%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black); 
 }
@@ -894,7 +894,7 @@ h4{
 
 
 #OWNER{
-    top: 25%;
+    top: 26%;
     right:21%;
     position: absolute;
     color: white;
