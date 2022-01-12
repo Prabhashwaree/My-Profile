@@ -769,14 +769,14 @@ h4{
 }
 #helth_img{
     border-radius: 16px;
-    left: 36%;
-    top:63%;
+    left: 34%;
+    top:64%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black);
 }
 #STEP1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 68%;
+    top: 73%;
     left: 31.8%;
     color: #cb1b4a;
     position: absolute;
@@ -786,7 +786,7 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph{
-    top: 72%;
+    top: 75%;
     left: 27.9%;
     text-align: center;
     text-align: left;
@@ -802,7 +802,7 @@ h4{
 #Month_2020_10{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 47%;
+    top: 52%;
     left: 38.5%;
     position: absolute;
     font-size: 12px;
@@ -810,7 +810,7 @@ h4{
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING1{
-    top: 52%;
+    top: 56%;
     left: 39%;
     position: absolute;
     color: white;
@@ -822,13 +822,13 @@ h4{
 #bank_img{
     border-radius: 16px;
     left: 44.8%;
-    top: 50%;
+    top: 55%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black); 
 }
 #STEP2{
     filter: drop-shadow(5px 10px 5px black);
-    top: 59%;
+    top: 63%;
     left: 42.3%;
     color: #CED44E;
     position: absolute;
@@ -838,7 +838,7 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph1{
-    top: 63.5%;
+    top: 68%;
     left: 39%;
     text-align: center;
     text-align: left;
@@ -852,7 +852,7 @@ h4{
 
 
 #TRAINING2{
-    top: 44%;
+    top: 46%;
     left:52%;
     position: absolute;
     color: white;
@@ -863,7 +863,7 @@ h4{
 }
 #STEP3{
     filter: drop-shadow(5px 10px 5px black);
-    top: 51%;
+    top: 55%;
     left:53.5%;
     color: #42afb6;
     position: absolute;
@@ -880,7 +880,7 @@ h4{
 
 
 #PERMANENT1{
-    top: 34%;
+    top: 36%;
     right:30.7%;
     position: absolute;
     color: white;
@@ -891,7 +891,7 @@ h4{
 }
 #STEP4{
     filter: drop-shadow(5px 10px 5px black);
-    top: 42%;
+    top: 45%;
     right:33%;
     color: #fcb414;
     position: absolute;
@@ -909,7 +909,7 @@ h4{
 
 
 #OWNER{
-    top: 26%;
+    top: 28%;
     right:21%;
     position: absolute;
     color: white;
@@ -920,7 +920,7 @@ h4{
 }
 #STEP5{
     filter: drop-shadow(5px 10px 5px black);
-    top: 32%;
+    top: 35%;
     right:21.8%;
     color: #074d67;
     position: absolute;
@@ -1167,12 +1167,12 @@ filter: drop-shadow(15px 10px 15px black);
     left: 25%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 68%;
+    top: 70%;
     position: absolute;
 }
 #School:hover{
     left: 24%;
-    top: 67%;
+    top: 69%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
@@ -1181,12 +1181,12 @@ filter: drop-shadow(15px 10px 15px black);
     left: 32.5%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 55%;
+    top: 57%;
     position: absolute;
 }
 #Nysc_img:hover{
     left: 32%;
-    top: 54%;
+    top: 56%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
@@ -1195,12 +1195,12 @@ filter: drop-shadow(15px 10px 15px black);
     left: 40.3%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 42%;
+    top: 44%;
     position: absolute;
 }
 #Esoft_img:hover{
     left: 40%;
-    top: 41.5%;
+    top: 43%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
@@ -1221,7 +1221,7 @@ filter: drop-shadow(15px 10px 15px black);
 }
 #School_paragraph{
     left: 31%;
-    top: 78%;
+    top: 85%;
     font-size: 12px;
     text-shadow: 10px 10px 10px #000000;
     color: white;
@@ -1231,7 +1231,7 @@ filter: drop-shadow(15px 10px 15px black);
 }
 #Nysc_paragraph{
     left: 39.5%;
-    top: 68%;
+    top: 73%;
     color: white;
     font-size: 13px;
     text-shadow: 10px 10px 10px #000000;
@@ -1241,7 +1241,7 @@ filter: drop-shadow(15px 10px 15px black);
 }
 #Esoft_paragraph{
     left: 46%;
-    top: 56%;
+    top: 60%;
     color: white;
     /* border: 1px solid black; */
     font-size: 13px;
@@ -1258,7 +1258,7 @@ filter: drop-shadow(15px 10px 15px black);
     font-family: 'Rajdhani', sans-serif;
     text-shadow: 10px 10px 10px #000000;
     text-align: center;
-    top: 45%;
+    top: 48%;
     position: absolute;
 }
 
