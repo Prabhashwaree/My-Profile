@@ -737,14 +737,6 @@ h4{
     position: absolute;
     
 }
-/* #main_pic{
-    left: 20%;
-    top: 10%;
-    filter: drop-shadow(5px 10px 5px black);
-    position: absolute;
-} */
-
-
 /* ------------------------------------------------ */
 .experience_step1{
     position: absolute;
@@ -977,16 +969,16 @@ h4{
 #Month_2019_06{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 60%;
-    left: 27.5%;
+    top:-35%;
+    left: 9%;
     position: absolute;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING{
-    top: 66%;
-    left: 27.9%;
+    top:-16%;
+    left: 15%;
     position: absolute;
     color: white;
     font-size: 15px;
@@ -996,16 +988,16 @@ h4{
 }
 #helth_img{
     border-radius: 16px;
-    left: 34%;
-    top:64%;
+    left: 67%;
+    top:-24%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black);
 }
 #STEP1{
     filter: drop-shadow(5px 10px 5px black);
-    top: 73%;
-    left: 31.8%;
-    color: #cb1b4a;
+    top: 8%;
+    left: 40%;
+    color: #42afb6;
     position: absolute;
     font-size: 16;
     font-family: 'Rajdhani', sans-serif;
@@ -1013,8 +1005,8 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph{
-    top: 77%;
-    left: 27.9%;
+    top: 25%;
+    left: 15%;
     text-align: center;
     text-align: left;
     position: absolute;
@@ -1029,16 +1021,16 @@ h4{
 #Month_2020_10{
     color: white;
     filter: drop-shadow(5px 10px 5px black);
-    top: 50%;
-    left: 38.5%;
+    top: -22%;
+    left: 10%;
     position: absolute;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Rajdhani', sans-serif;
 }
 #TRAINING1{
-    top: 55%;
-    left: 39%;
+    top: -11%;
+    left: 14%;
     position: absolute;
     color: white;
     font-size: 15px;
@@ -1048,16 +1040,16 @@ h4{
 }
 #bank_img{
     border-radius: 16px;
-    left: 44.8%;
-    top: 55%;
+    left: 63%;
+    top: -15%;
     position: absolute;
     filter: drop-shadow(5px 10px 5px black); 
 }
 #STEP2{
     filter: drop-shadow(5px 10px 5px black);
-    top: 62%;
+    top: 5%;
     left: 42.3%;
-    color: #CED44E;
+    color: #42afb6;
     position: absolute;
     font-size: 16;
     font-family: 'Rajdhani', sans-serif;
@@ -1065,8 +1057,8 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;
 }
 #I_worked_paragraph1{
-    top: 65%;
-    left: 39%;
+    top: 18%;
+    left: 12%;
     text-align: center;
     text-align: left;
     position: absolute;
@@ -1120,7 +1112,7 @@ h4{
     filter: drop-shadow(5px 10px 5px black);
     top: 44%;
     right:33%;
-    color: #fcb414;
+    color: #42afb6;
     position: absolute;
     font-size: 16;
     font-family: 'Rajdhani', sans-serif;
@@ -1149,7 +1141,7 @@ h4{
     filter: drop-shadow(5px 10px 5px black);
     top: 36%;
     right:21.8%;
-    color: #074d67;
+    color: #42afb6;
     position: absolute;
     font-size: 16;
     font-family: 'Rajdhani', sans-serif;
