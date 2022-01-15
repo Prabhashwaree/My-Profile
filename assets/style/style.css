@@ -729,8 +729,8 @@ h4{
 }
 
 #experience_paragraph{
-    top: 70px;
-    left: 10%;
+    top: 60px;
+    left: 15%;
     letter-spacing: 2px;
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
@@ -1071,8 +1071,8 @@ h4{
 
 
 #TRAINING2{
-    top: 47%;
-    left:52%;
+    top: -10%;
+    left:26%;
     position: absolute;
     color: white;
     font-size: 15px;
@@ -1082,8 +1082,8 @@ h4{
 }
 #STEP3{
     filter: drop-shadow(5px 10px 5px black);
-    top: 56%;
-    left:53.5%;
+    top: 5%;
+    left:40%;
     color: #42afb6;
     position: absolute;
     font-size: 16;
@@ -1092,15 +1092,15 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;; 
 }
 #experience_think1{
-    top: 60%;
-    left:52.5%;
+    top: 40%;
+    left:30%;
     position: absolute; 
 }
 
 
 #PERMANENT1{
-    top: 38%;
-    right:30.7%;
+    top: -8%;
+    right:19%;
     position: absolute;
     color: white;
     font-size: 15px;
@@ -1110,8 +1110,8 @@ h4{
 }
 #STEP4{
     filter: drop-shadow(5px 10px 5px black);
-    top: 44%;
-    right:33%;
+    top: 5%;
+    right:37%;
     color: #42afb6;
     position: absolute;
     font-size: 16;
@@ -1120,16 +1120,16 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;; 
 }
 #experience_think2{
-    top: 50.5%;
-    right:28%;
+    top: 30%;
+    right:-5%;
     position: absolute; 
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;; 
 }
 
 
  #OWNER{
-    top: 29%;
-    right:21%;
+    top:-7%;
+    right:27%;
     position: absolute;
     color: white;
     font-size: 15px;
@@ -1139,8 +1139,8 @@ h4{
 }
 #STEP5{
     filter: drop-shadow(5px 10px 5px black);
-    top: 36%;
-    right:21.8%;
+    top: 4%;
+    right:35%;
     color: #42afb6;
     position: absolute;
     font-size: 16;
@@ -1149,17 +1149,27 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;  
 }
 #experience_think3{
-    top: 40%;
-    right:15%;
+    top: 20%;
+    right:-20%;
     position: absolute;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;  
 }
 #man{
-    top: 20%;
-    left: -5%; 
+    top: 13%;
+    left: -8%; 
     position: absolute;
     z-index: 1;
 } 
+#run_man_img{
+    top:38.8%;
+    left: 25%;
+    position: absolute;
+}
+#winer_man_img{
+    top:1%;
+    right:17%;
+    position: absolute;
+}
 
 
 /* /----------------------------------4 st Page(Project)------------------------------------/ */
@@ -1333,7 +1343,7 @@ filter: drop-shadow(15px 10px 15px black);
     top: 0;
 }
 #Education_Pictures{
-    left: 10%;
+    left: 15%;
     top: 20%;
     position: absolute;
 
@@ -1378,57 +1388,57 @@ filter: drop-shadow(15px 10px 15px black);
     
 
 #School{
-    left: 25%;
+    left: 20%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 72%;
+    top: 82%;
     position: absolute;
 }
 #School:hover{
-    left: 24%;
-    top: 71%;
+    left: 19%;
+    top:81%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
 }
 #Nysc_img{
-    left: 32.5%;
+    left: 28%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 57%;
+    top: 68%;
     position: absolute;
 }
 #Nysc_img:hover{
-    left: 32%;
-    top: 56%;
+    left: 27%;
+    top: 67.5%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
 }
 #Esoft_img{
-    left: 40.3%;
+    left: 37%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 46%;
+    top: 51%;
     position: absolute;
 }
 #Esoft_img:hover{
-    left: 40%;
-    top: 45%;
+    left: 36%;
+    top: 50%;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: absolute;
 }
 #IJSE_img{
-    left: 47.8%;
+    left: 45%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 33%;
+    top: 37%;
     position: absolute;
 }
 #IJSE_img:hover{
-    left: 35;
-    top: 179px;
+    left: 45%;
+    top: 180px;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
     position: relative;
