@@ -1386,102 +1386,203 @@ filter: drop-shadow(15px 10px 15px black);
 
 }
     
-
+.main_image{
+    position: absolute;
+    top:10%;
+    left:15%;
+}
+.cercle1{
+    position: relative;
+    height:80px;
+    width: 80px;
+    top: 495px;
+    left: 110%;
+    z-index: 1;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    
+}
 #School{
-    left: 20%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 82%;
     position: absolute;
 }
 #School:hover{
-    left: 19%;
-    top:81%;
+    transform: scale(1.2);
+    transition: 0.5s;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: absolute;
 }
 #Nysc_img{
-    left: 28%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 68%;
     position: absolute;
+}
+.cercle2{
+    position: relative;
+    height:80px;
+    width: 80px;
+    top: 320px;
+    left: 250%;
+    z-index: 1;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    
 }
 #Nysc_img:hover{
-    left: 27%;
-    top: 67.5%;
+    transform: scale(1.2);
+    transition: 0.5s;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: absolute;
 }
 #Esoft_img{
-    left: 37%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 51%;
     position: absolute;
+}
+.cercle3{
+    position: relative;
+    height:80px;
+    width: 80px;
+    top: 110px;
+    left: 390%;
+    z-index: 1;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    
 }
 #Esoft_img:hover{
-    left: 36%;
-    top: 50%;
+    transform: scale(1.2);
+    transition: 0.5s;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: absolute;
 }
 #IJSE_img{
-    left: 45%;
     border-radius: 50%;
     filter: drop-shadow(5px 10px 5px black);
-    top: 37%;
     position: absolute;
 }
+.cercle4{
+    position: relative;
+    height:80px;
+    width: 80px;
+    top: -50px;
+    left: 530%;
+    z-index: 1;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    
+}
 #IJSE_img:hover{
-    left: 45%;
-    top: 180px;
+    transform: scale(1.2);
+    transition: 0.5s;
     filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
     cursor: pointer;
-    position: relative;
 }
 #School_paragraph{
-    left: 31%;
-    top: 83%;
+    left: 208%;
+    top: 160%;
+    width: 230%;
+    height: 19%;
+    background-color: #004060;
+    position: absolute;
+}
+#School_paragraph div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-bottom: 64px solid white;
+    border-right: 64px solid transparent;
+
+}
+#School_paragraph pre{
     font-size: 12px;
     text-shadow: 10px 10px 10px #000000;
     color: white;
     font-family: 'Rajdhani', sans-serif;
-    text-align: center;
-    position: absolute;
+    text-align: center; 
 }
 #Nysc_paragraph{
-    left: 39.5%;
-    top: 72%;
-    color: white;
+    left: 356%;
+    top: 130%;
+    width: 230%;
+    height: 18.5%;
+    background-color: #004060;
+    position: absolute;
+}
+#Nysc_paragraph div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-bottom: 64px solid white;
+    border-right: 64px solid transparent;
+
+}
+#Nysc_paragraph pre{
     font-size: 13px;
     text-shadow: 10px 10px 10px #000000;
-    font-family: 'Rajdhani', sans-serif;
-    text-align: center;
+    color: white;
+    top: 27%;
+    left: 20%;
     position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    /* text-align: center;  */
 }
 #Esoft_paragraph{
-    left: 46%;
-    top: 59%;
-    color: white;
-    font-size: 13px;
-    font-family: 'Rajdhani', sans-serif;
-    text-shadow: 10px 10px 10px #000000;
-    text-align: center;
+    left: 488%;
+    top: 100%;
+    width: 230%;
+    height: 18.5%;
+    background-color: #004060;
     position: absolute;
 }
-#IJSE_paragraph{
-    left: 52.8%;
-    color: white;
-    font-size: 13px;
-    font-family: 'Rajdhani', sans-serif;
-    text-shadow: 10px 10px 10px #000000;
-    text-align: center;
-    top: 47%;
+#Esoft_paragraph div{
+    width: 0;
+    height: 0;
     position: absolute;
+    top: 0;
+    border-bottom: 64px solid white;
+    border-right: 64px solid transparent;
+
+}
+#Esoft_paragraph pre{
+    font-size: 13px;
+    text-shadow: 10px 10px 10px #000000;
+    color: white;
+    top: 27%;
+    left: 20%;
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    /* text-align: center;  */
+}
+#IJSE_paragraph{
+    left: 630%;
+    top: 75%;
+    width: 230%;
+    height: 18.5%;
+    background-color: #004060;
+    position: absolute;
+}
+#IJSE_paragraph div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-bottom: 64px solid white;
+    border-right: 64px solid transparent;
+
+}
+#IJSE_paragraph pre{
+    font-size: 13px;
+    text-shadow: 10px 10px 10px #000000;
+    color: white;
+    top: 27%;
+    left: 10%;
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    /* text-align: center;  */
 }
 
 
