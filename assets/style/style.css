@@ -565,21 +565,22 @@ h4{
 }
 #rectangle_image1 img{
     filter: drop-shadow(5px 10px 5px black);
-    top: 50%;
-    left: 46%;
+    top: 42%;
+    left: 49%;
     z-index: 1;
+    border-radius: 100%;
     position: absolute;
 }
 
 #rectangle_image1 a{
     text-decoration: none;
-    top: 70%;
-    left: 47%;
+    top: 58%;
+    left: 50%;
     z-index: 1;
     position: absolute;
     color: black;
     animation-name: image_move;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #rectangle_image2 img{
@@ -587,6 +588,7 @@ h4{
     left: 20%;
     position: absolute;
     top: 12%;
+    border-radius: 100%;
 }
 
 #rectangle_image2 a{
@@ -595,12 +597,13 @@ h4{
     left: 21%;
     position: absolute;
     color: black; 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 #rectangle_image3 img{
     filter: drop-shadow(5px 10px 5px black);
     top: 30%;
     left: 34%;
+    border-radius: 100%;
     position: absolute; 
 }
 #rectangle_image3 #link_assignment3{
@@ -609,21 +612,22 @@ h4{
     left: 35%;
     position: absolute;
     color: black; 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 #rectangle_image4 img{
     filter: drop-shadow(5px 10px 5px black);
-    top: 63%;
-    left: 57%;
+    top: 56%;
+    left: 64%;
     z-index: 1;
+    border-radius: 100%;
     position: absolute;   
 }
 #rectangle_image4 #link_assignment4{
     text-decoration: none;
-    top: 83%;
-    left: 59%;
+    top: 70%;
+    left: 65%;
     z-index: 1;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     position: absolute;
     color: black; 
 }
