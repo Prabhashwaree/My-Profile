@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <!-- ---------------------------navbar------------------------------------ -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
         <div class="container-fluid">
             <img src="Bootstrap POS/assets/Images/logo.jpg" class="img-thumbnail" alt="..." style="width: 5%;border-radius: 100%;left: 2%;position: relative;">
@@ -45,5 +47,73 @@
         </div>
       </nav>
 
+
+
+      <!-- --------------------------Item details form---------------------------------- -->
+
+     <section class="container-fluid">
+        <section class="row px-5">
+
+
+            <div class="col-4 bg-danger shadow p-3 mb-5 bg-white rounded" style="background-color: rgb(163, 159, 159);">
+                <form class="row g-2 pt-5 pb-5">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Code">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                  </div>
+
+                  <div class="col-md-6 pt-3">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Price">
+                  </div>
+                  <div class="col-md-6 pt-3">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Quantity">
+                  </div>
+                </form>
+            </div>
+
+            <div class="w-100 d-none d-md-block" ></div>
+
+            <div class="col-8 mt-5" style="border: 1px solid black;">
+                
+
+                 <!-- --------------------------Item Table---------------------------------- -->
+                <div class="col bg-primary">
+                 <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        </section>
+     </section>
+
+      
 </body>
 </html>
