@@ -1,0 +1,15 @@
+
+@media all and (min-width:375px) and (max-width:667){
+    .main_page {
+        position:absolute;
+        width: 900vw;
+       
+    }
+
+
+    #motivate-rectangle {
+        width: 800vw;
+        position: relative;
+        
+    }
+}

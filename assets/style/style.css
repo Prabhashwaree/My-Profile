@@ -316,6 +316,7 @@ audio {
     height: 60vh;
     position: relative;
     background-color: white;
+    border: 1px solid black;
 }
 
 figure {
@@ -491,7 +492,7 @@ figure {
     width:20vw;
     height:6vh;
     background-color:white;
-    top:-4%;
+    top:-8%;
     position:relative;
 }
 #Assignment_big_rectangle{
@@ -1159,18 +1160,18 @@ h4{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;;  
 }
 #man{
-    top: 13%;
+    top: 22%;
     left: -8%; 
     position: absolute;
     z-index: 1;
 } 
 #run_man_img{
-    top:38.8%;
+    top:41%;
     left: 25%;
     position: absolute;
 }
 #winer_man_img{
-    top:1%;
+    top:2%;
     right:17%;
     position: absolute;
 }
