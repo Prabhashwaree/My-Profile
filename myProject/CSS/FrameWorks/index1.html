@@ -12,28 +12,29 @@
 </head>
 <body>
 
+  <header>
     <!-- ---------------------------navbar------------------------------------ -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-rgb(2, 90, 41) rounded" style="background-color: rgb(2, 90, 41);">
+        <div class="container-fluid " style="background-color: rgb(2, 90, 41);">
             <img src="Bootstrap POS/assets/Images/logo.jpg" class="img-thumbnail" alt="..." style="width: 5%;border-radius: 100%;left: 2%;position: relative;">
-          <a class="navbar-brand" href="#" style="left: 4%;position: relative;font-size: 200%;font-family: 'Pattaya', sans-serif;"><b><i>WIDEHAVEN</i></b></a>
+          <a class="navbar-brand" href="#" style="left: 4%;position: relative;font-size: 200%;font-family: 'Pattaya', sans-serif;color: white;"><h1><i>WIDEHAVEN</i></h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown" >
-            <ul class="navbar-nav" style="right:9%;position: absolute;hover:color darkblue;">
+            <ul class="navbar-nav" style="right:9%;position: absolute;hover:color rgb(218, 255, 9);">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Order</a>
+                <a class="nav-link" style="color: white;" href="#">Order</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Item</a>
+                <a class="nav-link" style="color: white;" href="#">Item</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Other
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -47,73 +48,81 @@
         </div>
       </nav>
 
+</header>
+
+<!-- --------------------------Item details form ---------------------------------- -->
+
+<section class="container-fluid">
+<section class="row">
+
+  <div class="col">
+
+   
+      <section class="row px-5">
 
 
-      <!-- --------------------------Item details form---------------------------------- -->
-
-     <section class="container-fluid">
-        <section class="row px-5">
-
-
-            <div class="col-4 bg-danger shadow p-3 mb-5 bg-white rounded" style="background-color: rgb(163, 159, 159);">
-                <form class="row g-2 pt-5 pb-5">
+          <div class="col-6 shadow p-1 mb-5 bg-rgb(226, 225, 225) rounded" style="background-color: rgb(248, 242, 242);">
+              <form class="row g-2 pt-5 pb-5">
+              <div class="col-md-6">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Code">
+                </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Code">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
-                  </div>
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                </div>
 
-                  <div class="col-md-6 pt-3">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Price">
-                  </div>
-                  <div class="col-md-6 pt-3">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Quantity">
-                  </div>
-                </form>
-            </div>
+                <div class="col-md-6 pt-3">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Price">
+                </div>
+                <div class="col-md-6 pt-3">
+                  <input type="text" class="form-control" id="inputEmail4" placeholder="Quantity">
+                </div>
+              </form>
+          </div>
+          </section>
+         
+  </div>
+</section>
 
-            <div class="w-100 d-none d-md-block" ></div>
 
-            <div class="col-8 mt-5" style="border: 1px solid black;">
-                
 
-                 <!-- --------------------------Item Table---------------------------------- -->
-                <div class="col bg-primary">
-                 <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Code</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
-        </section>
-     </section>
+ <!-- --------------------------Item Table---------------------------------- -->
 
-      
+
+  <section class="row px-5 " >
+   <div class="col-12 shadow p-1 mb-3 bg-rgb(226, 225, 225) rounded" >
+         <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">I-0001</th>
+                <td>T-shirt</td>
+                <td>RS.45,000.00</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <th scope="row">I-0001</th>
+                <td>Shirt</td>
+                <td>RS.55,000.00</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <th scope="row">I-0001</th>
+                <td>Blouse</td>
+                <td>RS.80,000.00</td>
+                <td>45</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+  </section>
+
+</section> 
 </body>
 </html>
