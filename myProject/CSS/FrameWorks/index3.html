@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Bootstrap POS/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="index2.html" rel="stylesheet">
+    <link href="index1.html" rel="stylesheet">
+    <link href="index3.html" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@500&display=swap" rel="stylesheet">
     
@@ -29,13 +31,13 @@
                 <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="#">Order</a>
+                <a class="nav-link" style="color: white;" href="index3.html">Order</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" style="color: white;" href="index1.html">Item</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="index2.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Other
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -186,7 +188,42 @@
 
 <!-- --------------------------view table form ---------------------------------- -->
 
-<div class="row">
+<div class="row px-5">
+
+    <div class="col-12 shadow  bg-rgb(248, 242, 242); rounded" style="background-color: rgb(248, 242, 242);" >
+        <table class="table">
+           <thead>
+             <tr>
+               <th scope="col">Item Code</th>
+               <th scope="col">Item Name</th>
+               <th scope="col">Price</th>
+               <th scope="col">Quantity</th>
+               <th scope="col">Total</th>
+               <th scope="col">Delete</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <th scope="row">I-0001</th>
+               <td>T-shirt</td>
+               <td>RS.45,000.00</td>
+               <td>25</td>
+               <td>RS.500,000.00</td>
+               <td><button style="background-color: red;color: white;border: 1px solid red;width: 80%;">Delete</button></td>
+             </tr>
+             <tr>
+               <th scope="row">I-0001</th>
+               <td>Shirt</td>
+               <td>RS.55,000.00</td>
+               <td>50</td>
+               <td>RS.1,000,000.00</td>
+               <td><button style="background-color: red;color: white;border: 1px solid red;width: 80%;">Delete</button></td>
+             </tr>
+            
+           </tbody>
+         </table>
+         </div>
+
 
 </div>
 
