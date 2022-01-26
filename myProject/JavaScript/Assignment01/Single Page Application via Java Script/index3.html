@@ -13,9 +13,17 @@
     <style>
 
         .PlaceOrder{
-          display: none;
+          
         }
-      
+
+      .ItemDetails{
+        display: none;
+      }
+
+      .CustomerDetails{
+        display: none;
+      }
+
     </style>
 
 
@@ -38,18 +46,18 @@
               <li class="nav-item">
                 <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="index3.html">Order</a>
+              <li id="Btn1PlaceOrder" class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Order</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="index1.html">Item</a>
+              <li id="Btn2ItemDetails" class="nav-item">
+                <a class="nav-link" style="color: white;" href="#">Item</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: white;" href="index2.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Other
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="index2.html">Customer Information</a></li>
+                  <li id="Btn3CustomerDetails"><a class="dropdown-item" href="#">Customer Information</a></li>
                   <li><a class="dropdown-item" href="#">Suplier Information</a></li>
                   <li><a class="dropdown-item" href="#">Seller</a></li>
                 </ul>
@@ -824,6 +832,8 @@
     </section> 
 
 
+<script src="assets/js/script.js"></script>
+  
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
