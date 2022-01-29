@@ -538,17 +538,17 @@ body{
               <form class="row g-2 pt-2 pb-5">
                 
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Item Code">
+                    <input type="text" class="form-control" id="txtItemCode" placeholder="Item Code">
                   </div>
                   <div class="col-md-6">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Item Name">
+                    <input type="text" class="form-control" id="txtItemName" placeholder="Item Name">
                   </div>
   
                   <div class="col-md-6 pt-3">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Item Price">
+                    <input type="text" class="form-control" id="txtItemPrice" placeholder="Item Price">
                   </div>
                   <div class="col-md-6 pt-3">
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Item Quantity">
+                    <input type="text" class="form-control" id="txtItemQuantity" placeholder="Item Quantity">
                   </div>
                 </form>
             </div>
@@ -619,7 +619,7 @@ body{
             <div class="col-2 px-2">
               <div class="row g-4 pb-5">
   
-                <div class="col-12"><button type="button" class="btn btn-success" style="width: 100%;">Save</button></div>
+                <div class="col-12"><button type="button" id="btnItemSave" class="btn btn-success" style="width: 100%;">Save</button></div>
                
                 
               </div>
@@ -636,7 +636,7 @@ body{
   
     <section class="row px-5 " >
      <div class="col-12 shadow p-1 mb-1 bg-rgb(248, 242, 242); rounded" style="background-color: rgb(248, 242, 242);border-radius: 50%;" >
-           <table class="table">
+           <table class="table" id="table">
               <thead>
                 <tr>
                   <th scope="col">Code</th>
@@ -701,6 +701,10 @@ body{
             </div>
     </section>
   </section> 
+
+
+
+
 
 
 
@@ -900,7 +904,41 @@ body{
 
 
 <script src="assets/js/script.js"></script>
-  
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- -------------------------- Item jQuery ---------------------------------- -->
+
+<script>
+  $("#btnItemSave").click(function () {
+
+    var itemCode =  $("#txtItemCode").val();
+    var itemName=   $("#txtItemName").val();
+    var itemPrice =  $("#txtItemPrice").val();
+    var itemQuantity =  $("#txtItemQuantity").val();
+      
+    var data = `<tr><td>`+itemCode+`</td>`+
+               `<td>`+itemName+`</td>`+
+                  `<td>`+itemPrice+`</td>`+
+                  `<td>`+itemQuantity+`</td></tr>`;
+
+                  $('#table').append(data);
+    
+  });
+
+
+
+
+$("#btnItemSave").click(function () {
+    $("#txtItemCode").val('');
+    $("#txtItemName").val('');
+    $("#txtItemPrice").val('');
+    $("#txtItemQuantity").val('');
+  
+ }); 
+
+</script>
+
 </body>
 </html>
