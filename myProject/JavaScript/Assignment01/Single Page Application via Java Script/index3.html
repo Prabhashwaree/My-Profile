@@ -739,17 +739,17 @@ body{
                   <form class="row g-2 pt-2 pb-5">
 
                   <div class="col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Customer ID">
+                      <input type="text" class="form-control" id="txtCustomerId" placeholder="Customer ID">
                     </div>
                     <div class="col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Customer Name">
+                      <input type="text" class="form-control" id="txtCustomerName" placeholder="Customer Name">
                     </div>
     
                     <div class="col-md-6 pt-3">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Customer Address">
+                      <input type="text" class="form-control" id="txtCustomerAddress" placeholder="Customer Address">
                     </div>
                     <div class="col-md-6 pt-3">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Customer Salary">
+                      <input type="text" class="form-control" id="txtCustomerSalary" placeholder="Customer Salary">
                     </div>
                   </form>
               </div>
@@ -820,7 +820,7 @@ body{
     <div class="col-2 px-2">
       <div class="row g-4 pb-5">
 
-        <div class="col-12"><button type="button" class="btn btn-success" style="width: 100%;">Save</button></div>
+        <div class="col-12"><button type="button" id="btnCustomerSave" class="btn btn-success" style="width: 100%;">Save</button></div>
        
       </div>
     </div>
@@ -836,7 +836,7 @@ body{
     
       <section class="row px-5 " >
        <div class="col-12 shadow p-1 mb-2 bg-rgb(248, 242, 242); rounded" style="background-color: rgb(248, 242, 242);border-radius: 50%;" >
-             <table class="table">
+             <table class="table" id="table1">
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
@@ -911,33 +911,64 @@ body{
 <!-- -------------------------- Item jQuery ---------------------------------- -->
 
 <script>
-  $("#btnItemSave").click(function () {
+ 
+ $("#btnItemSave").click(function () {
 
-    var itemCode =  $("#txtItemCode").val();
-    var itemName=   $("#txtItemName").val();
-    var itemPrice =  $("#txtItemPrice").val();
-    var itemQuantity =  $("#txtItemQuantity").val();
-      
-    var data = `<tr><td>`+itemCode+`</td>`+
-               `<td>`+itemName+`</td>`+
-                  `<td>`+itemPrice+`</td>`+
-                  `<td>`+itemQuantity+`</td></tr>`;
+var itemCode =  $("#txtItemCode").val();
+var itemName=   $("#txtItemName").val();
+var itemPrice =  $("#txtItemPrice").val();
+var itemQuantity =  $("#txtItemQuantity").val();
+  
+var data = `<tr><td>`+itemCode+`</td>`+
+           `<td>`+itemName+`</td>`+
+              `<td>`+itemPrice+`</td>`+
+              `<td>`+itemQuantity+`</td></tr>`;
 
-                  $('#table').append(data);
-    
-  });
+              $('#table').append(data);
 
-
+});
 
 
 $("#btnItemSave").click(function () {
-    $("#txtItemCode").val('');
-    $("#txtItemName").val('');
-    $("#txtItemPrice").val('');
-    $("#txtItemQuantity").val('');
-  
- }); 
+  $("#txtItemCode").val('');
+  $("#txtItemName").val('');
+  $("#txtItemPrice").val('');
+  $("#txtItemQuantity").val('');
 
+}); 
+
+
+
+
+
+//  <!-- -------------------------- Customer jQuery ---------------------------------- -->
+
+$("#btnCustomerSave").click(function () {
+
+var customerId =  $("#txtCustomerId").val();
+var customerName=   $("#txtCustomerName").val();
+var customerAddress =  $("#txtCustomerAddress").val();
+var customerSalary =  $("#txtCustomerSalary").val();
+  
+var data = `<tr><td>`+customerId+`</td>`+
+           `<td>`+customerName+`</td>`+
+              `<td>`+customerAddress+`</td>`+
+              `<td>`+customerSalary+`</td></tr>`;
+
+              $('#table1').append(data);
+
+});
+
+
+
+
+$("#btnCustomerSave").click(function () {
+  $("#txtCustomerId").val('');
+  $("#txtCustomerName").val('');
+  $("#txtCustomerAddress").val('');
+  $("#txtCustomerSalary").val('');
+
+}); 
 </script>
 
 </body>

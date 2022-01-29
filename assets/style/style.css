@@ -316,7 +316,7 @@ audio {
     height: 60vh;
     position: relative;
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 figure {
