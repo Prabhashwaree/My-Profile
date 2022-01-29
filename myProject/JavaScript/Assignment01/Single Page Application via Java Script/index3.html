@@ -20,8 +20,16 @@ body{
        }
 
 
+       .nav{
+         display: none;
+       }
+
+       .login{
+         
+       }
+
         .PlaceOrder{
-          
+          display: none;
         }
 
       .ItemDetails{
@@ -38,13 +46,63 @@ body{
 
 </head>
 <body>
+   <!-- ---------------------------Login Page------------------------------------ -->
+
+  <section class="container-fluid login" style="background-color: #1f3044;">
+  
+    <div class="row">
+        <div class="col-7  px-5">
+            <img class="pt-5" src="assets/Images/Home img.png" alt="home" style="width: 109.8%;height: 100%;">
+            </div>
+
+
+        <div class="col-4 px-5">
+            <div class="row shadow mb-3 pb-5 bg-rgb(226, 225, 225) rounded" style="background-color: rgb(248, 242, 242);top: 10%;left: 10%;position: relative;">
+                <a class="navbar-brand pt-5 px-4" href="#" style="left: 8%;position: relative;font-size: 280%;font-family: 'Pattaya', sans-serif;color: #449e7b;"><p><i>WIDEHAVEN</i></p></a>
+            
+
+
+            <div class="row px-4" style="left: 3%;position: relative;">
+           
+           <form>
+            <div class="form-group pt-1">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group pt-3">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check pt-2">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="pt-4 px-4">
+            <button id="btnLogin" type="button" class="btn btn-success px-2" style="width: 100%;">Login</button>
+        </div>
+        <a class="nav-link px-5 pt-4" style="color: rgb(41, 158, 212);left: 26%;position: relative;" href="#"><b>Sign Up</b></a>
+          </form>
+
+
+        </div>
+    </div>
+    </div>
+</div>
+
+        <!-- <div class="col-2">
+          
+        </div> -->
+       
+    
+</section>
   
 
   <header>
     <!-- ---------------------------navbar------------------------------------ -->
 
-    <nav class="navbar navbar-expand-lg shadow p-3 mb-5 bg-rgb(2, 90, 41) rounded" style="background-color: rgb(2, 90, 41);">
-        <div class="container-fluid " style="background-color: rgb(2, 90, 41);">
+    <nav class="nav navbar navbar-expand-lg shadow p-3 mb-5 bg-rgb(2, 90, 41) rounded" style="background-color: rgb(2, 90, 41);">  
+      <div class="container-fluid " style="background-color: rgb(2, 90, 41);">
             <img src="assets/Images/logo.jpg" class="img-thumbnail" alt="..." style="width: 5%;border-radius: 100%;left: 2%;position: relative;">
           <a class="navbar-brand" href="#" style="left: 4%;position: relative;font-size: 200%;font-family: 'Pattaya', sans-serif;color: white;"><h1><i>WIDEHAVEN</i></h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +111,7 @@ body{
           <div class="collapse navbar-collapse" id="navbarNavDropdown" >
             <ul class="navbar-nav" style="right:9%;position: absolute;hover:color rgb(218, 255, 9);">
               <li class="nav-item">
-                <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" id="Home" style="color: white;" aria-current="page" href="#">Home</a>
               </li>
               <li id="Btn1PlaceOrder" class="nav-item">
                 <a class="nav-link" style="color: white;" href="#">Order</a>
