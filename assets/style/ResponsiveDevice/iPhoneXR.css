@@ -1,0 +1,209 @@
+@media all  and (min-width:  414px) and (max-width: 896px)  {
+
+    header{
+      height: 8vh;
+  }
+
+  .main_page {
+      height:10%;
+     
+  }
+  .naviLink0 button{
+      font-size: 18px;
+  }
+
+   #home{
+      height: 5vh;
+      width: 15vw;
+      top: 12px;
+  }
+
+   #small-rectangle{
+      height: 4vh;
+      left:44px;
+      width: 14vw;
+      top: 28px;
+  }
+
+  .secondary-menu {
+    top:-20%;
+    position:relative;
+    width: 100%;
+    height:6vh;
+  }
+  
+  #header-bar2 li {
+    position: relative;
+    bottom: -10px;
+  }
+
+  #header-bar2 button{
+    margin: 0 50px;
+    width:66%;
+    font-size: 17px;
+  }
+  #heroText {
+    top: 26%;   
+  }
+
+
+
+/*  3 motivation section */
+
+  #motivate-rectangle {
+    height: 45vh;
+  }
+  
+  figure {
+    font-size: 18px;
+    width:50%; 
+    left:25% 
+  }
+
+  #writer {
+    left: 48%;
+  }
+
+  #motivate-rectangle img{
+    left: 71%;
+    top: 23%; 
+    width:15%;   
+  }
+
+
+
+
+  /* /----------------------------------2 st Page(About)------------------------------------/ */
+
+  #about-Me{
+    height: 64vh;
+  }
+
+  #topic-About{
+    width:72vw;
+    top:-2%;
+  }
+
+   #about-Me div{ 
+    top:125px;
+  }
+
+  #rectangle-shape{
+    width:160vw;
+    left:35%
+  }
+  
+  #rectangle-shape #about_details{
+    left: 60px;
+    top: 20%;
+    position: relative;
+  }
+
+  #rectangle-shape #about_details{
+    top: 26%;
+  }
+  
+  #navi_phone_gmail{
+    right: 10%;
+    top:90%;  
+  }
+
+
+
+
+  /* ----------------------------------3 st Page(Assignment)------------------------------------ */
+
+  #Gallery_Page{
+      left: 20%;
+  }
+
+  #Assignment_Rectangle{
+    width:72vw;
+    height:7vh;
+    top:-13%;
+}
+
+  #Assignment_big_rectangle{
+    top: 0;
+    width: 285%;
+    height: 70vh;
+  }
+
+
+
+
+  /* /----------------------------------4 st Page(Skill)------------------------------------/ */
+
+  #skil_rectangle{
+      width:72vw;
+      top:-1px; 
+  }
+
+  #skil_big_rectangle{
+    height: 40vh;
+  }
+
+
+
+
+  /* /----------------------------------4 st Page(Experience)------------------------------------/ */
+
+  #experience_rectangle{
+      width:72vw;
+      top:-10%; 
+      left:-4%;  
+  }
+
+  #experience_big_rectangle{
+    width:270%;
+    height:800px;
+    left:10%; 
+  }
+
+
+
+
+/* /----------------------------------4 st Page(Project)------------------------------------/ */
+
+  #Project_rectangle{
+      width:72vw;
+      top:-17px;
+  }
+
+  #Project_big_rectangle{
+      height: 65vh;
+  }
+
+
+
+  /* /----------------------------------4 st Page(Education)------------------------------------/ */
+
+  #Education_rectangle{
+      top:-7%
+  } 
+
+  #Education_big_rectangle{
+       height: 78vh;
+  }
+
+  
+
+
+  /* /----------------------------------4 st Page(Contact)------------------------------------/ */
+  #contact_and_comment_big_rectangle{
+     height: 70vh;
+
+  }
+  #Contact_rectangle{
+      width:72vw;
+      left:74.8%;
+  }
+
+
+
+ /* /----------------------------------4 st Page(Footer)------------------------------------/ */
+
+  
+
+
+}
