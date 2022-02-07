@@ -917,6 +917,9 @@ body{
 
  $("#btnItemSave").click(function () {
 
+// ----one event with off method------
+  $("#selecterowItem>tr").off("click");
+
 var itemCode =  $("#txtItemCode").val();
 var itemName=   $("#txtItemName").val();
 var itemPrice =  $("#txtItemPrice").val();
@@ -970,7 +973,11 @@ $("#btnItemSave").click(function () {
 
 //  <!-- -------------------------- Customer jQuery ---------------------------------- -->
 
+
 $("#btnCustomerSave").click(function () {
+
+// ----one event with off method------
+  $("#selecterow>tr").off("click");
 
 var customerId =  $("#txtCustomerId").val();
 var customerName=   $("#txtCustomerName").val();
@@ -1018,6 +1025,8 @@ $("#btnCustomerSave").click(function () {
   $("#txtCustomerSalary").val('');
 
 }); 
+
+
 </script>
 
 </body>
