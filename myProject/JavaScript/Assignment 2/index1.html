@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traversing with jQuery</title>
+</head>
+<body>
+    <h1 class="header1">Hello...!</h1>
+    <div>
+    
+    </div>
+   
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+
+
+<script>
+
+$("html").mousemove(function(event){
+    $(".header1").css("position","relative");
+    $(".header1").css("left",event.pageX);
+    $(".header1").css("top",event.pageY);
+})
+
+
+
+</script>
+</body>
+</html>
