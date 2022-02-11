@@ -740,6 +740,7 @@ body{
 
                   <div class="col-md-6">
                       <input type="text" class="form-control" id="txtCustomerId" placeholder="Customer ID">
+                      <p><small id="error" class="text-danger pl-1"></small></p>
                     </div>
                     <div class="col-md-6">
                       <input type="text" class="form-control" id="txtCustomerName" placeholder="Customer Name">
@@ -994,11 +995,7 @@ $("#btnItemSave").click(function () {
 
 //  <!-- -------------------------- Customer jQuery ---------------------------------- -->
 
-$("#txtCustomerId").keydown(function(event){
-  if(event.key=="Enter"){
-    $("#txtCustomerName").focus();
-  }
-});
+
 $("#txtCustomerName").keydown(function(event){
   if(event.key=="Enter"){
     $("#txtCustomerAddress").focus();
@@ -1009,6 +1006,26 @@ $("#txtCustomerAddress").keydown(function(event){
     $("#txtCustomerSalary").focus();
   }
 }); 
+
+
+var customerId=/^(C-)[0-9]{4}$/;
+$("#txtCustomerId").keyup(function(){
+  let input=$("#txtCustomerId").val();
+
+  if(customerId.test(input)){
+    $("#txtCustomerId").css('border','1px solid green');
+    $("#txtCustomerId").keydown(function(event){
+      if(event.key=="Enter"){
+        $("#txtCustomerName").focus();
+      }
+  });
+    $("#error").text("ID is Correct..");
+  }else{
+    $("#txtCustomerId").css('border','1px solid red');
+    $("#error").text("Customer ID is Incorrect..");
+  }
+
+})
 
 
 $("#btnCustomerSave").click(function () {
@@ -1030,6 +1047,10 @@ var data = `<tr><td>`+customerId+`</td>`+
 
 
 // ----select table row data move to text feald------
+$("#selecterow>tr").dblclick(function(){
+  $(this).remove();
+})
+
 
 $("#selecterow>tr").click(function(){
   // console.log(this);
@@ -1051,6 +1072,7 @@ $("#txtCustomerSalary").val(salary);
 
 
 });
+
 
 
 
