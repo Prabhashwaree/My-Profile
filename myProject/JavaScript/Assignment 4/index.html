@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Queue</title>
+
+<style>
+
+    body{
+        background-color: black;
+    }
+
+    h1{
+        font-size: 26px;
+        color: white;
+        top:-150px;
+        left: 35%;
+        position: relative;
+    }
+
+    body>main{
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        width: 50%;
+        height: 80px;
+        position: relative;
+        top: 250px;
+        left: 25%;
+        
+    }
+    body>main>section{
+        display: flex;
+    }
+    body>main>section>div{
+        width: 8vw;
+        height: 8vh;
+        margin: 1%;
+        border: 1px solid white;
+        position: relative;
+        top: -56px;
+    }
+    #one{
+        top: -128px;
+        position: relative;
+    }
+    #six{
+        top: 17px;
+        position: relative;
+    }
+
+
+</style>
+
+
+</head>
+<body>
+  
+<main>
+    <h1>Java Script Queue</h1>
+<section>
+    <div id="one"></div>
+
+    <div id="two"></div>
+
+    <div id="three"></div>
+
+    <div id="four"></div>
+
+    <div id="five"></div>
+
+    <div id="six"></div>
+</section>
+
+</main>
+
+<script src="QUE/js/jquery-3.6.0.min.js"></script>
+
+<script>
+
+
+setInterval(coloursChange,500);
+console.log(coloursChange);
+let count=0;
+
+function coloursChange(){
+
+    if(count==0){
+        colors=["blue", "pink", "green", "orange", "red", "purple"];
+       
+    }else if(count==1){
+        colors=["purple", "blue", "pink", "green", "orange", "red"];
+        
+    }else if(count==2){
+        colors=["red", "purple", "blue", "pink", "green", "orange"];
+
+    }else if(count==3){
+        colors=["orange", "red", "purple", "blue", "pink", "green"];
+
+    }else if(count==4){
+        colors=["green", "orange", "red", "purple", "blue", "pink"];
+
+    }else if(count==5){
+        colors=["pink", "green", "orange", "red", "purple", "blue"];
+
+    }else{
+        count=1;
+    }
+    count++;
+
+            $("#one").css('background-color',colors[0]);
+            $("#two").css('background-color',colors[1]);
+            $("#three").css('background-color',colors[2]);
+            $("#four").css('background-color',colors[3]);
+            $("#five").css('background-color',colors[4]);
+            $("#six").css('background-color',colors[5]);
+}
+    
+
+
+</script>
+</body>
+</html>
