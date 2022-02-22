@@ -245,6 +245,14 @@ $("#selecterowItem").on('click','.deleteItem',function(){
       loadAllItem();
 
 
+      $("#cmbItemCode").empty();
+      for(var i of ItemDB){
+          let itemCodeValue=`<option>${i.code}</option>`;
+  
+          $("#cmbItemCode").append(itemCodeValue);
+      }
+
+
     $("#txtItemCode").css('border','black');
     $("#txtItemName").css('border','black');
     $("#txtItemPrice").css('border','black');

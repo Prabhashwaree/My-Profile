@@ -205,6 +205,16 @@ $("#btnCustomerSave").click(function () {
   saveCustomer();
   loadAllCustomer();
 
+
+  $("#cmbCusId").empty();
+    for(var i of CustomerDB){
+        let cusIdValue=`<option>${i.id}</option>`;
+
+        $("#cmbCusId").append(cusIdValue);
+    }
+
+
+
 $("#txtCustomerId").css('border','black');
 $("#txtCustomerName").css('border','black');
 $("#txtCustomerAddress").css('border','black');
