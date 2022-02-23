@@ -186,7 +186,7 @@ function loadAllItem(){
   }
   $(".updateItems").click(function(){
 
-alert("hello");
+    alert("hello");
    let iCode=$("#txtItemCode").val();
    let itName=$("#txtItemName").val();
    let iPrice=$("#txtItemPrice").val();
