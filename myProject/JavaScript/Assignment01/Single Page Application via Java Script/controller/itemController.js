@@ -156,6 +156,7 @@ function saveItem(){
       quantity:itemQuantity
     }
     ItemDB.push(item);
+    setCmbDataItem("<option>" + itemCode + "</option>");
     console.log(item);
 }
 
@@ -243,15 +244,6 @@ $("#selecterowItem").on('click','.deleteItem',function(){
 
       saveItem();
       loadAllItem();
-
-
-      $("#cmbItemCode").empty();
-      for(var i of ItemDB){
-          let itemCodeValue=`<option>${i.code}</option>`;
-  
-          $("#cmbItemCode").append(itemCodeValue);
-      }
-
 
     $("#txtItemCode").css('border','black');
     $("#txtItemName").css('border','black');

@@ -1,6 +1,46 @@
 //---------invoice details-------------
+$("#genarateId").text(genarateOrderId());
+console.log("#genarateId");
 
-$("#cmbCusId").click(function(){
+function genarateOrderId(){
+    if(OrderDB.length !=0){
+        let lastId=OrderDB[OrderDB.length-1];
+
+        if(lastId<9){
+            return "O00" + (lastId +1 );
+        }else if(lastId<9){
+            return "O0" + (lastId +1 );
+        }else{
+            return "O" + (lastId +1 );
+        }
+    }else{
+        return "O001";
+    }
+}
+
+
+$(".confirmOrder").click(function(){
+    // OrderDB.push(1);
+    $("#genarateId").text(genarateOrderId());
+})
+
+
+//qty diduck
+function qtyReduce(orderQty){
+    var available=parseInt(orderQty);
+    var orderQuantity=parseInt($("#txtOrderQtyItem").val());
+    orderQuantity=available-orderQuantity;
+
+    $("#txtOrderQtyItem").val(orderQuantity);
+
+    console.log(orderQuantity);
+}
+
+$("#cmbCusId").append("<option> Select ID </option>");
+
+
+$("#cmbCusId").change(function(){
+    // alert("hello");
     let customerId =  $("#cmbCusId").val(); 
     let cusName= $("#txtCusName").val();
     let cusAddress=$("#txtCusAddress").val();
@@ -19,10 +59,15 @@ $("#cmbCusId").click(function(){
     }
 });
 
-cmbItemCode
+function setCmbDataCustomer(customerData){
+    $("#cmbCusId").append(customerData);
+}
 
 
 //---------item select-------------
+
+$("#cmbItemCode").append("<option> Select Code </option>");
+
 $("#cmbItemCode").click(function(){
     let itemsCode =  $("#cmbItemCode").val(); 
     let itemsName= $("#txtNameItem").val();
@@ -42,6 +87,9 @@ $("#cmbItemCode").click(function(){
     }
 });
 
+function setCmbDataItem(itemData){
+    $("#cmbItemCode").append(itemData);
+}
 
 
 
@@ -51,7 +99,9 @@ $("#btnAddToCart").click(function () {
     // $("#addToCart>tr").off("click");
     console.log("Enter");
     addToCart();
-    clear();
+    qtyReduce($("#txtQtyHandItem").val());
+    //clear();
+
    
 });
 
@@ -67,14 +117,19 @@ var cartTotal1;
 function addToCart(){
     // console.log("Enter");
 
+
     itemCode1 = $("#cmbItemCode").val();
     itemName1 = $("#txtNameItem").val();
     itemPrice1 = $("#txtPriceItem").val();
+    qtyOnHand1 = $("#txtQtyHandItem").val();
     orderQty1 = $("#txtOrderQtyItem").val();
-    cartTotal1= $(".totalLbl").val();
+    
 
 
-   let row = `<tr><td>${itemCode1}</td><td>${itemName1}</td><td>${itemPrice1}</td><td>${orderQty1}</td><td>${cartTotal1}</td>
+    let total=itemPrice1*orderQty1;
+    $("#totalLbl").val(itemPrice1*orderQty1);
+
+   let row = `<tr><td>${itemCode1}</td><td>${itemName1}</td><td>${itemPrice1}</td><td>${qtyOnHand1}</td><td>${orderQty1}</td><td>${total}</td>
    <td><button  type="button" class="btn-sm border btn-primary updateCart" id="updateItems" style="height: 9%;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
    width="20" height="20"
    viewBox="0 0 172 172"
@@ -88,6 +143,26 @@ function addToCart(){
 
    $("#cartTable").append(row);
    console.log(row);
+
+
+   $("#cartTable>tr").click(function(){
+
+    let itemId=$(this).children(":eq(0)").text();
+    let itemName=$(this).children(":eq(1)").text();
+    let itemPrice=$(this).children(":eq(2)").text();
+    let itemQTYHand=$(this).children(":eq(3)").text();
+    let orderQty=$(this).children(":eq(4)").text();
+
+
+    $("#cmbItemCode").val(itemId);
+    $("#txtNameItem").val(itemName);
+    $("#txtPriceItem").val(itemPrice);
+    $("#txtQtyHandItem").val(itemQTYHand);
+    $("#txtOrderQtyItem").val(orderQty);
+
+});
+
+
 
 }
 
@@ -122,22 +197,13 @@ $(".updateCart").click(function(){
 });
 
 
+// function total() {
+//     let qty = $("#txtOrderQtyItem").val();
+//     let price = $("#txtPriceItem").val()
+//     $(".totalLbl").val(qty * price)
+// };
 
-    $("#cartTable>tr").click(function(){
-
-        let itemId=$(this).children(":eq(0)").text();
-        let itemName=$(this).children(":eq(1)").text();
-        let itemPrice=$(this).children(":eq(2)").text();
-        let itemQTYHand=$(this).children(":eq(3)").text();
-        let orderQty=$(this).children(":eq(4)").text();
-
-        $("#cmbItemCode").val(itemId);
-        $("#txtNameItem").val(itemName);
-        $("#txtPriceItem").val(itemPrice);
-        $("#txtQtyHandItem").val(itemQTYHand);
-        $("#txtOrderQtyItem").val(orderQty);
-
-    });
+    
 
 
 

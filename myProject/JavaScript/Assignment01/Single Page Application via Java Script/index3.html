@@ -160,11 +160,11 @@ body{
                   <div class="col-12 px-4 shadow p-1 bg-rgb(226, 225, 225) rounded" style="background-color: rgb(248, 242, 242);border-radius: 2%;">
                 <form class="row g-2 pt-3 pb-4">
                   <div class="col-md-6">
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Order ID">
+                      <h2><span id="genarateId"></span></h2>
                     </div>
                     <div class="col-md-6">
                         <select id="cmbCusId" class="form-select">
-                            <option selected>Select ID</option>
+                            <!-- <option selected></option> -->
                             <!-- <option>C-0001</option>
                             <option>C-0002</option>
                             <option>C-0003</option>
@@ -214,7 +214,7 @@ body{
         <form class="row g-2 pt-2 pb-2">
             <div class="col-md-12">
                 <select id="cmbItemCode" class="form-select">
-                    <option selected>Select Item Code</option>
+                    <!-- <option selected>Select Item Code</option> -->
                     <!-- <option>I-0001</option>
                     <option>I-0002</option>
                     <option>I-0003</option>
@@ -254,15 +254,15 @@ body{
             <div class="col-4 pt-1">
                 <label for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);"><h2>Total:</h2></label>
               </div>
-              <div class="col-8 pt-2">
-                <label id="totalLbl" for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(16, 143, 175);"><h2>1050.00Rs/=</h2></label>
+              <div class="col-8 pt-1">
+                <input id="totalLbl" for="formGroupExampleInput" class="form-label px-2 w-75" style="font-family: 'Rasa', serif;color: rgb(16, 143, 175);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"></input>
               </div>
 
-              <div class="col-6 pt-1">
+              <div class="col-6 ">
                 <label for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);"><h2>SubTotal:</h2></label>
               </div>
-              <div class="col-6 pt-1">
-                <label for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(223, 58, 58);"><h2>945.00Rs/=</h5></label>
+              <div class="col-6 ">
+                <input for="formGroupExampleInput" class="form-label w-100" style="font-family: 'Rasa', serif;color: rgb(223, 58, 58);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"></input>
               </div>
 
           <div class="col-md-6 pt-1">
@@ -275,7 +275,7 @@ body{
               <input type="text" class="form-control" id="inputEmail4" placeholder="Balance">
             </div>
             <div class="col-md-6 pt-1">
-                <div class="col-8"><button type="button" class="btn btn-primary" style="width: 150%;">Confirm Order</button></div>
+                <div class="col-8"><button type="button" class="btn btn-primary confirmOrder" style="width: 150%;">Confirm Order</button></div>
               </div>
 
                <!-- (Pop Up Window) Button trigger modal -->
@@ -463,7 +463,8 @@ body{
                <th scope="col">Item Code</th>
                <th scope="col">Item Name</th>
                <th scope="col">Price</th>
-               <th scope="col">Quantity</th>
+               <th scope="col">Qty On Hand</th>
+               <th scope="col">Order Qty</th>
                <th scope="col">Total</th>
                <th scope="col">Delete</th>
              </tr>
@@ -926,6 +927,8 @@ body{
 <script src="controller/customerController.js"></script>
 <script src="controller/itemController.js"></script>
 <script src="controller/placeOrderController.js"></script>
+<script src="model/customer.js"></script>
+<script src="model/item.js"></script>
 
 
 <script>

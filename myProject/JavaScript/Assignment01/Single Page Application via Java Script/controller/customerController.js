@@ -167,6 +167,7 @@ function saveCustomer(){
       salary:customerSalary
     }
     CustomerDB.push(customer);
+    setCmbDataCustomer("<option>" + customerId + "</option>");
     console.log(customer);
 }
 
@@ -206,12 +207,12 @@ $("#btnCustomerSave").click(function () {
   loadAllCustomer();
 
 
-  $("#cmbCusId").empty();
-    for(var i of CustomerDB){
-        let cusIdValue=`<option>${i.id}</option>`;
+  // $("#cmbCusId").empty();
+  //   for(var i of CustomerDB){
+  //       let cusIdValue=`<option>${i.id}</option>`;
 
-        $("#cmbCusId").append(cusIdValue);
-    }
+  //       $("#cmbCusId").append(cusIdValue);
+  //   }
 
 
 
