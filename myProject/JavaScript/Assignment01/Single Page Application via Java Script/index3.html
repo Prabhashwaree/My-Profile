@@ -235,8 +235,11 @@ body{
             <div class="col-md-6 pt-1">
                 <input type="text" disabled class="form-control" id="txtQtyHandItem" placeholder="QtyOnHhand">
               </div>
-              <div class="col-md-6 pt-1">
+              <div class="col-md-3 pt-1">
                 <input type="text" class="form-control" id="txtOrderQtyItem" placeholder="Oder Quantity">
+              </div>
+              <div class="col-md-3 pt-1">
+                <input type="text" class="form-control" id="txtDiscount" placeholder="Discount">
               </div>
               <div class="col-md-12 pt-1 pt-2">
                 <div class="col-8"><button id="btnAddToCart" type="button" class="btn btn-success" style="width: 150%;">Add To Cart</button></div>
@@ -249,31 +252,23 @@ body{
     <!-- --------------------------Purchase Order ---------------------------------- -->
     <div class="col-3">
 
-          <div class="col-12 px-4 shadow p-1 mb-3 bg-rgb(226, 225, 225) rounded" style="background-color: rgb(248, 242, 242);">
+          <div class="col-12 px-4 shadow pt-3 pb-3 mb-3 bg-rgb(226, 225, 225) rounded" style="background-color: rgb(248, 242, 242);">
         <form class="row g-2 pt-1 pb-1">
-            <div class="col-4 pt-1">
-                <label for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);"><h2>Total:</h2></label>
-              </div>
+
               <div class="col-8 pt-1">
-                <input id="totalLbl" for="formGroupExampleInput" class="form-label px-2 w-75" style="font-family: 'Rasa', serif;color: rgb(16, 143, 175);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"></input>
-              </div>
+                <h2 style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);">Sub Total:</h2>
+                </div>
+                <div class="col-4 pt-2 px-3" style="position: relative; left:-20%;">
+                  <h4 style="font-family: 'Rasa', serif;color: rgb(16, 143, 175);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"><span id="SubtotalLbl"></span></h4>
+                </div>
 
-              <div class="col-6 ">
-                <label for="formGroupExampleInput" class="form-label px-2" style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);"><h2>SubTotal:</h2></label>
-              </div>
-              <div class="col-6 ">
-                <input for="formGroupExampleInput" class="form-label w-100" style="font-family: 'Rasa', serif;color: rgb(223, 58, 58);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"></input>
-              </div>
+                <div class="col-6">
+                  <h2 style="font-family: 'Rasa', serif;color: rgb(10, 24, 27);">Total:</h2>
+                </div>
+                <div class="col-6 pt-1 px-2" style="position: relative; left:-20%;" >
+                  <h4 style="font-family: 'Rasa', serif;color: rgb(223, 58, 58);border: none; background-color: rgb(248, 242, 242);font-size: 25px;font-weight: bold;"> <span id="totalLbl"></span></h4>
+                </div>
 
-          <div class="col-md-6 pt-1">
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Cash">
-            </div>
-            <div class="col-md-6 pt-1">
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Discount">
-            </div>
-            <div class="col-md-12 pt-1">
-              <input type="text" class="form-control" id="inputEmail4" placeholder="Balance">
-            </div>
             <div class="col-md-6 pt-1">
                 <div class="col-8"><button type="button" class="btn btn-primary confirmOrder" style="width: 150%;">Confirm Order</button></div>
               </div>
@@ -454,17 +449,16 @@ body{
 
 <!-- --------------------------view table form ---------------------------------- -->
 
-<div class="row px-5">
+<div class="row px-5 pt-4">
 
-    <div class="col-12 shadow  bg-rgb(248, 242, 242); rounded" style="background-color: rgb(248, 242, 242);border-radius: 50%;" >
+    <div class="col-12  shadow  bg-rgb(248, 242, 242); rounded" style="background-color: rgb(248, 242, 242);border-radius: 50%;" >
         <table class="table">
            <thead>
              <tr>
                <th scope="col">Item Code</th>
                <th scope="col">Item Name</th>
-               <th scope="col">Price</th>
-               <th scope="col">Qty On Hand</th>
                <th scope="col">Order Qty</th>
+               <th scope="col">Price</th>
                <th scope="col">Total</th>
                <th scope="col">Delete</th>
              </tr>
@@ -491,9 +485,9 @@ body{
              <tr>
                <th scope="row">I-0001</th>
                <td>Shirt</td>
-               <td>RS.55,000.00</td>
                <td>50</td>
-               <td>RS.1,000,000.00</td>
+               <td>RS.2000.00</td>
+               <td>RS.100,000.00</td>
               <td><button type="button" class="btn-sm border btn-primary" style="height: 9%;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="20" height="20"
                   viewBox="0 0 172 172"

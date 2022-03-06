@@ -28,10 +28,9 @@ $(".confirmOrder").click(function(){
 //qty diduck
 function qtyReduce(orderQty){
     var available=parseInt(orderQty);
-    var orderQuantity=parseInt($("#txtOrderQtyItem").val());
-    orderQuantity=available-orderQuantity;
-
-    $("#txtOrderQtyItem").val(orderQuantity);
+    var orderQuantity=parseInt($("#txtQtyHandItem").val());
+    orderQuantity=orderQuantity-available;
+    $("#txtQtyHandItem").val(orderQuantity);
 
     console.log(orderQuantity);
 }
@@ -93,17 +92,39 @@ function setCmbDataItem(itemData){
 
 
 
+
+
 //---------view Table-------------
 
 $("#btnAddToCart").click(function () {
     // $("#addToCart>tr").off("click");
     console.log("Enter");
     addToCart();
-    qtyReduce($("#txtQtyHandItem").val());
+    qtyReduce($("#txtOrderQtyItem").val());
     //clear();
 
    
 });
+
+
+
+
+
+ let sub_total = 0;
+ let discount = 0;
+ let total = 0;
+
+function calculateTotal(orderQty,itemPrice,discounts){
+    sub_total+=orderQty *itemPrice;
+    discount+=(orderQty*itemPrice*discounts) /100;
+    total=sub_total-discount;  
+    
+    $("#totalLbl").text(total);
+    $("#SubtotalLbl").text(sub_total);
+}
+
+
+
 
 $("#cartTable").empty();
 
@@ -120,16 +141,14 @@ function addToCart(){
 
     itemCode1 = $("#cmbItemCode").val();
     itemName1 = $("#txtNameItem").val();
-    itemPrice1 = $("#txtPriceItem").val();
-    qtyOnHand1 = $("#txtQtyHandItem").val();
     orderQty1 = $("#txtOrderQtyItem").val();
+    itemPrice1 = $("#txtPriceItem").val();
+    qtyOnHand = $("#txtQtyHandItem").val();
+    discounts=$("#txtDiscount").val();
     
+    calculateTotal($("#txtOrderQtyItem").val(),$("#txtPriceItem").val(),$("#txtDiscount").val());
 
-
-    let total=itemPrice1*orderQty1;
-    $("#totalLbl").val(itemPrice1*orderQty1);
-
-   let row = `<tr><td>${itemCode1}</td><td>${itemName1}</td><td>${itemPrice1}</td><td>${qtyOnHand1}</td><td>${orderQty1}</td><td>${total}</td>
+   let row = `<tr><td>${itemCode1}</td><td>${itemName1}</td><td>${orderQty1}</td><td>${itemPrice1}</td><td>${total}</td>
    <td><button  type="button" class="btn-sm border btn-primary updateCart" id="updateItems" style="height: 9%;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
    width="20" height="20"
    viewBox="0 0 172 172"
@@ -149,16 +168,17 @@ function addToCart(){
 
     let itemId=$(this).children(":eq(0)").text();
     let itemName=$(this).children(":eq(1)").text();
-    let itemPrice=$(this).children(":eq(2)").text();
-    let itemQTYHand=$(this).children(":eq(3)").text();
     let orderQty=$(this).children(":eq(4)").text();
+    let itemPrice=$(this).children(":eq(2)").text();
+    
+    
 
 
     $("#cmbItemCode").val(itemId);
     $("#txtNameItem").val(itemName);
-    $("#txtPriceItem").val(itemPrice);
-    $("#txtQtyHandItem").val(itemQTYHand);
     $("#txtOrderQtyItem").val(orderQty);
+    $("#txtPriceItem").val(itemPrice);
+    
 
 });
 
