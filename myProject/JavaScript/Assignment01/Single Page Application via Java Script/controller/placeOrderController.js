@@ -194,7 +194,7 @@ $("#cartTable>tr").click(function(){
     $("#txtOrderQtyItem").val(orderQty);
     $("#txtPriceItem").val(itemPrice);
     
-
+    
 });
 
 function loadAllCartTable(){
@@ -218,24 +218,32 @@ function loadAllCartTable(){
   $("#confirmOrder").click(function(){
     saveConfirmOrder();
     loadAllConfirmOrder();
+    console.log("hello");
 
   });
 
-
+ 
+    
+  
 
   function saveConfirmOrder(){
-    var itemCode =  $("#txtItemCode").val();
-    var itemName=   $("#txtItemName").val();
-    var itemPrice =  $("#txtItemPrice").val();
-    var itemQuantity =  $("#txtItemQuantity").val();
+    let order_Id=$("#genarateId").val();
+    let date=$("#iDate").val();
+    let time=$("#selectTime").val();
+    let cus_Id=$("#cmbCusId").val();
+    let item_Code=$("#cmbItemCode").val();
+    let item_Qty=$("#txtOrderQtyItem").val();
+    let item_Discount=$("#txtDiscount").val();
+    let all_Total=$("#totalLbl").val();
 
-    ItemDB.push(new item(itemCode,itemName,itemPrice,itemQuantity));
-    
+
+
+    OrderDB.push(new Orders(order_Id,date,time,cus_Id,item_Code,item_Qty,item_Discount,all_Total));
   }
 
 
   function loadAllConfirmOrder(){
-
+    
   }
 
 
