@@ -4,31 +4,31 @@ function item(code,name,price,quantity){
     var _itemPrice=price;
     var _itemQuantity=quantity;
 
-    this.getCusId=function(){
-        return itemCode;
+    this.getItemCode=function(){
+        return _itemCode;
     }
-    this.setCusId=function(itemCode){
+    this.setItemCode=function(itemCode){
         _itemCode=itemCode;
     }
 
-    this.getCusName=function(){
+    this.getItemName=function(){
         return _itemName;
     }
-    this.setCusName=function(itemName){
+    this.setItemName=function(itemName){
         _itemName=itemName;
     }
 
-    this.getCusAddress=function(){
+    this.getItemPrice=function(){
         return _itemPrice;
     }
-    this.setCusAddress=function(itemPrice){
+    this.setItemPrice=function(itemPrice){
         _itemPrice=itemPrice;
     }
 
-    this.getCusSalary=function(){
+    this.getItemQuantity=function(){
         return _itemQuantity;
     }
-    this.setCusSalary=function(itemQuantity){
+    this.setItemQuantity=function(itemQuantity){
         _itemQuantity=itemQuantity;
     }
 }

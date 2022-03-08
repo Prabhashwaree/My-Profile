@@ -2,11 +2,11 @@
 // -------------------auto save table data (practice)----------------------
 
 // ----------------------------Item Code-------------------------------------------
-var itemCode=/^(I-)[0-9]{4}$/;
+var itemCodes=/^(I-)[0-9]{4}$/;
 $("#txtItemCode").keyup(function(){
   let input=$("#txtItemCode").val();
 
-  if(itemCode.test(input)){
+  if(itemCodes.test(input)){
     $("#txtItemCode").css('border','1px solid green');
     $("#txtItemName").css('border','1px solid red');
     $("#errors").text("ID is Correct..");
@@ -121,10 +121,10 @@ $("#search1").keyup(function(event){
   if(event.key=="Enter"){
    
     if(responceId){
-      $("#txtItemCode").val(responceId.code);
-        $("#txtItemName").val(responceId.iName);
-        $("#txtItemPrice").val(responceId.price);
-        $("#txtItemQuantity").val(responceId.quantity);
+      $("#txtItemCode").val(responceId.getItemCode());
+        $("#txtItemName").val(responceId.getItemName());
+        $("#txtItemPrice").val(responceId.getItemPrice());
+        $("#txtItemQuantity").val(responceId.getItemQuantity());
 
     }else{
       // alert("hi");
@@ -136,7 +136,7 @@ $("#search1").keyup(function(event){
 
 function searchItem(code){
   for(let i=0;i<ItemDB.length;i++){
-    if(ItemDB[i].code==code){
+    if(ItemDB[i].getItemCode()==code){
       return ItemDB[i];
     }
   }
@@ -149,15 +149,11 @@ function saveItem(){
   var itemPrice =  $("#txtItemPrice").val();
   var itemQuantity =  $("#txtItemQuantity").val();
 
-    var item={
-      code:itemCode,
-      iName:itemName,
-      price:itemPrice,
-      quantity:itemQuantity
-    }
-    ItemDB.push(item);
+
+
+    ItemDB.push(new item(itemCode,itemName,itemPrice,itemQuantity));
     setCmbDataItem("<option>" + itemCode + "</option>");
-    console.log(item);
+    console.log(itemCode);
 }
 
 
@@ -167,10 +163,10 @@ function loadAllItem(){
   $("#selecterowItem").empty();
     for(var i of ItemDB){
 
-  let itemData=`<tr><td>${i.code}</td>
-    <td>${i.iName}</td>
-    <td>${i.price}</td>
-    <td>${i.quantity}</td>
+  let itemData=`<tr><td>${i.getItemCode()}</td>
+    <td>${i.getItemName()}</td>
+    <td>${i.getItemPrice()}</td>
+    <td>${i.getItemQuantity()}</td>
     <td><button  type="button" class="btn-sm border btn-primary updateItems" id="updateItems" style="height: 9%;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="20" height="20"
           viewBox="0 0 172 172"
@@ -195,12 +191,12 @@ function loadAllItem(){
 
    for(var i=0;i<ItemDB.length;i++){
      
-     if($("#txtItemCode").val()==ItemDB[i].code){
+     if($("#txtItemCode").val()==ItemDB[i].getItemCode()){
        
-       ItemDB[i].code=iCode;
-       ItemDB[i].iName=itName;
-       ItemDB[i].price=iPrice;
-       ItemDB[i].quantity=iQuantity;
+       ItemDB[i].setItemCode(iCode);
+       ItemDB[i].setItemName(itName);
+       ItemDB[i].setItemPrice(iPrice);
+       ItemDB[i].setItemQuantity(iQuantity);
      }
 
    }
@@ -215,7 +211,7 @@ function loadAllItem(){
 $("#selecterowItem").on('click','.deleteItem',function(){
   var index=0;
   for(var i=0;i<ItemDB.length;i++){
-    if($("#txtCustomerId").val()==ItemDB[i].id){
+    if($("#txtCustomerId").val()==ItemDB[i].getItemCode()){
       index=i;
     }
   }

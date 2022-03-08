@@ -126,10 +126,10 @@ $("#search").keyup(function(event){
   if(event.key=="Enter"){
    
     if(responces){
-      $("#txtCustomerId").val(responces.id);
-        $("#txtCustomerName").val(responces.name);
-        $("#txtCustomerAddress").val(responces.address);
-        $("#txtCustomerSalary").val(responces.salary);
+      $("#txtCustomerId").val(responces.getCusId());
+        $("#txtCustomerName").val(responces.getCusName());
+        $("#txtCustomerAddress").val(responces.getCusAddress());
+        $("#txtCustomerSalary").val(responces.getCusSalary());
 
     }else{
       alert("hi");
@@ -146,7 +146,7 @@ $("#search").keyup(function(event){
 
 function seachCustomer(id){
   for(let i=0;i<CustomerDB.length;i++){
-    if(CustomerDB[i].id==id){
+    if(CustomerDB[i].getCusId()==id){
       return CustomerDB[i];
     }
   }
@@ -160,13 +160,9 @@ function saveCustomer(){
     var customerAddress =  $("#txtCustomerAddress").val();
     var customerSalary =  $("#txtCustomerSalary").val();
 
-    var customer={
-      id:customerId,
-      name:customerName,
-      address:customerAddress,
-      salary:customerSalary
-    }
-    CustomerDB.push(customer);
+
+
+    CustomerDB.push(new customer(customerId,customerName,customerAddress,customerSalary));
     setCmbDataCustomer("<option>" + customerId + "</option>");
     console.log(customer);
 }
@@ -178,10 +174,10 @@ function loadAllCustomer(){
   $("#selecterow").empty();
     for(var i of CustomerDB){
 
-  let data=`<tr><td>${i.id}</td>
-    <td>${i.name}</td>
-    <td>${i.address}</td>
-    <td>${i.salary}</td>
+  let data=`<tr><td>${i.getCusId()}</td>
+    <td>${i.getCusName()}</td>
+    <td>${i.getCusAddress()}</td>
+    <td>${i.getCusSalary()}</td>
     <td><button  type="button" class="btn-sm border btn-primary" id="updateCustomer" style="height: 9%;"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="20" height="20"
           viewBox="0 0 172 172"
@@ -229,7 +225,7 @@ $("#selecterow").on('click','.deleteCustomer',function(){
   
   var index=0;
   for(var i=0;i<CustomerDB.length;i++){
-    if($("#txtCustomerId").val()==CustomerDB[i].id){
+    if($("#txtCustomerId").val()==CustomerDB[i].getCusId()){
       index=i;
     }
   }
@@ -257,12 +253,12 @@ $("#updateCustomer").click(function(){
 
     for(var i=0;i<CustomerDB.length;i++){
       
-      if($("#txtCustomerId").val()==CustomerDB[i].id){
+      if($("#txtCustomerId").val()==CustomerDB[i].getCusId()){
         
-        CustomerDB[i].id=cusId;
-        CustomerDB[i].name=cusName;
-        CustomerDB[i].address=cusAddress;
-        CustomerDB[i].salary=cusSalary;
+        CustomerDB[i].setCusId(cusId);
+        CustomerDB[i].setCusName(cusName);
+        CustomerDB[i].setCusAddress(cusAddress);
+        CustomerDB[i].setCusSalary(cusSalary);
       }
 
     }
