@@ -1,9 +1,10 @@
-function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal) {
+function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal,discount) {
     var __cartICode=cartICode;
     var __cartIName=cartIName;
     var __orderQty=orderQty;
     var __cartIPrice=cartIPrice;
     var __total=cartTotal;
+    var __discount=discount;
     
     this.getcartICode=function () {
         return __cartICode;
@@ -34,5 +35,11 @@ function cart(cartICode,cartIName,cartIPrice,orderQty,cartTotal) {
     }
     this.setTotal=function (total) {
         __total=total;
+    }
+    this.getDiscount=function () {
+        return __discount;
+    }
+    this.setDiscount=function (discount) {
+        __discount=discount;
     }
 }

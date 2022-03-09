@@ -5,7 +5,6 @@ console.log("#genarateId");
 function genarateOrderId(){
     if(OrderDB.length !=0){
         let lastId=OrderDB[OrderDB.length-1];
-
         if(lastId<9){
             return "O00" + (lastId +1 );
         }else if(lastId<9){
@@ -19,12 +18,7 @@ function genarateOrderId(){
 }
 
 
-$(".confirmOrder").click(function(){
-    // OrderDB.push(1);
-    $("#genarateId").text(genarateOrderId());
-    clearAll();
-    $("#cartTable").empty();
-})
+
 
 
 //qty diduck
@@ -173,7 +167,7 @@ function addToCart(){
 
     }
 
-    cartDB.push(new cart(itemCode1,itemName1,itemPrice1,orderQty1,total));
+    cartDB.push(new cart(itemCode1,itemName1,itemPrice1,orderQty1,total,discounts));
     console.log("itemCode1,itemName1,orderQty1,itemPrice1,total");
 
 }
@@ -217,8 +211,11 @@ function loadAllCartTable(){
   // Confirm order
   $("#confirmOrder").click(function(){
     saveConfirmOrder();
+    genarateOrderId();
     loadAllConfirmOrder();
-    console.log("hello");
+    $("#genarateId").text(genarateOrderId());
+    clearAll();
+    // $("#cartTable").empty();
 
   });
 
@@ -227,23 +224,40 @@ function loadAllCartTable(){
   
 
   function saveConfirmOrder(){
-    let order_Id=$("#genarateId").val();
+    let order_Id=$("#genarateId").text();
     let date=$("#iDate").val();
     let time=$("#selectTime").val();
-    let cus_Id=$("#cmbCusId").val();
-    let item_Code=$("#cmbItemCode").val();
-    let item_Qty=$("#txtOrderQtyItem").val();
-    let item_Discount=$("#txtDiscount").val();
-    let all_Total=$("#totalLbl").val();
+    let cusId=$("#cmbCusId").val();
+    let itemCode1 = $("#cmbItemCode").val();
+    let itemQty=$("#txtOrderQtyItem").val();
+    let itemDiscount=$("#txtDiscount").val();
+    let allTotal=$("#totalLbl").text();
 
+    for(var i of cartDB){
+        OrderDB.push(new Orders(order_Id,date,time,cusId,i.getcartICode(),i.getcartOQty(),i.getDiscount(),allTotal));
+    }
 
-
-    OrderDB.push(new Orders(order_Id,date,time,cus_Id,item_Code,item_Qty,item_Discount,all_Total));
   }
 
 
   function loadAllConfirmOrder(){
-    
+    $("#orderTable").empty();
+    for(var i of OrderDB){
+      let row = `<tr>
+      <td>${i.getOrderId()}</td>
+      <td>${i.getOrderDate()}</td>
+      <td>${i.getOrderTime()}</td>
+      <td>${i.getCuId()}</td>
+      <td>${i.getItemCode()}</td>
+      <td>${i.getIQty()}</td>
+      <td>${i.getItemDiscount()}</td>
+      <td>${i.getAllTotal()}</td>
+      <td></td></tr>`;
+   
+      $("#orderTable").append(row);
+      console.log(row);
+   
+    }
   }
 
 
@@ -294,8 +308,3 @@ $(".updateCart").click(function(){
 //     let price = $("#txtPriceItem").val()
 //     $(".totalLbl").val(qty * price)
 // };
-
-    
-
-
-

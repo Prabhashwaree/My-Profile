@@ -270,7 +270,7 @@ body{
                 </div>
 
             <div class="col-md-6 pt-1">
-                <div class="col-8"><button type="button" class="btn btn-primary confirmOrder" id="confirmOrder" style="width: 150%;">Confirm Order</button></div>
+                <div class="col-8"><button type="button" class="btn btn-primary" id="confirmOrder" style="width: 150%;">Confirm Order</button></div>
               </div>
 
                <!-- (Pop Up Window) Button trigger modal -->
@@ -284,9 +284,13 @@ body{
               <div class="modal-dialog modal-xl shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #ffca2c">
                 <div class="modal-content">
                   <div class="modal-header shadow p-1 bg-rgb(212, 209, 4); rounded" style="background-color: #ffca2c">
-                    <h5 class="modal-title px-4" style="color: white;" id="exampleModalLabel">ORDER DETAILS</h5>
+                    <h5 class="modal-title px-4" style="color: white;" id="exampleModalLabel">ORDER</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   
+                    
+
                   </div>
+                  
                   <div class="modal-body">
                    <table class="table">
             <thead>
@@ -302,7 +306,7 @@ body{
                 <th scope="col">Update/Delete</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="orderTable">
               <!-- <tr>
                 <th scope="row">O-001</th>
                 <td>C-001</td>
