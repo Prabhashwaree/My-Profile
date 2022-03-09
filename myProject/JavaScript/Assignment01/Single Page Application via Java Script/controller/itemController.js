@@ -1,143 +1,115 @@
 // <!-- -------------------------- Item jQuery ---------------------------------- -->
 // -------------------auto save table data (practice)----------------------
 
-// ----------------------------Item Code-------------------------------------------
-function itemRegex(patton,value){
-  return patton.text(value);
-}
+ // ----------------------------Item Code-------------------------------------------
+
+var itemCode=/^(I-)[0-9]{4}$/;
 $("#txtItemCode").keyup(function(){
-  if (itemRegex(/^(I-)[0-9]{4}$/, $("#txtItemCode").val())) {
-    $("#txtItemCode").css('border', '2px solid green');
-    $("#txtItemName").css('border', '2px solid red');
-}else{
-    $("#txtItemCode").css({
-        'border': '2px solid red'
-    });
-}
-  // let input=$("#txtItemCode").val();
+  let input=$("#txtItemCode").val();
 
-  // if(itemCodes.test(input)){
-  //   $("#txtItemCode").css('border','1px solid green');
-  //   $("#txtItemName").css('border','1px solid red');
-  //   $("#errors").text("ID is Correct..");
+  if(itemCode.test(input)){
+    $("#txtItemCode").css('border','1px solid green');
+    $("#txtItemName").css('border','1px solid red');
+    $("#errors").text("ID is Correct..");
 
-  //   $("#txtItemCode").keydown(function(event){
-  //     if(event.key=="Enter"){
-  //       $("#txtItemName").focus();
-  //       $("#txtItemCode").css('border','1px solid green');
-  //       $("#btnCustomerSave").attr("disabled",false);
-  //       $("#errors").hide();
-        
-  //     }
+    $("#txtItemCode").keydown(function(event){
+      if(event.key=="Enter"){
+        $("#txtItemName").focus();
+        $("#txtItemCode").css('border','1px solid green');
+        $("#errors").hide();
+      }
   });
-  
-  // }else{
-  //   $("#txtItemCode").css('border','1px solid red');
-  //   $("#btnCustomerSave").attr("disabled",true);
-  //   $("#errors").text("Customer ID is Incorrect..");
-    
-  // }
 
-// })
+  }else{
+    $("#txtItemCode").css('border','1px solid red');
+    $("#btnItemSave").attr("disabled",true);
+    $("#errors").text("Customer ID is Incorrect..");
+  }
 
+})
+ // ----------------------------Item Name-------------------------------------------
 
-
-// ----------------------------Item Name-------------------------------------------
-
+var itemName=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z])$/;
 $("#txtItemName").keyup(function(){
-  if (itemRegex(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/, $("#txtItemName").val())) {
-    $("#txtItemName").css('border', '2px solid green');
-    $("#txtItemPrice").css('border', '2px solid red');
-}else{
-    $("#txtItemName").css({
-        'border': '2px solid red'
-    });
+  let input=$("#txtItemName").val();
 
-  //let input=$("#txtItemName").val();
+  if(itemName.test(input)){
+    $("#txtItemName").css('border','1px solid green');
+    $("#txtItemPrice").css('border','1px solid red');
+    $("#errors1").text("ID is Correct..");
 
-  // if(itemName.test(input)){
-  //   $("#txtItemName").css('border','1px solid green');
-  //   $("#txtItemPrice").css('border','1px solid red');
-  //   $("#errors1").text("ID is Correct..");
+    $("#txtItemName").keydown(function(event){
+      if(event.key=="Enter"){
+        $("#txtItemPrice").focus();
+        $("#txtItemName").css('border','1px solid green');
+        $("#btnItemSave").attr("disabled",false);
+        $("#errors1").hide();
 
-  //   $("#txtItemName").keydown(function(event){
-  //     if(event.key=="Enter"){
-  //       $("#txtItemPrice").focus();
-  //       $("#txtItemName").css('border','1px solid green');
-  //       $("#btnCustomerSave").attr("disabled",false);
-  //       $("#errors1").hide();
-        
-  //     }
- 
-  
-//   }else{
-//     $("#txtItemName").css('border','1px solid red');
-//     $("#btnCustomerSave").attr("disabled",true);
-//     $("#errors1").text("Customer ID is Incorrect..");
-    
-//   }
+      }
+  });
 
-// })
+  }else{
+    $("#txtItemName").css('border','1px solid red');
+    $("#btnItemSave").attr("disabled",true);
+    $("#errors1").text("Customer ID is Incorrect..");
+
+  }
+
+})
 
 
 
 // ----------------------------Item Prices-------------------------------------------
-var itemPrices=/^[0-9][0-9][0-9][0-9]*([.])[0-9]{2}?$/;
+
+var itemPrices=/^(Rs.)[0-9][0-9][0-9][0-9]*([.])[0-9]{2}?$/;
 $("#txtItemPrice").keyup(function(){
-  if (itemRegex(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/, $("#txtItemName").val())) {
-    $("#txtItemName").css('border', '2px solid green');
-    $("#txtItemPrice").css('border', '2px solid red');
-}else{
-    $("#txtItemName").css({
-        'border': '2px solid red'
-    });
+  let input=$("#txtItemPrice").val();
 
-  // let input=$("#txtItemPrice").val();
+  if(itemPrices.test(input)){
+    $("#txtItemPrice").css('border','1px solid green');
+    $("#txtItemQuantity").css('border','1px solid red');
+    $("#errors1").text("ID is Correct..");
 
-  // if(itemPrices.test(input)){
-  //   $("#txtItemPrice").css('border','1px solid green');
-  //   $("#txtItemQuantity").css('border','1px solid red');
-  //   $("#errors1").text("ID is Correct..");
+    $("#txtItemPrice").keydown(function(event){
+      if(event.key=="Enter"){
+        $("#txtItemQuantity").focus();
+        $("#txtItemPrice").css('border','1px solid green');
+        $("#btnItemSave").attr("disabled",false);
+        $("#errors1").hide();
 
-  //   $("#txtItemPrice").keydown(function(event){
-  //     if(event.key=="Enter"){
-  //       $("#txtItemQuantity").focus();
-  //       $("#txtItemPrice").css('border','1px solid green');
-  //       $("#btnCustomerSave").attr("disabled",false);
-  //       $("#errors1").hide();
-        
-  //     }
+      }
   });
-  
-  // }else{
-  //   $("#txtItemPrice").css('border','1px solid red');
-  //   $("#btnCustomerSave").attr("disabled",true);
-  //   $("#errors1").text("Customer ID is Incorrect..");
-  // }
+
+  }else{
+    $("#txtItemPrice").css('border','1px solid red');
+    $("#btnItemSave").attr("disabled",true);
+    $("#errors1").text("Customer ID is Incorrect..");
+  }
+})
 
 
 
 // ----------------------------Item Quantity-------------------------------------------
-var customerQuantity=/^[0-9]{1,20}$/;
+var itemQuantity=/^[0-9]{1,20}$/;
 $("#txtItemQuantity").keyup(function(){
   let input=$("#txtItemQuantity").val();
 
-  if(customerQuantity.test(input)){
+  if(itemQuantity.test(input)){
     $("#txtItemQuantity").css('border','1px solid green');
     $("#errors3").text("Name is Correct..");
-    $("#btnCustomerSave").attr("disabled",false);
+    
+    $("#btnItemSave").attr("disabled",false);
     $("#errors3").hide();
-    
 
-    
+
+
   }else{
     $("#txtItemQuantity").css('border','1px solid red');
-    $("#btnCustomerSave").attr("disabled",true);
+    $("#btnItemSave").attr("disabled",true);
     $("#errors3").text("Name is Incorrect..");
   }
 
 })
-  
 
 
 $("#search1").keyup(function(event){
