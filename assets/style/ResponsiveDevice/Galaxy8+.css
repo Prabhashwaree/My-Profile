@@ -1,0 +1,419 @@
+
+/* Galaxy8+ Responsive */
+
+@media all  and (min-width:  360px) and (max-width: 740px)  {
+    header{
+        height: 10vh;
+        top: 0;
+        width:315vw;
+      }
+    
+    .main_page {
+        width: 315%;
+        top: 0;
+    }
+
+    .naviLink0 button{
+        filter: drop-shadow(10px 10px 10px black);
+        background-color: white;
+        padding: 8px 30px;
+        font-size: 16px;
+        border-radius: 7px;
+        margin: 0 12px;
+    }
+    
+    #home{
+        width: 12vw;
+        left: 27px;
+        position: absolute;
+        top: 8px;
+    }
+    
+    #small-rectangle{
+        left:38px;
+        width: 12vw;
+        top: 22px;
+    }
+   
+  .secondary-menu {
+      width: 315%;
+      padding: 1px 1px;
+      
+  }
+  
+  
+  #header-bar2 li {
+      position: relative;
+      bottom: 1px;
+      display: inline-block;
+      font-family: 'Rajdhani', sans-serif;
+      border-radius: 7px;
+      text-align: center;
+  }
+  #header-bar2 button{
+      background-color: white;
+      font-size: 14px;
+      background-color: white;
+      padding: 6px 35px;
+      border-radius: 7px;
+      filter: drop-shadow(10px 10px 10px black);
+      margin: 0 47px;
+   
+  }
+  #name{
+      left:5%;
+      width:200%
+    }
+  
+    #I_m {
+      left:20%;
+      position:relative;
+  }
+  
+  #heroText h3{
+      width:200%;
+      left:9%;
+  
+  }
+  
+  #heroText h4{
+      left:29%;
+      width:200%;
+   }
+  
+   #heroText h5{
+      left:80%;
+  }
+  
+  #heroText p{
+      left:46%;
+      width:100%;
+   }
+   #heroText {
+      position: absolute;
+      top: 21%;
+      left: 46%;    
+  }
+  #vertical_line1 {
+    height: 15vh;
+    width: 0.200vw;
+    background-color: white;
+    left: 97%;
+    position: relative;
+    top: -30px;
+}
+
+#vertical_line2 {
+    height: 15vh;
+    width: 0.200vw;
+    background-color: white;
+    left: 97%;
+    position: relative;
+    top: -30px;
+}
+.sosial_media_links li a i {
+    top: -20px;
+}
+
+   
+  
+  
+  
+  
+  /*  3 motivation section */
+  
+  #motivate-rectangle {
+      height: 50vh;
+      width: 315%;
+      top: 0;
+      
+  }
+    
+  figure {
+      left:34%;
+      top: 30%;
+      font-size: 16px;
+      text-align: center;
+  }
+  
+  #motivate-rectangle img{
+      left: 68%;
+      top: 20%;    
+  }
+  
+  /* /----------------------------------2 st Page(About)------------------------------------/ */
+  
+  #about-Me{
+      height: 75vh;
+      width: 315%;
+      top: -19px;
+     
+  }
+  
+  #topic-About{
+      width:50vw;
+  }
+  
+  #about-Me img{ 
+     left: 30px;
+     top: 10px;
+     position: relative;
+   }
+  #about-Me div{ 
+      top:90px;
+  }
+  
+  #rectangle-shape{
+      width:150vw;
+      left:37%
+  }
+  
+  
+  #top{
+      width: 110vw;
+  }
+  #bottom{
+      width: 120vw;
+      left: 10%;
+  }
+  
+  #navi_phone_gmail a{
+      position: relative;  
+      left: 50px;
+  }
+  
+  /* ----------------------------------3 st Page(Assignment)------------------------------------ */
+  
+  #Gallery_Page{
+      left: 12%;
+  }
+  
+  #Assignment_Rectangle{
+      width:70vw;
+      height:7vh;
+      position: relative;
+      top: -30px;
+     
+  }
+  
+  .sec1{
+      width: 18%;
+      height: 5%;
+      left: -18.2%;
+      top: 20%;
+      border:1px solid #9e9c06;
+      background-color: #506b65;
+      margin: 20px;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  #Assignment_big_rectangle{
+      top: -60px;
+      width: 315%;
+      height: 115vh;
+  }
+  
+  #btn1_viewmore{
+      width:43vw;
+      height:5vh;
+  }
+  
+  /* /----------------------------------4 st Page(Skill)------------------------------------/ */
+  
+  #skil_rectangle{
+      width:70vw;
+     
+      top:-20px; 
+  }
+  
+  #skil_big_rectangle{
+      height: 60vh;
+      width: 315%;
+      position: relative;
+      background-color: #6e6e6e;
+      top: -100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  
+  /* /----------------------------------4 st Page(Experience)------------------------------------/ */
+  
+  #experience_rectangle{
+      width:80vw;
+      top:-3%;
+  }
+  
+  #experience_big_rectangle{
+    width: 315%;
+    position: relative;
+    top: -140px;
+  }
+  
+  .experience_step1{
+      left: 25%;
+      top: 60%;
+    
+  }
+  .experience_step2{
+     
+      left: 39%;
+      top: 50.7%;
+      
+  }
+  .experience_step3{
+      left: 53%;
+      top: 41%;
+  }
+  .experience_step4{
+      position: absolute;
+      right: 10%;
+      top: 31.4%;
+      transform: translate(-50% , -50%);
+  }
+  .experience_step5{
+      position: absolute;
+      right:-4%;
+      top: 22%;
+      transform: translate(-50% , -50%);
+  }
+  #man{
+      left:-12%;
+  } 
+  
+  #run_man_img{
+      top:42%;
+   }
+   #winer_man_img{
+       right:12%;
+       top:5%;
+   }
+  
+  /* /----------------------------------4 st Page(Project)------------------------------------/ */
+  
+  #Project_rectangle{
+      width:70vw;
+      top:-20px;
+  }
+  #Project_big_rectangle{
+      height: 85vh;
+      width: 315%;
+      position: relative;
+      background-color: #6e6e6e;
+      top:-160px;
+     
+  }
+  
+  
+  /* /----------------------------------4 st Page(Education)------------------------------------/ */
+  
+  #Education_rectangle{
+      width:80vw;
+      top: -20px;
+  } 
+  
+  #Education_big_rectangle{
+    width: 315%;
+    top: -160px;
+   
+  }
+  
+  #animal_picture{
+      top: 70%;
+      left:3%;
+  }
+  
+  #hat_img{
+      right: 10%;
+      top: 6%;
+  }
+  @keyframes drop_water{
+      0%{
+          width: 1px;
+          height: 1px;  
+          filter: drop-shadow(10px 10px 10px rgb(255, 255, 255));
+      }
+      100%{
+          width: 130px;
+          height: 130px;
+          filter: drop-shadow(10px 10px 10px rgb(238, 255, 0));
+      }
+  }
+  
+  
+  
+  /* /----------------------------------4 st Page(Contact)------------------------------------/ */
+  #contact_and_comment_big_rectangle{
+    width: 315%;
+    
+    top: -160px;
+  }
+  #Contact_rectangle{
+      width:70vw;
+      top:-1px;
+      left:75.3%;
+  }
+  
+  #location_rectangle{
+      width: 80vw;
+      height: 10vh;
+      right: 5%;
+  }
+  #location_rectangle p{
+      left: 5%;
+  }
+  
+  #gmail_rectangle{
+      width: 80vw;
+      height: 10vh;
+      right: 5%;
+  }
+  
+  #gmail_rectangle p{
+     left:5%;
+  }
+  
+  #tell_rectangle{
+      width: 80vw;
+      height: 10vh;
+      right: 5%;
+  }
+  #tell_rectangle p{
+      left: 5%;
+  }
+     
+  /* /----------------------------------4 st Page(comment)------------------------------------/ */
+  
+  
+  
+  .placeholder{
+      left: 60px;
+  }
+  .placeholder input{
+      width: 85vw;
+      height: 5vh;
+  }
+  .placeholder textarea{
+      width: 100vw;
+      height: 23vh;
+  }
+  
+  #date{
+      width: 60vw;
+  }
+  
+  .select-item{
+      width: 30vw;
+  }
+  
+  
+  /* /----------------------------------4 st Page(Footer)------------------------------------/ */
+  
+  footer{
+    width: 315%;
+    top: -160px;
+  }
+
+}
