@@ -4,13 +4,36 @@
 // --------------------Validation text deald-------------------
 
 
+function buttonDisable(){
+  let textFeald=[$("#txtCustomerId"),$("#txtCustomerName"),$("#txtCustomerAddress"),$("#txtCustomerSalary")];
+  let result=false;
 
+  for (let index = 0; index < textFeald.length; index++) {
+    if(textFeald[index].css('border-color')==="rgb(255, 0, 0)"){
+        result = true;
+    }
+    
+  }
+  if(result){
+    $("#btnCustomerSave").attr("disabled",true);
+    console.log("disabled");
+  }else{
+    $("#btnCustomerSave").attr("disabled",false);
+    console.log("enabled");
+  }
+
+}
 
 
 
 // ----------------------------customer ID-------------------------------------------
 var customerId=/^(C-)[0-9]{4}$/;
 $("#txtCustomerId").keyup(function(){
+
+  setTimeout(function () {
+    buttonDisable();
+   }, 150);
+
   let input=$("#txtCustomerId").val();
 
   if(customerId.test(input)){
@@ -42,6 +65,11 @@ $("#txtCustomerId").keyup(function(){
 
 var customerName=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
 $("#txtCustomerName").keyup(function(){
+
+  setTimeout(function () {
+    buttonDisable();
+   }, 150);
+
   let input=$("#txtCustomerName").val();
 
   if(customerName.test(input)){
@@ -73,6 +101,11 @@ $("#txtCustomerName").keyup(function(){
 
 var customerAddress=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
 $("#txtCustomerAddress").keyup(function(){
+
+  setTimeout(function () {
+    buttonDisable();
+   }, 150);
+
   let input=$("#txtCustomerAddress").val();
 
   if(customerAddress.test(input)){
@@ -104,6 +137,11 @@ $("#txtCustomerAddress").keyup(function(){
 
 var customerSalary=/^[0-9][0-9][0-9][0-9]*([.])[0-9]{2}?$/;
 $("#txtCustomerSalary").keyup(function(){
+
+  setTimeout(function () {
+    buttonDisable();
+   }, 150);
+
   let input=$("#txtCustomerSalary").val();
 
   if(customerSalary.test(input)){

@@ -2,9 +2,7 @@
 // -------------------auto save table data (practice)----------------------
 
 
-
-
-function buttonDisable(){
+function buttonDisabled(){
   let textFeald=[$("#txtItemCode"),$("#txtItemName"),$("#txtItemPrice"),$("#txtItemQuantity")];
   let result=false;
 
