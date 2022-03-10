@@ -1,29 +1,58 @@
 // <!-- -------------------------- Item jQuery ---------------------------------- -->
 // -------------------auto save table data (practice)----------------------
 
+
+
+
+function buttonDisable(){
+  let textFeald=[$("#txtItemCode"),$("#txtItemName"),$("#txtItemPrice"),$("#txtItemQuantity")];
+  let result=false;
+
+  for (let index = 0; index < textFeald.length; index++) {
+    if(textFeald[index].css('border-color')==="rgb(255, 0, 0)"){
+        result = true;
+    }
+    
+  }
+  if(result){
+    $("#btnItemSave").attr("disabled",true);
+    console.log("disabled");
+  }else{
+    $("#btnItemSave").attr("disabled",false);
+    console.log("enabled");
+  }
+
+}
+
+
  // ----------------------------Item Code-------------------------------------------
 
 var itemCode=/^(I-)[0-9]{4}$/;
 $("#txtItemCode").keyup(function(){
-  let input=$("#txtItemCode").val();
+  
+  setTimeout(function () {
+    buttonDisabled();
+   }, 150);
 
+  let input=$("#txtItemCode").val();
+  
   if(itemCode.test(input)){
     $("#txtItemCode").css('border','1px solid green');
     $("#txtItemName").css('border','1px solid red');
-    $("#errors").text("ID is Correct..");
+    // $("#errors").text("ID is Correct..");
 
     $("#txtItemCode").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtItemName").focus();
         $("#txtItemCode").css('border','1px solid green');
-        $("#errors").hide();
+        // $("#errors").hide();
       }
   });
 
   }else{
     $("#txtItemCode").css('border','1px solid red');
-    $("#btnItemSave").attr("disabled",true);
-    $("#errors").text("Customer ID is Incorrect..");
+    // $("#btnItemSave").attr("disabled",true);
+    // $("#errors").text("Customer ID is Incorrect..");
   }
 
 })
@@ -31,19 +60,25 @@ $("#txtItemCode").keyup(function(){
 
 var itemName=/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z])$/;
 $("#txtItemName").keyup(function(){
-  let input=$("#txtItemName").val();
+  
 
+  setTimeout(function () {
+    buttonDisabled();
+   }, 150);
+
+  let input=$("#txtItemName").val();
+  
   if(itemName.test(input)){
     $("#txtItemName").css('border','1px solid green');
     $("#txtItemPrice").css('border','1px solid red');
-    $("#errors1").text("ID is Correct..");
+    // $("#errors1").text("ID is Correct..");
 
     $("#txtItemName").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtItemPrice").focus();
         $("#txtItemName").css('border','1px solid green');
-        $("#btnItemSave").attr("disabled",false);
-        $("#errors1").hide();
+        // $("#btnItemSave").attr("disabled",false);
+        // $("#errors1").hide();
 
       }
   });
@@ -51,7 +86,7 @@ $("#txtItemName").keyup(function(){
   }else{
     $("#txtItemName").css('border','1px solid red');
     $("#btnItemSave").attr("disabled",true);
-    $("#errors1").text("Customer ID is Incorrect..");
+    // $("#errors1").text("Customer ID is Incorrect..");
 
   }
 
@@ -61,21 +96,27 @@ $("#txtItemName").keyup(function(){
 
 // ----------------------------Item Prices-------------------------------------------
 
-var itemPrices=/^(Rs.)[0-9][0-9][0-9][0-9]*([.])[0-9]{2}?$/;
+var itemPrices=/^[0-9][0-9][0-9][0-9]*([.])[0-9]{2}?$/;
 $("#txtItemPrice").keyup(function(){
-  let input=$("#txtItemPrice").val();
+  
+  setTimeout(function () {
+    buttonDisabled();
+   }, 150);
 
+
+  let input=$("#txtItemPrice").val();
+  
   if(itemPrices.test(input)){
     $("#txtItemPrice").css('border','1px solid green');
     $("#txtItemQuantity").css('border','1px solid red');
-    $("#errors1").text("ID is Correct..");
+    // $("#errors1").text("ID is Correct..");
 
     $("#txtItemPrice").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtItemQuantity").focus();
         $("#txtItemPrice").css('border','1px solid green');
-        $("#btnItemSave").attr("disabled",false);
-        $("#errors1").hide();
+        // $("#btnItemSave").attr("disabled",false);
+        // $("#errors1").hide();
 
       }
   });
@@ -83,7 +124,7 @@ $("#txtItemPrice").keyup(function(){
   }else{
     $("#txtItemPrice").css('border','1px solid red');
     $("#btnItemSave").attr("disabled",true);
-    $("#errors1").text("Customer ID is Incorrect..");
+    // $("#errors1").text("Customer ID is Incorrect..");
   }
 })
 
@@ -92,21 +133,28 @@ $("#txtItemPrice").keyup(function(){
 // ----------------------------Item Quantity-------------------------------------------
 var itemQuantity=/^[0-9]{1,20}$/;
 $("#txtItemQuantity").keyup(function(){
-  let input=$("#txtItemQuantity").val();
+  
 
+  setTimeout(function () {
+    buttonDisabled();
+   }, 150);
+
+
+  let input=$("#txtItemQuantity").val();
+  
   if(itemQuantity.test(input)){
     $("#txtItemQuantity").css('border','1px solid green');
-    $("#errors3").text("Name is Correct..");
+    // $("#errors3").text("Name is Correct..");
     
     $("#btnItemSave").attr("disabled",false);
-    $("#errors3").hide();
+    // $("#errors3").hide();
 
 
 
   }else{
     $("#txtItemQuantity").css('border','1px solid red');
-    $("#btnItemSave").attr("disabled",true);
-    $("#errors3").text("Name is Incorrect..");
+    // $("#btnItemSave").attr("disabled",true);
+    // $("#errors3").text("Name is Incorrect..");
   }
 
 })

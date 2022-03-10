@@ -3,6 +3,11 @@
 
 // --------------------Validation text deald-------------------
 
+
+
+
+
+
 // ----------------------------customer ID-------------------------------------------
 var customerId=/^(C-)[0-9]{4}$/;
 $("#txtCustomerId").keyup(function(){
@@ -11,14 +16,14 @@ $("#txtCustomerId").keyup(function(){
   if(customerId.test(input)){
     $("#txtCustomerId").css('border','1px solid green');
     $("#txtCustomerName").css('border','1px solid red');
-    $("#error").text("ID is Correct..");
+    // $("#error").text("ID is Correct..");
 
     $("#txtCustomerId").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtCustomerName").focus();
         $("#txtCustomerId").css('border','1px solid green');
-        $("#btnCustomerSave").attr("disabled",false);
-        $("#error").hide();
+        // $("#btnCustomerSave").attr("disabled",false);
+        // $("#error").hide();
         
       }
   });
@@ -26,7 +31,7 @@ $("#txtCustomerId").keyup(function(){
   }else{
     $("#txtCustomerId").css('border','1px solid red');
     $("#btnCustomerSave").attr("disabled",true);
-    $("#error").text("Customer ID is Incorrect..");
+    // $("#error").text("Customer ID is Incorrect..");
     
   }
 
@@ -42,22 +47,22 @@ $("#txtCustomerName").keyup(function(){
   if(customerName.test(input)){
     $("#txtCustomerName").css('border','1px solid green');
     $("#txtCustomerAddress").css('border','1px solid red');
-    $("#error1").text("Name is Correct..");
+    // $("#error1").text("Name is Correct..");
     
 
     $("#txtCustomerName").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtCustomerAddress").focus();
         $("#txtCustomerName").css('border','1px solid green');
-        $("#btnCustomerSave").attr("disabled",false);
-        $("#error1").hide();
+        // $("#btnCustomerSave").attr("disabled",false);
+        // $("#error1").hide();
      }
   });
     
   }else{
     $("#txtCustomerName").css('border','1px solid red');
     $("#btnCustomerSave").attr("disabled",true);
-    $("#error1").text("Name is Incorrect..");
+    // $("#error1").text("Name is Incorrect..");
   }
 
 })
@@ -73,21 +78,21 @@ $("#txtCustomerAddress").keyup(function(){
   if(customerAddress.test(input)){
     $("#txtCustomerAddress").css('border','1px solid green');
     $("#txtCustomerSalary").css('border','1px solid red');
-    $("#error2").text("Name is Correct..");
+    // $("#error2").text("Name is Correct..");
 
     $("#txtCustomerAddress").keydown(function(event){
       if(event.key=="Enter"){
         $("#txtCustomerSalary").focus();
         $("#txtCustomerAddress").css('border','1px solid green');
-        $("#btnCustomerSave").attr("disabled",false);
-        $("#error2").hide();
+        // $("#btnCustomerSave").attr("disabled",false);
+        // $("#error2").hide();
      }
   });
     
   }else{
     $("#txtCustomerAddress").css('border','1px solid red');
     $("#btnCustomerSave").attr("disabled",true);
-    $("#error2").text("Name is Incorrect..");
+    // $("#error2").text("Name is Incorrect..");
   }
 
 })
@@ -103,16 +108,16 @@ $("#txtCustomerSalary").keyup(function(){
 
   if(customerSalary.test(input)){
     $("#txtCustomerSalary").css('border','1px solid green');
-    $("#error3").text("Name is Correct..");
-    $("#btnCustomerSave").attr("disabled",false);
-    $("#error3").hide();
+    // $("#error3").text("Name is Correct..");
+    // $("#btnCustomerSave").attr("disabled",false);
+    // $("#error3").hide();
     
 
     
   }else{
     $("#txtCustomerSalary").css('border','1px solid red');
     $("#btnCustomerSave").attr("disabled",true);
-    $("#error3").text("Name is Incorrect..");
+    // $("#error3").text("Name is Incorrect..");
   }
 
 })
