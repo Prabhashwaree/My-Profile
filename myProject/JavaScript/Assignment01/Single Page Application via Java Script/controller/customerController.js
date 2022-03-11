@@ -175,7 +175,7 @@ $("#search").keyup(function(event){
         $("#txtCustomerSalary").val(responces.getCusSalary());
 
     }else{
-      alert("hi");
+     // alert("hi");
     }
 
 
