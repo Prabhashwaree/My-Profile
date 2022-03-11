@@ -153,7 +153,7 @@ function addToCart(){
     let itemPrice1 = $("#txtPriceItem").val();
     let qtyOnHand = $("#txtQtyHandItem").val();
     let discounts=$("#txtDiscount").val();
-    let total=$("#SubtotalLbl").text();
+    let total=itemPrice1*orderQty1;
     
     calculateTotal($("#txtOrderQtyItem").val(),$("#txtPriceItem").val(),$("#txtDiscount").val());
 
