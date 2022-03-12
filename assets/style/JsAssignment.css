@@ -2,12 +2,12 @@
 
 
 :root {
-    --red: hsl(0, 78%, 62%);
-    --cyan: hsl(180, 62%, 55%);
-    --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 64%);
-    --varyDarkBlue: hsl(234, 12%, 34%);
-    --grayishBlue: hsl(229, 6%, 66%);
+    --red: hsl(0, 100%, 35%);
+    --cyan: hwb(180 0% 0%);
+    --orange: hsl(315, 100%, 52%);
+    --blue: hsl(150, 100%, 48%);
+    --varyDarkBlue: hsl(228, 3%, 38%);
+    --grayishBlue: hsl(204, 100%, 63%);
     --veryLightGray: hsl(0, 0%, 98%);
     --weight1: 200;
     --weight2: 400;
