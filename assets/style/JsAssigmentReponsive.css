@@ -1,0 +1,25 @@
+
+
+@media (min-width: 950px) {
+    .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box-down {
+      position: relative;
+      top: 150px;
+    }
+    .box {
+      width: 20%;
+    }
+    .header p {
+      width: 30%;
+    }
+  }

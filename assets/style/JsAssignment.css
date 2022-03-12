@@ -64,9 +64,7 @@
     margin: 20px;
     
   }
-  /* .box:hover{
-    transform: rotateY(180deg);
-  } */
+ 
 
   
   img {
@@ -93,28 +91,6 @@
     font-weight: var(--weight3);
   }
   
-  @media (min-width: 950px) {
-    .row1-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   
-    .row2-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .box-down {
-      position: relative;
-      top: 150px;
-    }
-    .box {
-      width: 20%;
-    }
-    .header p {
-      width: 30%;
-    }
-  }
   
   
