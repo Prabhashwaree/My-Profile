@@ -215,7 +215,7 @@ function loadAllCartTable(){
     genarateOrderId();
     saveConfirmOrder();
     loadAllConfirmOrder();
-   
+    cartDB=[];
     clearAll();
      $("#cartTable").empty();
 
@@ -235,9 +235,10 @@ function loadAllCartTable(){
     let itemDiscount=$("#txtDiscount").val();
     let allTotal=$("#totalLbl").text();
 
-    for(var i of cartDB){
-        OrderDB.push(new Orders(order_Id,date,time,cusId,i.getcartICode(),i.getcartOQty(),i.getDiscount(),allTotal));
-    }
+   
+    OrderDB.push(new Orders(order_Id,date,time,cusId,itemCode1,itemQty,itemDiscount,allTotal));
+
+    
 
     
   }
@@ -324,8 +325,8 @@ function clearAddToCart(){
     $("#txtNameItem").val("");
     $("#txtPriceItem").val("");
     $("#txtQtyHandItem").val("");
-    $("#txtOrderQtyItem").val("");
-    $("#txtDiscount").val("");
+  //  $("#txtOrderQtyItem").val("");
+  //  $("#txtDiscount").val("");
     }
 
     
