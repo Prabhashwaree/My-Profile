@@ -235,11 +235,8 @@ function loadAllCartTable(){
     let itemDiscount=$("#txtDiscount").val();
     let allTotal=$("#totalLbl").text();
 
-   
+  
     OrderDB.push(new Orders(order_Id,date,time,cusId,itemCode1,itemQty,itemDiscount,allTotal));
-
-    
-
     
   }
 
@@ -325,8 +322,8 @@ function clearAddToCart(){
     $("#txtNameItem").val("");
     $("#txtPriceItem").val("");
     $("#txtQtyHandItem").val("");
-  //  $("#txtOrderQtyItem").val("");
-  //  $("#txtDiscount").val("");
+ //$("#txtOrderQtyItem").val("");
+ //$("#txtDiscount").val("");
     }
 
     
